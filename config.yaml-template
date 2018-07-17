@@ -1,0 +1,16 @@
+client:
+
+  database:
+    # Include the port in the address - standalone
+    #address: bolt://localhost:7687
+    # If you use the Docker Compose... use this configuration
+    address: bolt://tkg-db:7687
+    username: neo4j
+    password: neo4j
+
+server:
+  port: 8080
+
+general:
+  # Setting filter_biolink to True will ignore categories that are non-Biolink category compliant
+  filter_biolink: false

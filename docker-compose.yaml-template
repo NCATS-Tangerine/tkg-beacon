@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  tkg-api:
+    build: .
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/neo4j}
+    ports:
+      - "8071:5000"
+    depends_on:
+      - "tkg-db"
+    networks:
+        - default
+
+  tkg-db:
+    image: neo4j
+    environment:
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/neo4j}
+      # This sets java's heap size to 1G. If you get java.lang.OutOfMemoryError
+      # then you may need to increase this.
+      - _JAVA_OPTIONS="-Xmx1g"
+    ports:
+      - "7474:7474"
+      - "7473:7473"
+      - "7687:7687"
+    volumes:
+      # NOTE: if docker-compose is run under 'sudo' then $HOME will be 'root'
+      - $HOME/neo4j/data:/data
+      - $HOME/neo4j/import:/import
+      - $HOME/neo4j/logs:/logs
+    networks:
+        - default
+
+networks:
+    default:
+        driver: bridge
