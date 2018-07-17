@@ -4,7 +4,7 @@ services:
   tkg-api:
     build: .
     environment:
-      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/neo4j}
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/your_tkg_password}
     ports:
       - "8071:5000"
     depends_on:
@@ -15,7 +15,7 @@ services:
   tkg-db:
     image: neo4j
     environment:
-      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/neo4j}
+      - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/your_tkg_password}
       # This sets java's heap size to 1G. If you get java.lang.OutOfMemoryError
       # then you may need to increase this.
       - _JAVA_OPTIONS="-Xmx1g"

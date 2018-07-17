@@ -6,7 +6,7 @@ client:
     # If you use the Docker Compose... use this configuration
     address: bolt://tkg-db:7687
     username: neo4j
-    password: neo4j
+    password: your_tkg_password
 
 server:
   port: 8080
