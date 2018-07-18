@@ -7,8 +7,8 @@ COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY client client
-COPY ontology client
-COPY server client
+COPY ontology ontology
+COPY server server
 
 WORKDIR client
 
