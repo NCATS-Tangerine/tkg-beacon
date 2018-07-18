@@ -6,9 +6,9 @@ WORKDIR /home
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY client .
-COPY ontology .
-COPY server .
+COPY client/ .
+COPY ontology/ .
+COPY server/ .
 
 WORKDIR client
 
