@@ -3,18 +3,18 @@ FROM python:3
 
 WORKDIR /home
 
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY client/ .
-COPY ontology/ .
-COPY server/ .
+COPY client client
+COPY ontology client
+COPY server client
 
 WORKDIR client
 
 # The config,yaml file needs to be copied from the config.yaml-template 
 # and customized to point to the Neo4j TKG database that you are wrapping
-COPY config.yaml beacon_controller/
+COPY config.yaml beacon_controller/config.yaml
 RUN python setup.py install
 
 WORKDIR ../ontology
