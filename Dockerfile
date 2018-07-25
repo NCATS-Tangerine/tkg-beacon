@@ -1,9 +1,9 @@
 # Docker file for the Translator Knowledge Graph Beacon
-FROM python:3
+FROM python:3-alpine
 
 WORKDIR /home
 
-# The config,yaml file needs to be copied from the config.yaml-template 
+# The config,yaml file needs to be copied from the config.yaml-template
 # and customized to point to the Neo4j TKG database that you are wrapping
 COPY config.yaml /config.yaml
 
@@ -22,6 +22,10 @@ WORKDIR ../ontology
 RUN python setup.py install
 
 WORKDIR ../server
-RUN python setup.py install
+RUN pip install --no-cache-dir -r requirements.txt
 
-ENTRYPOINT ["python", "-m", "swagger_server"]
+EXPOSE 8080
+
+ENTRYPOINT ["python3"]
+
+CMD ["-m", "swagger_server"]
