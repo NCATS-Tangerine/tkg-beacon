@@ -119,6 +119,17 @@ def stringify(s):
     """
     Turns s into a semicolon separated string if s is a list
     """
-    if isinstance(s, (list, set)):
-        s = "; ".join(s)
+    if s is not None:
+        if isinstance(s, (list, set)):
+            s = "; ".join(s)
+    return s
+
+def listify(s):
+    """
+    Converts s into a list if not already. If s is None, an empty list will be returned.
+    """
+    if s is None:
+        s = []
+    if not isinstance(s, (list, set, tuple)):
+        s = [s]
     return s
