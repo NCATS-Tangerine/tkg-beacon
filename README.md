@@ -126,7 +126,7 @@ To build the Docker containers, run the following command
 
 ```
  $ cd ..  # make sure you are back in the root project directory
- $ sudo docker-compose -f docker-compose.yml build
+ $ sudo docker-compose -f docker-compose.yaml build
 ```
 
 This command make take some time to execute, as it is downloading and building your docker containers.
