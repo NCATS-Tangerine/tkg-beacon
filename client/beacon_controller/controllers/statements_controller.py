@@ -13,6 +13,7 @@ from beacon_controller import utils
 
 def populate_dict(d, db_dict, prefix=None):
     for key, value in db_dict.items():
+        value = utils.stringify(value)
         if prefix != None:
             d['{}_{}'.format(prefix, key)] = value
         else:
@@ -64,12 +65,12 @@ def get_statement_details(statementId, keywords=None, size=None):
         if 'evidence' in r:
             for uri in r['evidence']:
                 evidences.append(BeaconStatementCitation(
-                    uri=uri,
+                    uri=utils.stringify(uri),
                 ))
         if 'publications' in r:
             for pm_uri in r['publications']:
                 evidences.append(BeaconStatementCitation(
-                    uri=pm_uri
+                    uri=utils.stringify(pm_uri)
                 ))
 
         annotations = []
@@ -132,26 +133,26 @@ def get_statements(s, edge_label=None, relation=None, t=None, keywords=None, cat
         o_categories = utils.standardize(o['category'])
 
         if result['edge_label'] != None:
-            edge_label = result['edge_label']
+            edge_label = utils.stringify(result['edge_label'])
         else:
-            edge_label = result['type']
+            edge_label = utils.stringify(result['type'])
 
         beacon_subject = BeaconStatementSubject(
             id=s['id'],
-            name=s['name'],
-            categories=s_categories
+            name=utils.stringify(s['name']),
+            categories=utils.standardize(s['category'])
         )
 
         beacon_predicate = BeaconStatementPredicate(
             edge_label=edge_label,
-            relation=result['relation'],
-            negated=result['negated']
+            relation=utils.stringify(result['relation']),
+            negated=bool(result['negated'])
         )
 
         beacon_object = BeaconStatementObject(
             id=o['id'],
-            name=o['name'],
-            categories=o_categories
+            name=utils.stringify(o['name']),
+            categories=utils.standardize(o['category'])
         )
 
         statement_id = result['statement_id']

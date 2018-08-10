@@ -40,16 +40,11 @@ def get_concept_details(conceptId):
 
     for result in results:
         uri = result['uri'] if result['uri'] != None else result['iri']
-        synonyms = utils.listify(result['synonyms'])
 
         clique = utils.listify(result['clique'])
         xrefs = utils.listify(result['xrefs'])
-
         exact_matches = clique + xrefs
-
         exact_matches = utils.remove_all(exact_matches, result['id'])
-
-        categories = utils.standardize(result['category'])
 
         details_dict = create_details_dict(result['node'])
         details = []
@@ -63,10 +58,10 @@ def get_concept_details(conceptId):
             id=result['id'],
             uri=utils.stringify(uri),
             name=utils.stringify(result['name']),
-            categories=categories,
+            categories=utils.standardize(result['category']),
             symbol=utils.stringify(result['symbol']),
             description=utils.stringify(result['description']),
-            synonyms=synonyms,
+            synonyms=utils.listify(result['synonyms']),
             exact_matches=exact_matches,
             details=details
         )
