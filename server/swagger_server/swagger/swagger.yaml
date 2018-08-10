@@ -3,7 +3,7 @@ swagger: "2.0"
 info:
   description: "This is the Translator Knowledge Beacon web service application programming\
     \ interface (API).\n"
-  version: "1.1.0"
+  version: "1.1.1"
   title: "Translator Knowledge Beacon API"
   contact:
     url: "http://starinformatics.com"
