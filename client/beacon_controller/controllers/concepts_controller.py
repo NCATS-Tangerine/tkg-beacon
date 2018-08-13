@@ -114,7 +114,11 @@ def get_exact_matches_to_concept_list(c):
     results = db.query(q, id_list=c)
     exact_match_responses = []
     for result in results:
-        c.remove(result['id'])
+        clique_id = result['id']
+        if clique_id in c:
+            c.remove(clique_id)
+        else:
+            continue
 
         exact_matches = []
 
@@ -124,10 +128,10 @@ def get_exact_matches_to_concept_list(c):
         if isinstance(result['clique'], (list, tuple, set)):
             exact_matches += result['clique']
 
-        exact_matches = utils.remove_all(exact_matches, result['id'])
+        exact_matches = utils.remove_all(exact_matches, clique_id)
 
         exact_match_responses.append(ExactMatchResponse(
-            id=result['id'],
+            id=clique_id,
             within_domain=True,
             has_exact_matches=list(set(exact_matches))
         ))
