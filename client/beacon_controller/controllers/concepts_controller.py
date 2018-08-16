@@ -128,7 +128,7 @@ def get_exact_matches_to_concept_list(c:List[str]) -> List[ExactMatchResponse]:
         input_id IN n.xrefs OR
         input_id IN n.clique
     RETURN
-    	input_id AS input_id,
+        input_id AS input_id,
         n.id AS match_id,
         n.xrefs AS xrefs,
         n.clique AS clique;
