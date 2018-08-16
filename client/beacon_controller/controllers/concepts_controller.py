@@ -1,6 +1,7 @@
 from swagger_server.models.beacon_concept import BeaconConcept
 from swagger_server.models.beacon_concept_with_details import BeaconConceptWithDetails
 from swagger_server.models.exact_match_response import ExactMatchResponse
+from swagger_server.models.beacon_concept_detail import BeaconConceptDetail
 
 import beacon_controller.database as db
 from beacon_controller.database import Node
@@ -11,6 +12,14 @@ from collections import defaultdict
 import yaml, ast
 
 from typing import List
+
+def create_details_dict(node):
+    d = {}
+    already_labels = ['id', 'uri', 'iri', 'name', 'category', 'symbol', 'description', 'synonym', 'clique', 'xrefs']
+    for key, value in node.items():
+        if key not in already_labels:
+            d[key] = value
+    return d
 
 def get_concept_details(conceptId:str) -> BeaconConceptWithDetails:
     q = """
@@ -25,7 +34,8 @@ def get_concept_details(conceptId:str) -> BeaconConceptWithDetails:
         n.description AS description,
         n.synonym AS synonyms,
         n.clique AS clique,
-        n.xrefs AS xrefs
+        n.xrefs AS xrefs,
+        n AS node
     LIMIT 1
     """
 
@@ -33,26 +43,30 @@ def get_concept_details(conceptId:str) -> BeaconConceptWithDetails:
 
     for result in results:
         uri = result['uri'] if result['uri'] != None else result['iri']
-        synonyms = result['synonyms'] if result['synonyms'] != None else []
 
-        clique = result['clique'] if result['clique'] != None else []
-        xrefs = result['xrefs'] if result['xrefs'] != None else []
-
-        exact_matches = list(set(clique + xrefs))
-
+        clique = utils.listify(result['clique'])
+        xrefs = utils.listify(result['xrefs'])
+        exact_matches = clique + xrefs
         exact_matches = utils.remove_all(exact_matches, result['id'])
 
-        categories = utils.standardize(result['category'])
+        details_dict = create_details_dict(result['node'])
+        details = []
+        for key, value in details_dict.items():
+            details.append(BeaconConceptDetail(
+                tag=key,
+                value=utils.stringify(value)
+            ))
 
         return BeaconConceptWithDetails(
             id=result['id'],
-            uri=uri,
-            name=result['name'],
-            categories=categories,
-            symbol=result['symbol'],
-            description=result['description'],
-            synonyms=result['synonyms'],
-            exact_matches=exact_matches
+            uri=utils.stringify(uri),
+            name=utils.stringify(result['name']),
+            categories=utils.standardize(result['category']),
+            symbol=utils.stringify(result['symbol']),
+            description=utils.stringify(result['description']),
+            synonyms=utils.listify(result['synonyms']),
+            exact_matches=exact_matches,
+            details=details
         )
 
 def get_concepts(keywords:List[str], categories:List[str]=None, size:int=None) -> BeaconConcept:

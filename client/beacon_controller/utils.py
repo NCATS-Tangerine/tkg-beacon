@@ -80,7 +80,7 @@ def make_case_insensitive(strings):
 
 def remove_all(original_list:list, object_to_be_removed):
     """
-    Removes first of string in list if it exists and returns list with removed items
+    Removes object_to_be_removed in list if it exists and returns list with removed items
     """
     return [i for i in original_list if i != object_to_be_removed]
 
@@ -119,6 +119,18 @@ def stringify(s):
     """
     Turns s into a semicolon separated string if s is a list
     """
+    if s is None:
+        s = ""
     if isinstance(s, (list, set)):
         s = "; ".join(s)
+    return s
+
+def listify(s):
+    """
+    Converts s into a list if not already. If s is None, an empty list will be returned.
+    """
+    if s is None:
+        s = []
+    if not isinstance(s, (list, set, tuple)):
+        s = [s]
     return s

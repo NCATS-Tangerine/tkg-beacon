@@ -4,10 +4,10 @@ For wrapping Translator Knowledge Graph compliant Neo4j databases.
 
 Two options: 
 
-1. Run the wrapper directly on Linux
+1. Run the wrapper directly
 2. Run the wrapper within Docker
 
-## 1. Directly under Linux
+## 1. Directly (code snippets are for Linux)
 
 ### Getting started
 
@@ -126,7 +126,7 @@ To build the Docker containers, run the following command
 
 ```
  $ cd ..  # make sure you are back in the root project directory
- $ sudo docker-compose -f docker-compose.yml build
+ $ sudo docker-compose -f docker-compose.yaml build
 ```
 
 This command make take some time to execute, as it is downloading and building your docker containers.

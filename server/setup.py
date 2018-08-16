@@ -13,7 +13,7 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["connexion"]
+REQUIRES = ["connexion==1.1.15", "jsonschema==2.6.0"]
 
 setup(
     name=NAME,
