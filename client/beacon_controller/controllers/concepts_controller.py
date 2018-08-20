@@ -7,8 +7,11 @@ import beacon_controller.database as db
 from beacon_controller.database import Node
 from beacon_controller import utils
 
-import yaml
-import ast
+from collections import defaultdict
+
+import yaml, ast
+
+from typing import List
 
 def create_details_dict(node):
     d = {}
@@ -18,7 +21,7 @@ def create_details_dict(node):
             d[key] = value
     return d
 
-def get_concept_details(conceptId):
+def get_concept_details(conceptId:str) -> BeaconConceptWithDetails:
     q = """
     MATCH (n) WHERE LOWER(n.id)=LOWER({conceptId})
     RETURN
@@ -66,7 +69,7 @@ def get_concept_details(conceptId):
             details=details
         )
 
-def get_concepts(keywords, categories=None, size=None):
+def get_concepts(keywords:List[str], categories:List[str]=None, size:int=None) -> BeaconConcept:
     size = size if size is not None and size > 0 else 100
     categories = categories if categories is not None else []
 
@@ -101,46 +104,69 @@ def get_concepts(keywords, categories=None, size=None):
 
     return concepts
 
-def get_exact_matches_to_concept_list(c):
+def get_exact_matches_to_concept_list(c:List[str]) -> List[ExactMatchResponse]:
+    """
+    Gets a set of *case sensitive* exact matches for the given list of curie
+    identifiers. Making the Cypher query case insensitive results in significantly
+    slower performance. It is assumed that the database uses capital characters
+    for its identifiers. E.g., HP:0010313 and not hp:0010313.
+
+    :param c: an array set of [CURIE-encoded](https://www.w3.org/TR/curie/) identifiers of concepts thought to be exactly matching concepts, to be used in a search for additional exactly matching concepts [*sensa*-SKOS](http://www.w3.org/2004/02/skos/core#exactMatch).
+    :type c: List[str]
+
+    :rtype: List[ExactMatchResponse]
+    """
+    # ["HP:0010313", "DOID:3459", "HP:0009800", "MONDO:0004989"]
+
+    # "CCPSS:0033438","EFO:0001359","OBO:KEGG_04940","OBO:COHD_201254",
+    # "DOID:9744","NCIT:C2986","CHV:0000047456","OBO:SCTID_46635009","MESH:D003922"
+
     q = """
+    UNWIND {id_list} AS input_id
     MATCH (n) WHERE
-        ANY(id IN {id_list} WHERE TOLOWER(n.id) = TOLOWER(id))
+        n.id = input_id OR
+        input_id IN n.xrefs OR
+        input_id IN n.clique
     RETURN
-        n.id AS id,
+        input_id AS input_id,
+        n.id AS match_id,
         n.xrefs AS xrefs,
-        n.clique AS clique
+        n.clique AS clique;
     """
 
     results = db.query(q, id_list=c)
-    exact_match_responses = []
+
+    exactmatch_dict = defaultdict(set)
+
     for result in results:
-        clique_id = result['id']
-        if clique_id in c:
-            c.remove(clique_id)
+        input_id = result.get('input_id')
+        match_id = result.get('match_id')
+        clique = result.get('clique')
+        xrefs = result.get('xrefs')
+
+        if isinstance(match_id, str):
+            exactmatch_dict[input_id].add(match_id)
+
+        if isinstance(clique, (list, tuple, set)):
+            exactmatch_dict[input_id].update(clique)
+
+        if isinstance(xrefs, (list, tuple, set)):
+            exactmatch_dict[input_id].update(xrefs)
+
+    exactmatch_responses = []
+
+    for curie in c:
+        if curie in exactmatch_dict:
+            exactmatch_responses.append(ExactMatchResponse(
+                id=curie,
+                within_domain=True,
+                has_exact_matches=list(exactmatch_dict[curie])
+            ))
         else:
-            continue
+            exactmatch_responses.append(ExactMatchResponse(
+                id=curie,
+                within_domain=False,
+                has_exact_matches=[]
+            ))
 
-        exact_matches = []
-
-        if isinstance(result['xrefs'], (list, tuple, set)):
-            exact_matches += result['xrefs']
-
-        if isinstance(result['clique'], (list, tuple, set)):
-            exact_matches += result['clique']
-
-        exact_matches = utils.remove_all(exact_matches, clique_id)
-
-        exact_match_responses.append(ExactMatchResponse(
-            id=clique_id,
-            within_domain=True,
-            has_exact_matches=list(set(exact_matches))
-        ))
-
-    for curie_id in c:
-        exact_match_responses.append(ExactMatchResponse(
-            id=curie_id,
-            within_domain=False,
-            has_exact_matches=[]
-        ))
-
-    return exact_match_responses
+    return exactmatch_responses
