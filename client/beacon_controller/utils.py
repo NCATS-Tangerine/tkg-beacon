@@ -4,14 +4,11 @@ import beacon_controller as ctrl
 from beacon_ontology import getEntityByName
 from beacon_ontology.biolink_class import BiolinkClass
 from functools import lru_cache
+from beacon_controller import config
 
 import logging
 
 logger = logging.getLogger(__file__)
-
-__sample_name = 'config.sample.yaml'
-
-__config_dict = None
 
 @lru_cache()
 def prefix_map():
@@ -54,60 +51,6 @@ def fix_curie(curie:str) -> str:
         return '{}:{}'.format(prefixes[prefix], local_id)
     else:
         return curie
-
-def start_new_thread(method, args):
-    thread = threading.Thread(target=method, args=args)
-    thread.daemon = True
-    thread.start()
-
-def initiate_metadata_cache():
-    """
-    The metadata methods are very slow, but they automatically cache their
-    results. So we will call them on new threads to initiate the cache.
-    """
-    start_new_thread(ctrl.get_concept_categories, ())
-    start_new_thread(ctrl.get_knowledge_map, ())
-    start_new_thread(ctrl.get_predicates, ())
-
-def load_config(silent=True):
-    """
-    Walks backwards from __file__ to find config.yaml, loads and returns as a
-    dictionary.
-
-    Note: traverses up whole file system if config.yaml is not found, but this
-          doesn't appear to be a costly opperation.
-
-    source: https://www.programcreek.com/python/example/3198/yaml.safe_load
-    """
-
-    global __config_dict
-
-    if __config_dict is not None:
-        return __config_dict
-
-    config = None
-    f = __file__
-    while config is None:
-        d = os.path.dirname(f)
-        path = os.path.join(d, 'config.yaml')
-
-        if not silent:
-            print('Searching for config.yaml in:', path)
-
-        if os.path.isfile(path):
-            config = path
-            break
-        elif f == d:
-            break
-
-        f = d
-
-    if not config:
-        raise Exception('Could not find config.yaml in any parent directory of {}, try copying and renaming {} in projects root directory'.format(__file__, __sample_name))
-
-    __config_dict = yaml.safe_load(open(config).read())
-
-    return __config_dict
 
 def make_case_insensitive_and_inexact(strings):
     """
@@ -157,7 +100,7 @@ def standardize(categories):
         categories = []
     if not isinstance(categories, (list, set, tuple)):
         categories = [categories]
-    filter_biolink = load_config()['general']['filter_biolink']
+    filter_biolink = config['general']['filter_biolink']
     if filter_biolink is True:
         categories = removeNonBiolinkCategories(categories)
     return categories

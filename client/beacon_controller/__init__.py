@@ -2,7 +2,7 @@ import os, yaml
 
 basepath = os.path.dirname(os.path.abspath(__file__))
 
-configpath = os.path.join(os.path.dirname(basepath), 'config.yml')
+configpath = os.path.join(basepath, 'config', 'config.yaml')
 
 try:
     config = yaml.safe_load(open(configpath).read())
