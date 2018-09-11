@@ -17,7 +17,10 @@ docker-build:
 	docker build -t ncats:${tag} .
 
 docker-run-biolink:
-	docker run -p 8078:8080 ncats:biolink
+	docker run -d --rm -p 8078:8080 ncats:biolink
 
 docker-run-rkb:
-	docker run -p 8075:8080 ncats:rkb
+	docker run -d --rm -p 8075:8080 ncats:rkb
+
+docker-run-rtx:
+	docker run -d --rm -p 8074:8080 ncats:rtx
