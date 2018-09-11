@@ -1,3 +1,4 @@
+
 client:
 
   database:
@@ -7,6 +8,9 @@ client:
     address: bolt://tkg-db:7687
     username: neo4j
     password: your_tkg_password
+
+  # Either "rtx", "biolink" or "semmed"
+  kgx_name: rtx
 
 server:
   port: 8080

@@ -1,6 +1,6 @@
 # Configuration files
-config.yaml
-docker-compose.yaml
+client/config.yaml
+client/docker-compose.yaml
 
 # Swagger code-gen jar
 *.jar

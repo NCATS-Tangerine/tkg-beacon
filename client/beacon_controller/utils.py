@@ -3,10 +3,57 @@ import os, yaml, threading
 import beacon_controller as ctrl
 from beacon_ontology import getEntityByName
 from beacon_ontology.biolink_class import BiolinkClass
+from functools import lru_cache
+
+import logging
+
+logger = logging.getLogger(__file__)
 
 __sample_name = 'config.sample.yaml'
 
 __config_dict = None
+
+@lru_cache()
+def prefix_map():
+    """
+    Returns a dictionary that maps lowercase prefixs to the case of prefixes
+    as they appear in the database. Can be used to correct the case of an
+    identifier.
+    """
+    from beacon_controller import database as db
+    q="MATCH (x) RETURN  DISTINCT split(x.id, ':')[0] AS prefix"
+    results = db.query(q)
+
+    d = {}
+    for result in results:
+        prefix = result['prefix']
+
+        if prefix in d:
+            logger.warn('Identifier prefix {} appears in the database with multiple cases'.format(prefix))
+
+        if isinstance(prefix, str):
+            d[prefix.lower()] = prefix
+        else:
+            d[prefix] = prefix
+
+    return d
+
+def fix_curie(curie:str) -> str:
+    """
+    The exact matches query is case sensitive. This method can be used to ensure
+    that a given curie prefix matches the case of the prefix in the database.
+    """
+    if curie is None or ':' not in curie:
+        return curie
+
+    prefixes = prefix_map()
+    prefix, local_id = curie.split(':', 1)
+    prefix = prefix.lower()
+
+    if prefix in prefixes:
+        return '{}:{}'.format(prefixes[prefix], local_id)
+    else:
+        return curie
 
 def start_new_thread(method, args):
     thread = threading.Thread(target=method, args=args)
@@ -94,7 +141,7 @@ def removeNonBiolinkCategories(old_categories:list):
     if not categories:
         #categories is empty
         categories.append("named thing")
-    
+
     return categories
 
 def isBiolinkCategory(c):
@@ -131,6 +178,8 @@ def listify(s):
     """
     if s is None:
         s = []
-    if not isinstance(s, (list, set, tuple)):
+    elif isinstance(s, (set, tuple)):
+        s = [i for i in s]
+    elif not isinstance(s, list):
         s = [s]
     return s

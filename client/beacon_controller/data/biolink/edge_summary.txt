@@ -1,0 +1,1434 @@
+|subject_category|subject_prefix|edge_type|object_category|object_prefix|provided_by|frequency
+0|cell|CLO|subclass_of|cell|CLO||77698
+1|cell|FBbt|subclass_of|cell|FBbt||11880
+2|cell|CL|subclass_of|cell|CL||6286
+3|cell|ZFA|subclass_of|cell|ZFA||1824
+4|cell|FMA|subclass_of|cell|FMA||1742
+5|cell|FMA|subclass_of|cell|CL||670
+6|cell|CL|subclass_of|cell|FMA||670
+7|cell|ZFA|subclass_of|cell|CL||443
+8|cell|CL|subclass_of|cell|ZFA||443
+9|cell|FBbt|subclass_of|cell|CL||332
+10|cell|CL|subclass_of|cell|FBbt||332
+11|cell|WBbt|subclass_of|cell|WBbt||232
+12|cell|CL|subclass_of|cell|WBbt||32
+13|cell|WBbt|subclass_of|cell|CL||32
+14|cell|http|subclass_of|cell|CLO||10
+15|cell|CLO|subclass_of|cell|http||10
+16|cell|MA|subclass_of|cell|CL||3
+17|cell|CL|subclass_of|cell|MA||3
+18|cell|CL|subclass_of|cell|OBI||1
+19|cell|CLO|subclass_of|cell|OBI||1
+20|cell|OBI|subclass_of|cell|CL||1
+21|cell|OBI|subclass_of|cell|CLO||1
+22|cell|CLO|subclass_of|anatomical entity|CLO||77698
+23|cell|FBbt|subclass_of|anatomical entity|FBbt||11997
+24|cell|CL|subclass_of|anatomical entity|CL||6286
+25|cell|ZFA|subclass_of|anatomical entity|ZFA||1828
+26|cell|FMA|subclass_of|anatomical entity|FMA||1743
+27|cell|CL|subclass_of|anatomical entity|FMA||670
+28|cell|FMA|subclass_of|anatomical entity|CL||670
+29|cell|ZFA|subclass_of|anatomical entity|CL||443
+30|cell|CL|subclass_of|anatomical entity|ZFA||443
+31|cell|CL|subclass_of|anatomical entity|FBbt||332
+32|cell|FBbt|subclass_of|anatomical entity|CL||332
+33|cell|WBbt|subclass_of|anatomical entity|WBbt||245
+34|cell|CL|part_of|anatomical entity|UBERON||170
+35|cell|ZFA|subclass_of|anatomical entity|UBERON||124
+36|cell|CL|subclass_of|anatomical entity|WBbt||32
+37|cell|WBbt|subclass_of|anatomical entity|CL||32
+38|cell|FBbt|subclass_of|anatomical entity|UBERON||19
+39|cell|WBbt|subclass_of|anatomical entity|UBERON||12
+40|cell|http|subclass_of|anatomical entity|CLO||10
+41|cell|CLO|subclass_of|anatomical entity|http||10
+42|cell|MA|subclass_of|anatomical entity|CL||3
+43|cell|CL|subclass_of|anatomical entity|MA||3
+44|cell|FMA|subclass_of|anatomical entity|UBERON||1
+45|cell|CL|subclass_of|anatomical entity|UBERON||1
+46|cell|OBI|subclass_of|anatomical entity|CLO||1
+47|cell|CL|subclass_of|anatomical entity|OBI||1
+48|cell|OBI|subclass_of|anatomical entity|CL||1
+49|cell|CLO|subclass_of|anatomical entity|OBI||1
+50|cell|CL|has_entity|quality|MP|[]|1
+51|cell|CLO|subclass_of|cellular component|CLO||77698
+52|cell|FBbt|subclass_of|cellular component|FBbt||11880
+53|cell|CL|subclass_of|cellular component|CL||6286
+54|cell|ZFA|subclass_of|cellular component|ZFA||1824
+55|cell|FMA|subclass_of|cellular component|FMA||1742
+56|cell|FMA|subclass_of|cellular component|CL||670
+57|cell|CL|subclass_of|cellular component|FMA||670
+58|cell|ZFA|subclass_of|cellular component|CL||443
+59|cell|CL|subclass_of|cellular component|ZFA||443
+60|cell|FBbt|subclass_of|cellular component|CL||332
+61|cell|CL|subclass_of|cellular component|FBbt||332
+62|cell|WBbt|subclass_of|cellular component|WBbt||232
+63|cell|CL|subclass_of|cellular component|WBbt||32
+64|cell|WBbt|subclass_of|cellular component|CL||32
+65|cell|http|subclass_of|cellular component|CLO||10
+66|cell|CLO|subclass_of|cellular component|http||10
+67|cell|MA|subclass_of|cellular component|CL||3
+68|cell|CL|subclass_of|cellular component|MA||3
+69|cell|CLO|subclass_of|cellular component|OBI||1
+70|cell|OBI|subclass_of|cellular component|CL||1
+71|cell|OBI|subclass_of|cellular component|CLO||1
+72|cell|CL|subclass_of|cellular component|OBI||1
+73|cell|ZFA|has_entity|phenotype|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1394
+74|cell|CL|has_entity|phenotype|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+75|cell|CL|has_entity|phenotype|HP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+76|cell|WBbt|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|85
+77|cell|CL|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+78|cell|CL|has_entity|phenotype|MP|[]|1
+79|clinical_course|MP|subclass_of|clinical_course|MP||154
+80|clinical_course|HP|subclass_of|clinical_course|HP||16
+81|clinical_course|MP|subclass_of|clinical_course|HP||9
+82|clinical_course|HP|subclass_of|clinical_course|MP||9
+83|clinical_course|WBPhenotype|subclass_of|clinical_course|WBPhenotype||2
+84|clinical_course|WBPhenotype|subclass_of|clinical_course|MP||1
+85|clinical_course|MP|subclass_of|clinical_course|WBPhenotype||1
+86|clinical_course|MP|subclass_of|clinical_course|ZP||1
+87|clinical_course|ZP|subclass_of|clinical_course|MP||1
+88|clinical_course|MP|has_phenotype|snv|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|2
+89|clinical_course|HP|has_phenotype|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|3
+90|clinical_course|MP|has_entity|anatomical entity|UBERON|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|2
+91|clinical_course|WBPhenotype|has_entity|anatomical entity|WBbt|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+92|clinical_course|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|10548
+93|clinical_course|HP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|685
+94|clinical_course|HP|has_phenotype|gene|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|322
+95|clinical_course|MP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|31
+96|clinical_course|HP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|10
+97|clinical_course|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+98|clinical_course|MP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|2
+99|clinical_course|MP|has_phenotype|gene|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+100|clinical_course|HP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+101|clinical_course|ZP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|1
+102|clinical_course|MP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|5
+103|clinical_course|WBPhenotype|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+104|clinical_course|ZP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+105|clinical_course|MP|has_phenotype|organism|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|1
+106|clinical_course|MP|has_phenotype|genotype|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|1
+107|clinical_course|MP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|502
+108|clinical_course|HP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+109|clinical_course|MP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+110|clinical_course|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|10548
+111|clinical_course|HP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|685
+112|clinical_course|HP|has_phenotype|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|322
+113|clinical_course|MP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|31
+114|clinical_course|HP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|10
+115|clinical_course|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+116|clinical_course|MP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|2
+117|clinical_course|ZP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|1
+118|clinical_course|MP|has_phenotype|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+119|clinical_course|HP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+120|clinical_course|MP|subclass_of|phenotype|MP||168
+121|clinical_course|HP|subclass_of|phenotype|HP||16
+122|clinical_course|MP|subclass_of|phenotype|HP||12
+123|clinical_course|HP|subclass_of|phenotype|MP||10
+124|clinical_course|WBPhenotype|subclass_of|phenotype|WBPhenotype||4
+125|clinical_course|MP|subclass_of|phenotype|ZP||3
+126|clinical_course|MP|subclass_of|phenotype|GO||2
+127|clinical_course|ZP|subclass_of|phenotype|MP||1
+128|clinical_course|WBPhenotype|subclass_of|phenotype|MP||1
+129|clinical_course|MP|subclass_of|phenotype|WBPhenotype||1
+130|clinical_course|ZP|subclass_of|phenotype|GO||1
+131|clinical_course|MP|subclass_of|phenotype|UBERON||1
+132|clinical_course|MP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|502
+133|clinical_course|HP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+134|clinical_course|MP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+135|snv|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|2
+136|snv|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|48
+137|snv|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+138|molecular entity|HGNC|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|3
+139|molecular entity|HGNC|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+140|molecular entity|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|477
+141|molecular entity|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|34
+142|molecular entity|HGNC|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+143|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|880
+144|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|139
+145|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|27
+146|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|7
+147|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|3
+148|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|3
+149|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+150|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+151|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+152|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+153|molecular entity|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+154|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|319
+155|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|134
+156|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|27
+157|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|7
+158|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|3
+159|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+160|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|2
+161|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+162|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+163|molecular entity|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+164|molecular entity|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|477
+165|molecular entity|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|34
+166|molecular entity|HGNC|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+167|molecular entity|HGNC|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|38431
+168|anatomical entity|CLO|subclass_of|cell|CLO||77698
+169|anatomical entity|FBbt|subclass_of|cell|FBbt||11997
+170|anatomical entity|CL|subclass_of|cell|CL||6286
+171|anatomical entity|ZFA|subclass_of|cell|ZFA||1828
+172|anatomical entity|FMA|subclass_of|cell|FMA||1743
+173|anatomical entity|FMA|subclass_of|cell|CL||670
+174|anatomical entity|CL|subclass_of|cell|FMA||670
+175|anatomical entity|ZFA|subclass_of|cell|CL||443
+176|anatomical entity|CL|subclass_of|cell|ZFA||443
+177|anatomical entity|FBbt|subclass_of|cell|CL||332
+178|anatomical entity|CL|subclass_of|cell|FBbt||332
+179|anatomical entity|WBbt|subclass_of|cell|WBbt||245
+180|anatomical entity|UBERON|part_of|cell|CL||170
+181|anatomical entity|UBERON|subclass_of|cell|ZFA||124
+182|anatomical entity|CL|subclass_of|cell|WBbt||32
+183|anatomical entity|WBbt|subclass_of|cell|CL||32
+184|anatomical entity|UBERON|subclass_of|cell|FBbt||19
+185|anatomical entity|UBERON|subclass_of|cell|WBbt||12
+186|anatomical entity|CLO|subclass_of|cell|http||10
+187|anatomical entity|http|subclass_of|cell|CLO||10
+188|anatomical entity|MA|subclass_of|cell|CL||3
+189|anatomical entity|CL|subclass_of|cell|MA||3
+190|anatomical entity|CL|subclass_of|cell|OBI||1
+191|anatomical entity|UBERON|subclass_of|cell|CL||1
+192|anatomical entity|CLO|subclass_of|cell|OBI||1
+193|anatomical entity|UBERON|subclass_of|cell|FMA||1
+194|anatomical entity|OBI|subclass_of|cell|CL||1
+195|anatomical entity|OBI|subclass_of|cell|CLO||1
+196|anatomical entity|UBERON|has_entity|clinical_course|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|2
+197|anatomical entity|WBbt|has_entity|clinical_course|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+198|anatomical entity|CLO|subclass_of|anatomical entity|CLO||77698
+199|anatomical entity|UBERON|subclass_of|anatomical entity|UBERON||40552
+200|anatomical entity|FBbt|subclass_of|anatomical entity|FBbt||24382
+201|anatomical entity|FMA|subclass_of|anatomical entity|FMA||14452
+202|anatomical entity|ZFA|subclass_of|anatomical entity|ZFA||7198
+203|anatomical entity|MA|subclass_of|anatomical entity|MA||7000
+204|anatomical entity|CL|subclass_of|anatomical entity|CL||6286
+205|anatomical entity|UBERON|subclass_of|anatomical entity|FMA||5742
+206|anatomical entity|FMA|subclass_of|anatomical entity|UBERON||5742
+207|anatomical entity|NCBITaxon|subclass_of|anatomical entity|NCBITaxon||3966
+208|anatomical entity|ZFA|subclass_of|anatomical entity|UBERON||3293
+209|anatomical entity|UBERON|subclass_of|anatomical entity|ZFA||3293
+210|anatomical entity|MA|subclass_of|anatomical entity|UBERON||3064
+211|anatomical entity|UBERON|subclass_of|anatomical entity|MA||3064
+212|anatomical entity|FBbt|subclass_of|anatomical entity|UBERON||712
+213|anatomical entity|UBERON|subclass_of|anatomical entity|FBbt||712
+214|anatomical entity|UBERON|part_of|anatomical entity|UBERON||684
+215|anatomical entity|FMA|subclass_of|anatomical entity|CL||670
+216|anatomical entity|CL|subclass_of|anatomical entity|FMA||670
+217|anatomical entity|ZFA|subclass_of|anatomical entity|CL||443
+218|anatomical entity|CL|subclass_of|anatomical entity|ZFA||443
+219|anatomical entity|WBbt|subclass_of|anatomical entity|WBbt||422
+220|anatomical entity|CL|subclass_of|anatomical entity|FBbt||332
+221|anatomical entity|FBbt|subclass_of|anatomical entity|CL||332
+222|anatomical entity|CL|part_of|anatomical entity|UBERON||170
+223|anatomical entity|UBERON|part_of|anatomical entity|CL||170
+224|anatomical entity|WBbt|subclass_of|anatomical entity|UBERON||64
+225|anatomical entity|UBERON|subclass_of|anatomical entity|WBbt||64
+226|anatomical entity|CL|subclass_of|anatomical entity|WBbt||32
+227|anatomical entity|WBbt|subclass_of|anatomical entity|CL||32
+228|anatomical entity|OBO|subclass_of|anatomical entity|UBERON||18
+229|anatomical entity|UBERON|subclass_of|anatomical entity|OBO||18
+230|anatomical entity|ERO|subclass_of|anatomical entity|ERO||12
+231|anatomical entity|http|subclass_of|anatomical entity|CLO||10
+232|anatomical entity|CLO|subclass_of|anatomical entity|http||10
+233|anatomical entity|FBbt|part_of|anatomical entity|FBbt||6
+234|anatomical entity|MA|subclass_of|anatomical entity|CL||3
+235|anatomical entity|CL|subclass_of|anatomical entity|MA||3
+236|anatomical entity|ERO|subclass_of|anatomical entity|NCBITaxon||2
+237|anatomical entity|NCBITaxon|subclass_of|anatomical entity|ERO||2
+238|anatomical entity|CLO|subclass_of|anatomical entity|OBI||1
+239|anatomical entity|UBERON|subclass_of|anatomical entity|_||1
+240|anatomical entity|CL|subclass_of|anatomical entity|UBERON||1
+241|anatomical entity|UBERON|part_of|anatomical entity|FMA||1
+242|anatomical entity|FMA|part_of|anatomical entity|UBERON||1
+243|anatomical entity|UBERON|subclass_of|anatomical entity|NCBITaxon||1
+244|anatomical entity|CL|subclass_of|anatomical entity|OBI||1
+245|anatomical entity|OBI|subclass_of|anatomical entity|CLO||1
+246|anatomical entity|OBI|subclass_of|anatomical entity|CL||1
+247|anatomical entity|_|subclass_of|anatomical entity|UBERON||1
+248|anatomical entity|NCBITaxon|subclass_of|anatomical entity|UBERON||1
+249|anatomical entity|UBERON|subclass_of|anatomical entity|CL||1
+250|anatomical entity|CL|has_entity|quality|MP|[]|1
+251|anatomical entity|CLO|subclass_of|cellular component|CLO||77698
+252|anatomical entity|FBbt|subclass_of|cellular component|FBbt||11997
+253|anatomical entity|CL|subclass_of|cellular component|CL||6286
+254|anatomical entity|ZFA|subclass_of|cellular component|ZFA||1828
+255|anatomical entity|FMA|subclass_of|cellular component|FMA||1743
+256|anatomical entity|FMA|subclass_of|cellular component|CL||670
+257|anatomical entity|CL|subclass_of|cellular component|FMA||670
+258|anatomical entity|ZFA|subclass_of|cellular component|CL||443
+259|anatomical entity|CL|subclass_of|cellular component|ZFA||443
+260|anatomical entity|FBbt|subclass_of|cellular component|CL||332
+261|anatomical entity|CL|subclass_of|cellular component|FBbt||332
+262|anatomical entity|WBbt|subclass_of|cellular component|WBbt||245
+263|anatomical entity|UBERON|part_of|cellular component|CL||170
+264|anatomical entity|UBERON|subclass_of|cellular component|ZFA||124
+265|anatomical entity|CL|subclass_of|cellular component|WBbt||32
+266|anatomical entity|WBbt|subclass_of|cellular component|CL||32
+267|anatomical entity|UBERON|subclass_of|cellular component|FBbt||19
+268|anatomical entity|UBERON|subclass_of|cellular component|WBbt||12
+269|anatomical entity|http|subclass_of|cellular component|CLO||10
+270|anatomical entity|CLO|subclass_of|cellular component|http||10
+271|anatomical entity|UBERON|subclass_of|cellular component|UBERON||4
+272|anatomical entity|MA|subclass_of|cellular component|CL||3
+273|anatomical entity|CL|subclass_of|cellular component|MA||3
+274|anatomical entity|CL|subclass_of|cellular component|OBI||1
+275|anatomical entity|UBERON|subclass_of|cellular component|CL||1
+276|anatomical entity|CLO|subclass_of|cellular component|OBI||1
+277|anatomical entity|UBERON|subclass_of|cellular component|FMA||1
+278|anatomical entity|UBERON|part_of|cellular component|UBERON||1
+279|anatomical entity|OBI|subclass_of|cellular component|CL||1
+280|anatomical entity|OBI|subclass_of|cellular component|CLO||1
+281|anatomical entity|ZFA|has_entity|phenotype|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|8809
+282|anatomical entity|UBERON|has_entity|phenotype|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|4028
+283|anatomical entity|UBERON|has_entity|phenotype|HP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|3740
+284|anatomical entity|CL|has_entity|phenotype|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+285|anatomical entity|FBbt|subclass_of|phenotype|FBbt||661
+286|anatomical entity|WBbt|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|268
+287|anatomical entity|CL|has_entity|phenotype|HP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+288|anatomical entity|UBERON|subclass_of|phenotype|FBbt||103
+289|anatomical entity|CL|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+290|anatomical entity|FBbt|subclass_of|phenotype|UPHENO||1
+291|anatomical entity|CL|has_entity|phenotype|MP|[]|1
+292|inheritance|HP|subclass_of|phenotype|HP||1
+293|gene|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|10548
+294|gene|MGI|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|685
+295|gene|HGNC|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|322
+296|gene|NCBIGene|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|31
+297|gene|NCBIGene|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|10
+298|gene|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+299|gene|ZFIN|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|2
+300|gene|RGD|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+301|gene|NCBIGene|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+302|gene|ZFIN|has_phenotype|clinical_course|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|1
+303|gene|HGNC|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|477
+304|gene|HGNC|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|34
+305|gene|MGI|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+306|gene|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|1558545
+307|gene|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|1294801
+308|gene|RGD|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|988592
+309|gene|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|793313
+310|gene|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|520751
+311|gene|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|485128
+312|gene|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|450963
+313|gene|RGD|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+314|gene|ENSEMBL|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+315|gene|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|94256
+316|gene|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|76479
+317|gene|ENSEMBL|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|69489
+318|gene|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|32482
+319|gene|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|29884
+320|gene|MGI|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+321|gene|HGNC|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+322|gene|ZFIN|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+323|gene|ENSEMBL|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+324|gene|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|13112
+325|gene|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|12968
+326|gene|FlyBase|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+327|gene|ENSEMBL|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+328|gene|NCBIGene|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+329|gene|ZFIN|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+330|gene|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|8550
+331|gene|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|4408
+332|gene|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|3909
+333|gene|NCBIGene|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+334|gene|RGD|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+335|gene|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|1602
+336|gene|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|1374
+337|gene|NCBIGene|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+338|gene|WormBase|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+339|gene|ENSEMBL|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+340|gene|WormBase|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+341|gene|MGI|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+342|gene|ENSEMBL|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+343|gene|ENSEMBL|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+344|gene|NCBIGene|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+345|gene|HGNC|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+346|gene|ENSEMBL|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+347|gene|NCBIGene|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|400
+348|gene|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|210
+349|gene|NCBIGene|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+350|gene|MGI|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+351|gene|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|150
+352|gene|HGNC|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+353|gene|NCBIGene|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+354|gene|HGNC|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+355|gene|FlyBase|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+356|gene|NCBIGene|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+357|gene|HGNC|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+358|gene|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|66
+359|gene|HGNC|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+360|gene|WormBase|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+361|gene|MGI|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+362|gene|FlyBase|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+363|gene|HGNC|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+364|gene|ZFIN|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+365|gene|MGI|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+366|gene|ZFIN|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+367|gene|NCBIGene|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+368|gene|WormBase|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+369|gene|WormBase|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+370|gene|MGI|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+371|gene|NCBIGene|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+372|gene|MGI|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+373|gene|ZFIN|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+374|gene|NCBIGene|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+375|gene|NCBIGene|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+376|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|9494
+377|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4229
+378|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2448
+379|gene|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|1609
+380|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1241
+381|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1211
+382|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|957
+383|gene|NCBIGene|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|726
+384|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|540
+385|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+386|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|110
+387|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|107
+388|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|85
+389|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+390|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+391|gene|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+392|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+393|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+394|gene|Orphanet|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+395|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+396|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+397|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+398|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+399|gene|HGNC|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|2
+400|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+401|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+402|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+403|gene|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+404|gene|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+405|gene|RGD|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|1
+406|gene|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+407|gene|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+408|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4199
+409|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|3356
+410|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2395
+411|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1210
+412|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1199
+413|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|956
+414|gene|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|560
+415|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|461
+416|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+417|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|98
+418|gene|ZFIN|has_phenotype|quality|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|84
+419|gene|MGI|has_phenotype|quality|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|83
+420|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+421|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+422|gene|NCBIGene|contributes_to|quality|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|57
+423|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|47
+424|gene|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+425|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|18
+426|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+427|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+428|gene|Orphanet|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+429|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+430|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+431|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+432|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+433|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+434|gene|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+435|gene|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+436|gene|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+437|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+438|gene|NCBIGene|has_phenotype|quality|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+439|gene|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+440|gene|MGI|interacts_with|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+441|gene|MGI|interacts_with|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+442|gene|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|1558545
+443|gene|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|1294801
+444|gene|RGD|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|988592
+445|gene|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|793313
+446|gene|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|520751
+447|gene|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|485128
+448|gene|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|450963
+449|gene|RGD|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+450|gene|ENSEMBL|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+451|gene|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|94256
+452|gene|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|76479
+453|gene|ENSEMBL|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|69489
+454|gene|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|32482
+455|gene|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|29884
+456|gene|HGNC|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+457|gene|MGI|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+458|gene|ZFIN|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+459|gene|ENSEMBL|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+460|gene|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|13112
+461|gene|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|12968
+462|gene|FlyBase|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+463|gene|ENSEMBL|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+464|gene|ZFIN|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+465|gene|NCBIGene|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+466|gene|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|8550
+467|gene|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|4408
+468|gene|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|3909
+469|gene|RGD|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+470|gene|NCBIGene|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+471|gene|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|1602
+472|gene|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|1374
+473|gene|NCBIGene|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+474|gene|WormBase|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+475|gene|WormBase|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+476|gene|ENSEMBL|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+477|gene|MGI|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+478|gene|ENSEMBL|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+479|gene|ENSEMBL|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+480|gene|NCBIGene|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+481|gene|HGNC|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+482|gene|ENSEMBL|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+483|gene|NCBIGene|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|400
+484|gene|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|210
+485|gene|NCBIGene|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+486|gene|MGI|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+487|gene|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|150
+488|gene|HGNC|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+489|gene|NCBIGene|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+490|gene|HGNC|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+491|gene|FlyBase|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+492|gene|HGNC|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+493|gene|NCBIGene|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+494|gene|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|66
+495|gene|HGNC|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+496|gene|WormBase|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+497|gene|FlyBase|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+498|gene|MGI|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+499|gene|ZFIN|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+500|gene|HGNC|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+501|gene|MGI|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+502|gene|ZFIN|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+503|gene|NCBIGene|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+504|gene|WormBase|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+505|gene|MGI|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+506|gene|WormBase|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+507|gene|NCBIGene|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+508|gene|MGI|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+509|gene|ZFIN|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+510|gene|NCBIGene|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+511|gene|NCBIGene|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+512|gene|HGNC|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|583127
+513|gene|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|136986
+514|gene|NCBIGene|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|69784
+515|gene|SGD|has_phenotype|phenotype|MONARCH|['https://data.monarchinitiative.org/ttl/sgd.ttl']|59770
+516|gene|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|57522
+517|gene|ZFIN|has_phenotype|phenotype|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|51594
+518|gene|SGD|has_phenotype|phenotype|APO|['https://data.monarchinitiative.org/ttl/sgd.ttl']|8454
+519|gene|RGD|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/rgd.ttl']|1223
+520|gene|NCBIGene|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|527
+521|gene|NCBIGene|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|412
+522|gene|MGI|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|238
+523|gene|Orphanet|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|185
+524|gene|ZFIN|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|182
+525|gene|ZFIN|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|133
+526|gene|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+527|gene|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+528|gene|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+529|gene|NCBIGene|has_phenotype|phenotype|UBERON|['https://data.monarchinitiative.org/ttl/monarch.ttl']|13
+530|gene|WormBase|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|11
+531|gene|NCBIGene|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/monarch.ttl']|8
+532|gene|RGD|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/rgd.ttl']|8
+533|gene|SGD|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|6
+534|gene|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+535|gene|RGD|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|4
+536|gene|NCBIGene|has_phenotype|phenotype|NBO|['https://data.monarchinitiative.org/ttl/monarch.ttl']|3
+537|gene|NCBIGene|has_phenotype|phenotype|CL|['https://data.monarchinitiative.org/ttl/monarch.ttl']|2
+538|gene|RGD|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+539|gene|MGI|interacts_with|variant locus|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+540|gene|MGI|interacts_with|variant locus|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+541|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|880
+542|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|139
+543|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|27
+544|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|7
+545|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|3
+546|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|3
+547|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+548|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+549|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+550|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+551|disease|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+552|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|9494
+553|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4229
+554|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2448
+555|disease|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|1609
+556|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1241
+557|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1211
+558|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|957
+559|disease|OMIA|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omia.ttl']|726
+560|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|540
+561|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+562|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|110
+563|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|107
+564|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|85
+565|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+566|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+567|disease|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+568|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+569|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+570|disease|MONDO|contributes_to|gene|Orphanet|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+571|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+572|disease|OMIA|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omia.ttl']|2
+573|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+574|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+575|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+576|disease|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+577|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+578|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+579|disease|OMIA|contributes_to|gene|RGD|['https://data.monarchinitiative.org/ttl/omia.ttl']|1
+580|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+581|disease|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+582|disease|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+583|disease|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+584|disease|MONDO|subclass_of|disease|MONDO||72850
+585|disease|OMIA|subclass_of|disease|OMIA||6464
+586|disease|MONDO|subclass_of|disease|OMIA||1766
+587|disease|OMIA|subclass_of|disease|MONDO||1766
+588|disease|MONDO|subclass_of|disease|SNOMED||235
+589|disease|SNOMED|subclass_of|disease|MONDO||235
+590|disease|MONDO|subclass_of|disease|NCIT||151
+591|disease|NCIT|subclass_of|disease|MONDO||151
+592|disease|NCIT|subclass_of|disease|NCIT||98
+593|disease|MPATH|subclass_of|disease|MONDO||65
+594|disease|MONDO|subclass_of|disease|MPATH||65
+595|disease|MPATH|subclass_of|disease|MPATH||36
+596|disease|NCIT|subclass_of|disease|MPATH||9
+597|disease|MPATH|subclass_of|disease|NCIT||9
+598|disease|MONDO|subclass_of|disease|HGNC||1
+599|disease|HGNC|subclass_of|disease|MONDO||1
+600|disease|MONDO|subclass_of|quality|MONDO||61543
+601|disease|OMIA|subclass_of|quality|OMIA||264
+602|disease|MONDO|subclass_of|quality|PATO||85
+603|disease|NCIT|subclass_of|quality|MONDO||80
+604|disease|MONDO|subclass_of|quality|NCIT||53
+605|disease|MONDO|subclass_of|quality|OMIA||50
+606|disease|OMIA|subclass_of|quality|MONDO||50
+607|disease|MPATH|subclass_of|quality|MONDO||42
+608|disease|NCIT|subclass_of|quality|NCIT||25
+609|disease|MONDO|subclass_of|quality|MPATH||17
+610|disease|NCIT|subclass_of|quality|MPATH||6
+611|disease|MPATH|subclass_of|quality|MPATH||6
+612|disease|MPATH|subclass_of|quality|NCIT||5
+613|disease|HGNC|subclass_of|quality|MONDO||1
+614|disease|MONDO|subclass_of|quality|HGNC||1
+615|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|9494
+616|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4229
+617|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2448
+618|disease|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|1609
+619|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1241
+620|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1211
+621|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|957
+622|disease|OMIA|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omia.ttl']|726
+623|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|540
+624|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+625|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|110
+626|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|107
+627|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|85
+628|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+629|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+630|disease|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+631|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+632|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+633|disease|MONDO|contributes_to|sequence feature|Orphanet|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+634|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+635|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+636|disease|OMIA|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omia.ttl']|2
+637|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+638|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+639|disease|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+640|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+641|disease|MONDO|subclass_of|sequence feature|HGNC||1
+642|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+643|disease|OMIA|contributes_to|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/omia.ttl']|1
+644|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+645|disease|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+646|disease|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+647|disease|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+648|disease|MONDO|has_quality|phenotype|MPATH|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|25
+649|quality|MP|has_entity|cell|CL|[]|1
+650|quality|PATO|has_quality|clinical_course|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|5
+651|quality|PATO|has_quality|clinical_course|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+652|quality|PATO|has_quality|clinical_course|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1
+653|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|319
+654|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|134
+655|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|27
+656|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|7
+657|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|3
+658|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+659|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|2
+660|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+661|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+662|quality|MONDO|contributes_to|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+663|quality|MP|has_entity|anatomical entity|CL|[]|1
+664|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4199
+665|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|3356
+666|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2395
+667|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1210
+668|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1199
+669|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|956
+670|quality|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|560
+671|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|461
+672|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+673|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|98
+674|quality|ZP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|84
+675|quality|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|83
+676|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+677|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+678|quality|OMIA|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omia.ttl']|57
+679|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|47
+680|quality|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+681|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|18
+682|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+683|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+684|quality|MONDO|contributes_to|gene|Orphanet|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+685|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+686|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+687|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+688|quality|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+689|quality|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+690|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+691|quality|MP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+692|quality|MONDO|contributes_to|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+693|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+694|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+695|quality|MONDO|contributes_to|gene|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+696|quality|MONDO|subclass_of|disease|MONDO||61543
+697|quality|OMIA|subclass_of|disease|OMIA||264
+698|quality|PATO|subclass_of|disease|MONDO||85
+699|quality|MONDO|subclass_of|disease|NCIT||80
+700|quality|NCIT|subclass_of|disease|MONDO||53
+701|quality|MONDO|subclass_of|disease|OMIA||50
+702|quality|OMIA|subclass_of|disease|MONDO||50
+703|quality|MONDO|subclass_of|disease|MPATH||42
+704|quality|NCIT|subclass_of|disease|NCIT||25
+705|quality|MPATH|subclass_of|disease|MONDO||17
+706|quality|MPATH|subclass_of|disease|MPATH||6
+707|quality|MPATH|subclass_of|disease|NCIT||6
+708|quality|NCIT|subclass_of|disease|MPATH||5
+709|quality|MONDO|subclass_of|disease|HGNC||1
+710|quality|HGNC|subclass_of|disease|MONDO||1
+711|quality|MONDO|subclass_of|quality|MONDO||58840
+712|quality|PATO|subclass_of|quality|PATO||4126
+713|quality|FBcv|subclass_of|quality|FBcv||466
+714|quality|OBA|subclass_of|quality|OBA||278
+715|quality|OMIA|subclass_of|quality|OMIA||264
+716|quality|MONDO|subclass_of|quality|PATO||87
+717|quality|PATO|subclass_of|quality|MONDO||87
+718|quality|MP|subclass_of|quality|MP||56
+719|quality|ZP|subclass_of|quality|ZP||54
+720|quality|MONDO|subclass_of|quality|OMIA||50
+721|quality|OMIA|subclass_of|quality|MONDO||50
+722|quality|FBcv|subclass_of|quality|PATO||49
+723|quality|PATO|subclass_of|quality|FBcv||49
+724|quality|MONDO|subclass_of|quality|NCIT||45
+725|quality|NCIT|subclass_of|quality|MONDO||45
+726|quality|ZP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|23
+727|quality|PATO|has_quality|quality|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|23
+728|quality|PATO|has_quality|quality|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|19
+729|quality|MP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|19
+730|quality|MONDO|subclass_of|quality|MPATH||16
+731|quality|MPATH|subclass_of|quality|MONDO||16
+732|quality|NCIT|subclass_of|quality|NCIT||16
+733|quality|PCO|subclass_of|quality|PCO||12
+734|quality|MP|subclass_of|quality|PATO||5
+735|quality|NCIT|subclass_of|quality|MPATH||5
+736|quality|PATO|subclass_of|quality|MP||5
+737|quality|MPATH|subclass_of|quality|NCIT||5
+738|quality|PCO|subclass_of|quality|PATO||2
+739|quality|PATO|subclass_of|quality|PCO||2
+740|quality|MPATH|subclass_of|quality|MPATH||2
+741|quality|PATO|subclass_of|quality|ENVO||1
+742|quality|ERO|subclass_of|quality|PATO||1
+743|quality|MP|subclass_of|quality|ZP||1
+744|quality|ZP|subclass_of|quality|MP||1
+745|quality|OBA|subclass_of|quality|PATO||1
+746|quality|MONDO|subclass_of|quality|HGNC||1
+747|quality|ENVO|subclass_of|quality|PATO||1
+748|quality|PATO|subclass_of|quality|ERO||1
+749|quality|HGNC|subclass_of|quality|MONDO||1
+750|quality|PATO|subclass_of|quality|OBA||1
+751|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4199
+752|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|3356
+753|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2395
+754|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1210
+755|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1199
+756|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|956
+757|quality|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|560
+758|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl']|461
+759|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+760|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|98
+761|quality|ZP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|84
+762|quality|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|83
+763|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+764|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+765|quality|OMIA|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omia.ttl']|57
+766|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|47
+767|quality|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+768|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|18
+769|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+770|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+771|quality|MONDO|contributes_to|sequence feature|Orphanet|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+772|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+773|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+774|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+775|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+776|quality|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+777|quality|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+778|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+779|quality|MP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+780|quality|MONDO|subclass_of|sequence feature|HGNC||1
+781|quality|MONDO|contributes_to|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+782|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+783|quality|MONDO|contributes_to|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+784|quality|MP|has_entity|cellular component|CL|[]|1
+785|quality|PATO|has_quality|phenotype|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|18327
+786|quality|PATO|has_quality|phenotype|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|7558
+787|quality|PATO|has_quality|phenotype|HP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|5841
+788|quality|PATO|has_quality|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|878
+789|quality|FBcv|subclass_of|phenotype|FBcv||461
+790|quality|OBA|subclass_of|phenotype|OBA||278
+791|quality|FBcv|subclass_of|phenotype|GO||71
+792|quality|MP|subclass_of|phenotype|MP||70
+793|quality|ZP|subclass_of|phenotype|ZP||60
+794|quality|PATO|subclass_of|phenotype|FBcv||48
+795|quality|MONDO|has_quality|phenotype|MPATH|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|25
+796|quality|FBcv|subclass_of|phenotype|FBbt||17
+797|quality|ZP|subclass_of|phenotype|UBERON||11
+798|quality|ZP|subclass_of|phenotype|MP||6
+799|quality|ZP|subclass_of|phenotype|HP||5
+800|quality|MP|subclass_of|phenotype|GO||5
+801|quality|PATO|subclass_of|phenotype|MP||5
+802|quality|ZP|subclass_of|phenotype|GO||5
+803|quality|FBcv|subclass_of|phenotype|CL||4
+804|quality|MP|subclass_of|phenotype|HP||3
+805|quality|MP|subclass_of|phenotype|ZP||2
+806|quality|MP|subclass_of|phenotype|CL||1
+807|quality|ZP|subclass_of|phenotype|WBPhenotype||1
+808|quality|PATO|subclass_of|phenotype|ENVO||1
+809|quality|ZP|subclass_of|phenotype|CL||1
+810|quality|ENVO|subclass_of|phenotype|UPHENO||1
+811|quality|FBcv|subclass_of|phenotype|UPHENO||1
+812|quality|PATO|subclass_of|phenotype|OBA||1
+813|organism|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|1
+814|organism|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|15
+815|organism|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+816|organism|MGI|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|2
+817|genotype|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|1
+818|genotype|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|7
+819|genotype|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3
+820|sequence alteration|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|502
+821|sequence alteration|MGI|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+822|sequence alteration|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+823|sequence alteration|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+824|sequence alteration|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+825|sequence alteration|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+826|sequence alteration|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+827|sequence alteration|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|4913
+828|sequence alteration|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3707
+829|sequence alteration|MGI|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|196
+830|sequence alteration|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+831|sequence alteration|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+832|sequence alteration|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+833|sequence alteration|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+834|sequence feature|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|10548
+835|sequence feature|MGI|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|685
+836|sequence feature|HGNC|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|322
+837|sequence feature|NCBIGene|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|31
+838|sequence feature|NCBIGene|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|10
+839|sequence feature|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+840|sequence feature|ZFIN|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|2
+841|sequence feature|NCBIGene|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+842|sequence feature|ZFIN|has_phenotype|clinical_course|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|1
+843|sequence feature|RGD|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+844|sequence feature|HGNC|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|477
+845|sequence feature|HGNC|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|34
+846|sequence feature|MGI|interacts_with|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+847|sequence feature|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|1558545
+848|sequence feature|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|1294801
+849|sequence feature|RGD|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|988592
+850|sequence feature|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|793313
+851|sequence feature|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|520751
+852|sequence feature|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|485128
+853|sequence feature|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|450963
+854|sequence feature|RGD|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+855|sequence feature|ENSEMBL|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+856|sequence feature|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|94256
+857|sequence feature|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|76479
+858|sequence feature|ENSEMBL|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|69489
+859|sequence feature|HGNC|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|32482
+860|sequence feature|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|29884
+861|sequence feature|MGI|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+862|sequence feature|HGNC|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+863|sequence feature|ZFIN|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+864|sequence feature|ENSEMBL|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+865|sequence feature|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|13112
+866|sequence feature|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|12968
+867|sequence feature|FlyBase|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+868|sequence feature|ENSEMBL|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+869|sequence feature|NCBIGene|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+870|sequence feature|ZFIN|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+871|sequence feature|FlyBase|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|8550
+872|sequence feature|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|4408
+873|sequence feature|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|3909
+874|sequence feature|NCBIGene|interacts_with|gene|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+875|sequence feature|RGD|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+876|sequence feature|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|1602
+877|sequence feature|WormBase|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|1374
+878|sequence feature|NCBIGene|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+879|sequence feature|WormBase|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+880|sequence feature|ENSEMBL|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+881|sequence feature|WormBase|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+882|sequence feature|ENSEMBL|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+883|sequence feature|MGI|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+884|sequence feature|NCBIGene|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+885|sequence feature|ENSEMBL|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+886|sequence feature|ENSEMBL|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+887|sequence feature|HGNC|interacts_with|gene|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+888|sequence feature|NCBIGene|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|400
+889|sequence feature|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|210
+890|sequence feature|NCBIGene|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+891|sequence feature|MGI|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+892|sequence feature|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|150
+893|sequence feature|NCBIGene|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+894|sequence feature|HGNC|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+895|sequence feature|HGNC|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+896|sequence feature|FlyBase|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+897|sequence feature|NCBIGene|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+898|sequence feature|HGNC|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+899|sequence feature|ZFIN|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|66
+900|sequence feature|HGNC|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+901|sequence feature|WormBase|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+902|sequence feature|FlyBase|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+903|sequence feature|MGI|interacts_with|gene|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+904|sequence feature|HGNC|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+905|sequence feature|ZFIN|interacts_with|gene|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+906|sequence feature|MGI|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+907|sequence feature|ZFIN|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+908|sequence feature|NCBIGene|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+909|sequence feature|WormBase|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+910|sequence feature|WormBase|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+911|sequence feature|MGI|interacts_with|gene|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+912|sequence feature|NCBIGene|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+913|sequence feature|MGI|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+914|sequence feature|NCBIGene|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+915|sequence feature|NCBIGene|interacts_with|gene|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+916|sequence feature|ZFIN|interacts_with|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+917|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|9494
+918|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4229
+919|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2448
+920|sequence feature|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|1609
+921|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1241
+922|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1211
+923|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|957
+924|sequence feature|NCBIGene|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|726
+925|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|540
+926|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+927|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|110
+928|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|107
+929|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|85
+930|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+931|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+932|sequence feature|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+933|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+934|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+935|sequence feature|Orphanet|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+936|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+937|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+938|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+939|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2
+940|sequence feature|HGNC|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|2
+941|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+942|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+943|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+944|sequence feature|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+945|sequence feature|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+946|sequence feature|RGD|contributes_to|disease|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|1
+947|sequence feature|NCBIGene|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+948|sequence feature|HGNC|subclass_of|disease|MONDO||1
+949|sequence feature|HGNC|contributes_to|disease|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+950|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|4199
+951|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|3356
+952|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|2395
+953|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1210
+954|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|1199
+955|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|956
+956|sequence feature|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|560
+957|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|461
+958|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|148
+959|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|98
+960|sequence feature|ZFIN|has_phenotype|quality|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|84
+961|sequence feature|MGI|has_phenotype|quality|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|83
+962|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|73
+963|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|58
+964|sequence feature|NCBIGene|contributes_to|quality|OMIA|['https://data.monarchinitiative.org/ttl/omia.ttl']|57
+965|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|47
+966|sequence feature|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl']|19
+967|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|18
+968|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|13
+969|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|11
+970|sequence feature|Orphanet|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl']|5
+971|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|4
+972|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl']|2
+973|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|2
+974|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+975|sequence feature|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl']|1
+976|sequence feature|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/omim.ttl']|1
+977|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+978|sequence feature|NCBIGene|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/omim.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+979|sequence feature|HGNC|subclass_of|quality|MONDO||1
+980|sequence feature|NCBIGene|has_phenotype|quality|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+981|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/gwascatalog.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl', 'https://data.monarchinitiative.org/ttl/clinvar.ttl']|1
+982|sequence feature|HGNC|contributes_to|quality|MONDO|['https://data.monarchinitiative.org/ttl/clinvar.ttl', 'https://data.monarchinitiative.org/ttl/orphanet.ttl']|1
+983|sequence feature|MGI|interacts_with|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+984|sequence feature|MGI|interacts_with|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+985|sequence feature|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|1558545
+986|sequence feature|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|1294801
+987|sequence feature|RGD|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|988592
+988|sequence feature|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|793313
+989|sequence feature|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|520751
+990|sequence feature|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|485128
+991|sequence feature|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|450963
+992|sequence feature|RGD|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+993|sequence feature|ENSEMBL|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|101540
+994|sequence feature|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|94256
+995|sequence feature|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|76479
+996|sequence feature|ENSEMBL|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|69489
+997|sequence feature|HGNC|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|32482
+998|sequence feature|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|29884
+999|sequence feature|HGNC|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+1000|sequence feature|MGI|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|19849
+1001|sequence feature|ZFIN|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+1002|sequence feature|ENSEMBL|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|13718
+1003|sequence feature|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|13112
+1004|sequence feature|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|12968
+1005|sequence feature|FlyBase|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+1006|sequence feature|ENSEMBL|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/string.ttl']|10508
+1007|sequence feature|ZFIN|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+1008|sequence feature|NCBIGene|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl']|8566
+1009|sequence feature|FlyBase|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|8550
+1010|sequence feature|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|4408
+1011|sequence feature|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|3909
+1012|sequence feature|NCBIGene|interacts_with|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+1013|sequence feature|RGD|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1618
+1014|sequence feature|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|1602
+1015|sequence feature|WormBase|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|1374
+1016|sequence feature|NCBIGene|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+1017|sequence feature|WormBase|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|1218
+1018|sequence feature|ENSEMBL|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+1019|sequence feature|WormBase|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|994
+1020|sequence feature|ENSEMBL|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+1021|sequence feature|MGI|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|712
+1022|sequence feature|NCBIGene|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+1023|sequence feature|ENSEMBL|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|688
+1024|sequence feature|ENSEMBL|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+1025|sequence feature|HGNC|interacts_with|sequence feature|ENSEMBL|['https://data.monarchinitiative.org/ttl/string.ttl']|602
+1026|sequence feature|NCBIGene|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|400
+1027|sequence feature|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|210
+1028|sequence feature|NCBIGene|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+1029|sequence feature|MGI|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|162
+1030|sequence feature|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/string.ttl', 'https://data.monarchinitiative.org/ttl/biogrid.ttl']|150
+1031|sequence feature|HGNC|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+1032|sequence feature|NCBIGene|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|124
+1033|sequence feature|HGNC|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+1034|sequence feature|FlyBase|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|117
+1035|sequence feature|NCBIGene|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+1036|sequence feature|HGNC|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/string.ttl']|94
+1037|sequence feature|ZFIN|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl', 'https://data.monarchinitiative.org/ttl/string.ttl']|66
+1038|sequence feature|HGNC|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+1039|sequence feature|WormBase|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|49
+1040|sequence feature|FlyBase|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+1041|sequence feature|MGI|interacts_with|sequence feature|FlyBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|30
+1042|sequence feature|ZFIN|interacts_with|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+1043|sequence feature|HGNC|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|26
+1044|sequence feature|MGI|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+1045|sequence feature|ZFIN|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|17
+1046|sequence feature|NCBIGene|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+1047|sequence feature|WormBase|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|11
+1048|sequence feature|WormBase|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+1049|sequence feature|MGI|interacts_with|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|8
+1050|sequence feature|NCBIGene|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+1051|sequence feature|MGI|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|2
+1052|sequence feature|ZFIN|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+1053|sequence feature|NCBIGene|interacts_with|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+1054|sequence feature|NCBIGene|interacts_with|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|1
+1055|sequence feature|HGNC|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|583127
+1056|sequence feature|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|136986
+1057|sequence feature|NCBIGene|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|69784
+1058|sequence feature|SGD|has_phenotype|phenotype|MONARCH|['https://data.monarchinitiative.org/ttl/sgd.ttl']|59770
+1059|sequence feature|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|57522
+1060|sequence feature|ZFIN|has_phenotype|phenotype|ZP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|51594
+1061|sequence feature|SGD|has_phenotype|phenotype|APO|['https://data.monarchinitiative.org/ttl/sgd.ttl']|8454
+1062|sequence feature|RGD|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/rgd.ttl']|1223
+1063|sequence feature|NCBIGene|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|527
+1064|sequence feature|NCBIGene|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|412
+1065|sequence feature|MGI|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|238
+1066|sequence feature|Orphanet|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|185
+1067|sequence feature|ZFIN|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|182
+1068|sequence feature|ZFIN|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|133
+1069|sequence feature|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1070|sequence feature|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1071|sequence feature|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1072|sequence feature|NCBIGene|has_phenotype|phenotype|UBERON|['https://data.monarchinitiative.org/ttl/monarch.ttl']|13
+1073|sequence feature|WormBase|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|11
+1074|sequence feature|NCBIGene|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/monarch.ttl']|8
+1075|sequence feature|RGD|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/rgd.ttl']|8
+1076|sequence feature|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+1077|sequence feature|SGD|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|6
+1078|sequence feature|RGD|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|4
+1079|sequence feature|NCBIGene|has_phenotype|phenotype|NBO|['https://data.monarchinitiative.org/ttl/monarch.ttl']|3
+1080|sequence feature|NCBIGene|has_phenotype|phenotype|CL|['https://data.monarchinitiative.org/ttl/monarch.ttl']|2
+1081|sequence feature|RGD|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+1082|sequence feature|MGI|interacts_with|variant locus|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+1083|sequence feature|MGI|interacts_with|variant locus|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+1084|cellular component|CLO|subclass_of|cell|CLO||77698
+1085|cellular component|FBbt|subclass_of|cell|FBbt||11880
+1086|cellular component|CL|subclass_of|cell|CL||6286
+1087|cellular component|ZFA|subclass_of|cell|ZFA||1824
+1088|cellular component|FMA|subclass_of|cell|FMA||1742
+1089|cellular component|CL|subclass_of|cell|FMA||670
+1090|cellular component|FMA|subclass_of|cell|CL||670
+1091|cellular component|ZFA|subclass_of|cell|CL||443
+1092|cellular component|CL|subclass_of|cell|ZFA||443
+1093|cellular component|CL|subclass_of|cell|FBbt||332
+1094|cellular component|FBbt|subclass_of|cell|CL||332
+1095|cellular component|WBbt|subclass_of|cell|WBbt||232
+1096|cellular component|CL|subclass_of|cell|WBbt||32
+1097|cellular component|WBbt|subclass_of|cell|CL||32
+1098|cellular component|http|subclass_of|cell|CLO||10
+1099|cellular component|CLO|subclass_of|cell|http||10
+1100|cellular component|MA|subclass_of|cell|CL||3
+1101|cellular component|CL|subclass_of|cell|MA||3
+1102|cellular component|OBI|subclass_of|cell|CLO||1
+1103|cellular component|OBI|subclass_of|cell|CL||1
+1104|cellular component|CL|subclass_of|cell|OBI||1
+1105|cellular component|CLO|subclass_of|cell|OBI||1
+1106|cellular component|CLO|subclass_of|anatomical entity|CLO||77698
+1107|cellular component|FBbt|subclass_of|anatomical entity|FBbt||11997
+1108|cellular component|CL|subclass_of|anatomical entity|CL||6286
+1109|cellular component|ZFA|subclass_of|anatomical entity|ZFA||1828
+1110|cellular component|FMA|subclass_of|anatomical entity|FMA||1743
+1111|cellular component|FMA|subclass_of|anatomical entity|CL||670
+1112|cellular component|CL|subclass_of|anatomical entity|FMA||670
+1113|cellular component|ZFA|subclass_of|anatomical entity|CL||443
+1114|cellular component|CL|subclass_of|anatomical entity|ZFA||443
+1115|cellular component|FBbt|subclass_of|anatomical entity|CL||332
+1116|cellular component|CL|subclass_of|anatomical entity|FBbt||332
+1117|cellular component|WBbt|subclass_of|anatomical entity|WBbt||245
+1118|cellular component|CL|part_of|anatomical entity|UBERON||170
+1119|cellular component|ZFA|subclass_of|anatomical entity|UBERON||124
+1120|cellular component|WBbt|subclass_of|anatomical entity|CL||32
+1121|cellular component|CL|subclass_of|anatomical entity|WBbt||32
+1122|cellular component|FBbt|subclass_of|anatomical entity|UBERON||19
+1123|cellular component|WBbt|subclass_of|anatomical entity|UBERON||12
+1124|cellular component|http|subclass_of|anatomical entity|CLO||10
+1125|cellular component|CLO|subclass_of|anatomical entity|http||10
+1126|cellular component|UBERON|subclass_of|anatomical entity|UBERON||4
+1127|cellular component|MA|subclass_of|anatomical entity|CL||3
+1128|cellular component|CL|subclass_of|anatomical entity|MA||3
+1129|cellular component|CLO|subclass_of|anatomical entity|OBI||1
+1130|cellular component|CL|subclass_of|anatomical entity|UBERON||1
+1131|cellular component|UBERON|part_of|anatomical entity|UBERON||1
+1132|cellular component|FMA|subclass_of|anatomical entity|UBERON||1
+1133|cellular component|OBI|subclass_of|anatomical entity|CLO||1
+1134|cellular component|OBI|subclass_of|anatomical entity|CL||1
+1135|cellular component|CL|subclass_of|anatomical entity|OBI||1
+1136|cellular component|CL|has_entity|quality|MP|[]|1
+1137|cellular component|CLO|subclass_of|cellular component|CLO||77698
+1138|cellular component|FBbt|subclass_of|cellular component|FBbt||11880
+1139|cellular component|CL|subclass_of|cellular component|CL||6286
+1140|cellular component|ZFA|subclass_of|cellular component|ZFA||1824
+1141|cellular component|FMA|subclass_of|cellular component|FMA||1742
+1142|cellular component|CL|subclass_of|cellular component|FMA||670
+1143|cellular component|FMA|subclass_of|cellular component|CL||670
+1144|cellular component|ZFA|subclass_of|cellular component|CL||443
+1145|cellular component|CL|subclass_of|cellular component|ZFA||443
+1146|cellular component|CL|subclass_of|cellular component|FBbt||332
+1147|cellular component|FBbt|subclass_of|cellular component|CL||332
+1148|cellular component|WBbt|subclass_of|cellular component|WBbt||232
+1149|cellular component|CL|subclass_of|cellular component|WBbt||32
+1150|cellular component|WBbt|subclass_of|cellular component|CL||32
+1151|cellular component|CLO|subclass_of|cellular component|http||10
+1152|cellular component|http|subclass_of|cellular component|CLO||10
+1153|cellular component|MA|subclass_of|cellular component|CL||3
+1154|cellular component|CL|subclass_of|cellular component|MA||3
+1155|cellular component|UBERON|subclass_of|cellular component|UBERON||2
+1156|cellular component|OBI|subclass_of|cellular component|CL||1
+1157|cellular component|OBI|subclass_of|cellular component|CLO||1
+1158|cellular component|CL|subclass_of|cellular component|OBI||1
+1159|cellular component|CLO|subclass_of|cellular component|OBI||1
+1160|cellular component|ZFA|has_entity|phenotype|ZP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1394
+1161|cellular component|CL|has_entity|phenotype|MP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+1162|cellular component|CL|has_entity|phenotype|HP|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+1163|cellular component|WBbt|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|85
+1164|cellular component|CL|has_entity|phenotype|WBPhenotype|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+1165|cellular component|CL|has_entity|phenotype|MP|[]|1
+1166|phenotype|ZP|has_entity|cell|ZFA|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1394
+1167|phenotype|MP|has_entity|cell|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+1168|phenotype|HP|has_entity|cell|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+1169|phenotype|WBPhenotype|has_entity|cell|WBbt|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|85
+1170|phenotype|WBPhenotype|has_entity|cell|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+1171|phenotype|MP|has_entity|cell|CL|[]|1
+1172|phenotype|MP|subclass_of|clinical_course|MP||168
+1173|phenotype|HP|subclass_of|clinical_course|HP||16
+1174|phenotype|HP|subclass_of|clinical_course|MP||12
+1175|phenotype|MP|subclass_of|clinical_course|HP||10
+1176|phenotype|WBPhenotype|subclass_of|clinical_course|WBPhenotype||4
+1177|phenotype|ZP|subclass_of|clinical_course|MP||3
+1178|phenotype|GO|subclass_of|clinical_course|MP||2
+1179|phenotype|WBPhenotype|subclass_of|clinical_course|MP||1
+1180|phenotype|MP|subclass_of|clinical_course|WBPhenotype||1
+1181|phenotype|GO|subclass_of|clinical_course|ZP||1
+1182|phenotype|UBERON|subclass_of|clinical_course|MP||1
+1183|phenotype|MP|subclass_of|clinical_course|ZP||1
+1184|phenotype|HP|has_phenotype|snv|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|48
+1185|phenotype|MP|has_phenotype|snv|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1186|phenotype|HP|has_phenotype|molecular entity|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|38431
+1187|phenotype|ZP|has_entity|anatomical entity|ZFA|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|8809
+1188|phenotype|MP|has_entity|anatomical entity|UBERON|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|4028
+1189|phenotype|HP|has_entity|anatomical entity|UBERON|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|3740
+1190|phenotype|MP|has_entity|anatomical entity|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+1191|phenotype|FBbt|subclass_of|anatomical entity|FBbt||661
+1192|phenotype|WBPhenotype|has_entity|anatomical entity|WBbt|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|268
+1193|phenotype|HP|has_entity|anatomical entity|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+1194|phenotype|FBbt|subclass_of|anatomical entity|UBERON||103
+1195|phenotype|WBPhenotype|has_entity|anatomical entity|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+1196|phenotype|MP|has_entity|anatomical entity|CL|[]|1
+1197|phenotype|UPHENO|subclass_of|anatomical entity|FBbt||1
+1198|phenotype|HP|subclass_of|inheritance|HP||1
+1199|phenotype|HP|has_phenotype|gene|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|583127
+1200|phenotype|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|136986
+1201|phenotype|HP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|69784
+1202|phenotype|MONARCH|has_phenotype|gene|SGD|['https://data.monarchinitiative.org/ttl/sgd.ttl']|59770
+1203|phenotype|HP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|57522
+1204|phenotype|ZP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|51594
+1205|phenotype|APO|has_phenotype|gene|SGD|['https://data.monarchinitiative.org/ttl/sgd.ttl']|8454
+1206|phenotype|MP|has_phenotype|gene|RGD|['https://data.monarchinitiative.org/ttl/rgd.ttl']|1223
+1207|phenotype|HP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|527
+1208|phenotype|MP|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|412
+1209|phenotype|GO|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/go.ttl']|238
+1210|phenotype|HP|has_phenotype|gene|Orphanet|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|185
+1211|phenotype|HP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|182
+1212|phenotype|MP|has_phenotype|gene|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|133
+1213|phenotype|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1214|phenotype|HP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1215|phenotype|UBERON|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|13
+1216|phenotype|MP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1217|phenotype|GO|has_phenotype|gene|WormBase|['https://data.monarchinitiative.org/ttl/go.ttl']|11
+1218|phenotype|HP|has_phenotype|gene|RGD|['https://data.monarchinitiative.org/ttl/rgd.ttl']|8
+1219|phenotype|GO|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|8
+1220|phenotype|HP|has_phenotype|gene|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+1221|phenotype|GO|has_phenotype|gene|SGD|['https://data.monarchinitiative.org/ttl/go.ttl']|6
+1222|phenotype|MP|has_phenotype|gene|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|4
+1223|phenotype|NBO|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|3
+1224|phenotype|CL|has_phenotype|gene|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|2
+1225|phenotype|HP|has_phenotype|gene|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+1226|phenotype|MPATH|has_quality|disease|MONDO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|25
+1227|phenotype|ZP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|18327
+1228|phenotype|MP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|7558
+1229|phenotype|HP|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|5841
+1230|phenotype|WBPhenotype|has_quality|quality|PATO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|878
+1231|phenotype|FBcv|subclass_of|quality|FBcv||461
+1232|phenotype|OBA|subclass_of|quality|OBA||278
+1233|phenotype|GO|subclass_of|quality|FBcv||71
+1234|phenotype|MP|subclass_of|quality|MP||70
+1235|phenotype|ZP|subclass_of|quality|ZP||60
+1236|phenotype|FBcv|subclass_of|quality|PATO||48
+1237|phenotype|MPATH|has_quality|quality|MONDO|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|25
+1238|phenotype|FBbt|subclass_of|quality|FBcv||17
+1239|phenotype|UBERON|subclass_of|quality|ZP||11
+1240|phenotype|MP|subclass_of|quality|ZP||6
+1241|phenotype|GO|subclass_of|quality|MP||5
+1242|phenotype|GO|subclass_of|quality|ZP||5
+1243|phenotype|MP|subclass_of|quality|PATO||5
+1244|phenotype|HP|subclass_of|quality|ZP||5
+1245|phenotype|CL|subclass_of|quality|FBcv||4
+1246|phenotype|HP|subclass_of|quality|MP||3
+1247|phenotype|ZP|subclass_of|quality|MP||2
+1248|phenotype|OBA|subclass_of|quality|PATO||1
+1249|phenotype|UPHENO|subclass_of|quality|FBcv||1
+1250|phenotype|UPHENO|subclass_of|quality|ENVO||1
+1251|phenotype|WBPhenotype|subclass_of|quality|ZP||1
+1252|phenotype|ENVO|subclass_of|quality|PATO||1
+1253|phenotype|CL|subclass_of|quality|MP||1
+1254|phenotype|CL|subclass_of|quality|ZP||1
+1255|phenotype|MP|has_phenotype|organism|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|15
+1256|phenotype|HP|has_phenotype|organism|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+1257|phenotype|GO|has_phenotype|organism|MGI|['https://data.monarchinitiative.org/ttl/go.ttl']|2
+1258|phenotype|MP|has_phenotype|genotype|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|7
+1259|phenotype|HP|has_phenotype|genotype|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3
+1260|phenotype|MP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|4913
+1261|phenotype|HP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3707
+1262|phenotype|GO|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/go.ttl']|196
+1263|phenotype|MP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1264|phenotype|HP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1265|phenotype|MP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1266|phenotype|HP|has_phenotype|sequence alteration|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+1267|phenotype|HP|has_phenotype|sequence feature|HGNC|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|583127
+1268|phenotype|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|136986
+1269|phenotype|HP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|69784
+1270|phenotype|MONARCH|has_phenotype|sequence feature|SGD|['https://data.monarchinitiative.org/ttl/sgd.ttl']|59770
+1271|phenotype|HP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|57522
+1272|phenotype|ZP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|51594
+1273|phenotype|APO|has_phenotype|sequence feature|SGD|['https://data.monarchinitiative.org/ttl/sgd.ttl']|8454
+1274|phenotype|MP|has_phenotype|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/rgd.ttl']|1223
+1275|phenotype|HP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|527
+1276|phenotype|MP|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|412
+1277|phenotype|GO|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/go.ttl']|238
+1278|phenotype|HP|has_phenotype|sequence feature|Orphanet|['https://data.monarchinitiative.org/ttl/hpoa.ttl']|185
+1279|phenotype|HP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|182
+1280|phenotype|MP|has_phenotype|sequence feature|ZFIN|['https://data.monarchinitiative.org/ttl/zfin_slim.ttl']|133
+1281|phenotype|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1282|phenotype|HP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1283|phenotype|UBERON|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|13
+1284|phenotype|MP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1285|phenotype|GO|has_phenotype|sequence feature|WormBase|['https://data.monarchinitiative.org/ttl/go.ttl']|11
+1286|phenotype|GO|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|8
+1287|phenotype|HP|has_phenotype|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/rgd.ttl']|8
+1288|phenotype|HP|has_phenotype|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+1289|phenotype|GO|has_phenotype|sequence feature|SGD|['https://data.monarchinitiative.org/ttl/go.ttl']|6
+1290|phenotype|MP|has_phenotype|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|4
+1291|phenotype|NBO|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|3
+1292|phenotype|CL|has_phenotype|sequence feature|NCBIGene|['https://data.monarchinitiative.org/ttl/monarch.ttl']|2
+1293|phenotype|HP|has_phenotype|sequence feature|RGD|['https://data.monarchinitiative.org/ttl/monarch.ttl']|1
+1294|phenotype|ZP|has_entity|cellular component|ZFA|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|1394
+1295|phenotype|MP|has_entity|cellular component|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|934
+1296|phenotype|HP|has_entity|cellular component|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|136
+1297|phenotype|WBPhenotype|has_entity|cellular component|WBbt|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|85
+1298|phenotype|WBPhenotype|has_entity|cellular component|CL|['http://purl.obolibrary.org/obo/upheno/monarch.owl']|28
+1299|phenotype|MP|has_entity|cellular component|CL|[]|1
+1300|phenotype|ZP|subclass_of|phenotype|ZP||43812
+1301|phenotype|HP|subclass_of|phenotype|HP||34776
+1302|phenotype|FBbt|subclass_of|phenotype|FBbt||31410
+1303|phenotype|UBERON|subclass_of|phenotype|UBERON||30354
+1304|phenotype|MP|subclass_of|phenotype|MP||22278
+1305|phenotype|GO|subclass_of|phenotype|GO||20952
+1306|phenotype|ZP|subclass_of|phenotype|UBERON||14729
+1307|phenotype|UBERON|subclass_of|phenotype|ZP||14729
+1308|phenotype|HP|subclass_of|phenotype|ZP||6684
+1309|phenotype|ZP|subclass_of|phenotype|HP||6684
+1310|phenotype|VT|subclass_of|phenotype|VT||6058
+1311|phenotype|WBPhenotype|subclass_of|phenotype|WBPhenotype||5672
+1312|phenotype|MP|subclass_of|phenotype|HP||5336
+1313|phenotype|HP|subclass_of|phenotype|MP||5336
+1314|phenotype|ZP|subclass_of|phenotype|GO||3403
+1315|phenotype|GO|subclass_of|phenotype|ZP||3403
+1316|phenotype|CL|subclass_of|phenotype|ZP||3389
+1317|phenotype|ZP|subclass_of|phenotype|CL||3389
+1318|phenotype|ZP|subclass_of|phenotype|MP||3229
+1319|phenotype|MP|subclass_of|phenotype|ZP||3229
+1320|phenotype|CL|subclass_of|phenotype|CL||2738
+1321|phenotype|UBERON|subclass_of|phenotype|MP||1686
+1322|phenotype|MP|subclass_of|phenotype|UBERON||1686
+1323|phenotype|UBERON|subclass_of|phenotype|HP||1363
+1324|phenotype|HP|subclass_of|phenotype|UBERON||1363
+1325|phenotype|GO|subclass_of|phenotype|MP||773
+1326|phenotype|MP|subclass_of|phenotype|GO||773
+1327|phenotype|MONARCH|subclass_of|phenotype|UPHENO||627
+1328|phenotype|UPHENO|subclass_of|phenotype|MONARCH||627
+1329|phenotype|NBO|subclass_of|phenotype|NBO||626
+1330|phenotype|AQTLTrait|subclass_of|phenotype|VT||522
+1331|phenotype|VT|subclass_of|phenotype|AQTLTrait||522
+1332|phenotype|MPATH|subclass_of|phenotype|MPATH||494
+1333|phenotype|FBcv|subclass_of|phenotype|FBcv||458
+1334|phenotype|MP|subclass_of|phenotype|CL||414
+1335|phenotype|CL|subclass_of|phenotype|MP||414
+1336|phenotype|AQTLTrait|subclass_of|phenotype|AQTLTrait||390
+1337|phenotype|UBERON|subclass_of|phenotype|FBbt||383
+1338|phenotype|FBbt|subclass_of|phenotype|UBERON||383
+1339|phenotype|CL|subclass_of|phenotype|FBbt||329
+1340|phenotype|FBbt|subclass_of|phenotype|CL||329
+1341|phenotype|GO|subclass_of|phenotype|WBPhenotype||281
+1342|phenotype|WBPhenotype|subclass_of|phenotype|GO||281
+1343|phenotype|OBA|subclass_of|phenotype|OBA||278
+1344|phenotype|WBPhenotype|subclass_of|phenotype|ZP||278
+1345|phenotype|ZP|subclass_of|phenotype|WBPhenotype||278
+1346|phenotype|GO|subclass_of|phenotype|HP||231
+1347|phenotype|HP|subclass_of|phenotype|GO||231
+1348|phenotype|UPHENO|subclass_of|phenotype|UBERON||193
+1349|phenotype|UBERON|subclass_of|phenotype|UPHENO||193
+1350|phenotype|MPATH|subclass_of|phenotype|HP||159
+1351|phenotype|HP|subclass_of|phenotype|MPATH||159
+1352|phenotype|WBPhenotype|subclass_of|phenotype|UBERON||139
+1353|phenotype|UBERON|subclass_of|phenotype|WBPhenotype||139
+1354|phenotype|NBO|subclass_of|phenotype|MP||129
+1355|phenotype|MP|subclass_of|phenotype|NBO||129
+1356|phenotype|WBPhenotype|subclass_of|phenotype|MP||122
+1357|phenotype|MP|subclass_of|phenotype|WBPhenotype||122
+1358|phenotype|CL|subclass_of|phenotype|UBERON||88
+1359|phenotype|UBERON|subclass_of|phenotype|CL||88
+1360|phenotype|MP|subclass_of|phenotype|MPATH||85
+1361|phenotype|MPATH|subclass_of|phenotype|MP||85
+1362|phenotype|EFO|subclass_of|phenotype|UPHENO||81
+1363|phenotype|UPHENO|subclass_of|phenotype|EFO||81
+1364|phenotype|HP|subclass_of|phenotype|NBO||75
+1365|phenotype|NBO|subclass_of|phenotype|HP||75
+1366|phenotype|GO|subclass_of|phenotype|UPHENO||72
+1367|phenotype|UPHENO|subclass_of|phenotype|GO||72
+1368|phenotype|FBcv|subclass_of|phenotype|GO||71
+1369|phenotype|WBPhenotype|subclass_of|phenotype|CL||71
+1370|phenotype|GO|subclass_of|phenotype|FBcv||71
+1371|phenotype|CL|subclass_of|phenotype|WBPhenotype||71
+1372|phenotype|CL|subclass_of|phenotype|HP||64
+1373|phenotype|HP|subclass_of|phenotype|CL||64
+1374|phenotype|ZP|subclass_of|phenotype|MPATH||60
+1375|phenotype|MPATH|subclass_of|phenotype|ZP||60
+1376|phenotype|WBPhenotype|subclass_of|phenotype|HP||51
+1377|phenotype|HP|subclass_of|phenotype|WBPhenotype||51
+1378|phenotype|GO|subclass_of|phenotype|CL||37
+1379|phenotype|CL|subclass_of|phenotype|GO||37
+1380|phenotype|FBbt|subclass_of|phenotype|FBcv||17
+1381|phenotype|FBcv|subclass_of|phenotype|FBbt||17
+1382|phenotype|UBERON|subclass_of|phenotype|GO||9
+1383|phenotype|GO|subclass_of|phenotype|UBERON||9
+1384|phenotype|UPHENO|subclass_of|phenotype|APO||8
+1385|phenotype|APO|subclass_of|phenotype|UPHENO||8
+1386|phenotype|GENO|subclass_of|phenotype|ZP||5
+1387|phenotype|ZP|subclass_of|phenotype|GENO||5
+1388|phenotype|CL|subclass_of|phenotype|FBcv||4
+1389|phenotype|FBcv|subclass_of|phenotype|CL||4
+1390|phenotype|FBbt|subclass_of|phenotype|GO||3
+1391|phenotype|CL|subclass_of|phenotype|UPHENO||3
+1392|phenotype|GO|subclass_of|phenotype|FBbt||3
+1393|phenotype|UPHENO|subclass_of|phenotype|CL||3
+1394|phenotype|UPHENO|subclass_of|phenotype|FBbt||2
+1395|phenotype|FBbt|subclass_of|phenotype|UPHENO||2
+1396|phenotype|UPHENO|subclass_of|phenotype|NBO||2
+1397|phenotype|NBO|subclass_of|phenotype|UPHENO||2
+1398|phenotype|ENVO|subclass_of|phenotype|UPHENO||1
+1399|phenotype|WBPhenotype|subclass_of|phenotype|UPHENO||1
+1400|phenotype|FBcv|subclass_of|phenotype|UPHENO||1
+1401|phenotype|UPHENO|subclass_of|phenotype|FBcv||1
+1402|phenotype|UPHENO|subclass_of|phenotype|ENVO||1
+1403|phenotype|MP|subclass_of|phenotype|UPHENO||1
+1404|phenotype|UPHENO|subclass_of|phenotype|GENO||1
+1405|phenotype|HP|subclass_of|phenotype|UPHENO||1
+1406|phenotype|MPATH|subclass_of|phenotype|UPHENO||1
+1407|phenotype|UPHENO|subclass_of|phenotype|MPATH||1
+1408|phenotype|UPHENO|subclass_of|phenotype|WBPhenotype||1
+1409|phenotype|UPHENO|subclass_of|phenotype|HP||1
+1410|phenotype|GENO|subclass_of|phenotype|UPHENO||1
+1411|phenotype|UPHENO|subclass_of|phenotype|MP||1
+1412|phenotype|MP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|4913
+1413|phenotype|HP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3707
+1414|phenotype|GO|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/go.ttl']|196
+1415|phenotype|MP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1416|phenotype|HP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1417|phenotype|MP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1418|phenotype|HP|has_phenotype|variant locus|MGI|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6
+1419|variant locus|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|502
+1420|variant locus|MGI|has_phenotype|clinical_course|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1421|variant locus|MGI|has_phenotype|clinical_course|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|6
+1422|variant locus|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+1423|variant locus|MGI|interacts_with|gene|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+1424|variant locus|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/string.ttl']|38
+1425|variant locus|MGI|interacts_with|sequence feature|MGI|['https://data.monarchinitiative.org/ttl/biogrid.ttl']|7
+1426|variant locus|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|4913
+1427|variant locus|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|3707
+1428|variant locus|MGI|has_phenotype|phenotype|GO|['https://data.monarchinitiative.org/ttl/go.ttl']|196
+1429|variant locus|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|49
+1430|variant locus|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mmrrc.ttl', 'https://data.monarchinitiative.org/ttl/mgi_slim.ttl']|24
+1431|variant locus|MGI|has_phenotype|phenotype|MP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|13
+1432|variant locus|MGI|has_phenotype|phenotype|HP|['https://data.monarchinitiative.org/ttl/mgi_slim.ttl', 'https://data.monarchinitiative.org/ttl/mmrrc.ttl']|6

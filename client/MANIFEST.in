@@ -1,0 +1,4 @@
+include README.md
+include config.yaml
+include docker-compose.yaml
+include beacon_controller/data/*
