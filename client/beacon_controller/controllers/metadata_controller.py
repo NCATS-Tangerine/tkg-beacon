@@ -11,29 +11,30 @@ import beacon_controller.database as db
 from beacon_controller.database import Node
 from beacon_controller import utils
 
+from beacon_controller import config, basepath
+import pandas as pd
+import os
+
 from collections import defaultdict
 
 __time_to_live_in_seconds = 604800
+
+edge_summary = os.path.join(basepath, 'data', config['client']['kgx_name'], 'edge_summary.txt')
+node_summary = os.path.join(basepath, 'data', config['client']['kgx_name'], 'node_summary.txt')
 
 def camel_case(s:str) -> str:
     return ''.join(w.title() for w in s.replace('_', ' ').split(' '))
 
 @ttl_cache(ttl=__time_to_live_in_seconds)
 def get_concept_categories():
-    q = 'MATCH (x) RETURN DISTINCT x.category AS category, COUNT(*) AS frequency;'
-    results = db.query(q)
+    rows = pd.read_csv(node_summary, sep='|').to_dict(orient='records')
 
-    category_dict = {}
-    for result in results:
-        categories = utils.standardize(result['category'])
-        for c in categories:
-            if c in category_dict:
-                category_dict[c] += result['frequency']
-            else: 
-                category_dict[c] = result['frequency']
-    
-    categories = []
+    category_dict = defaultdict(lambda: 0)
+    for row in rows:
+        category_dict[row['category']] += row['frequency']
     sorted_results = sorted(category_dict.items(), key=lambda k: k[1], reverse=True)
+
+    categories = []
     for category, frequency in sorted_results:
         uri = 'http://bioentity.io/vocab/{}'.format(camel_case(category))
         identifier = 'BLM:{}'.format(camel_case(category))
@@ -84,69 +85,68 @@ def add_up_duplicates(results):
 
 @ttl_cache(ttl=__time_to_live_in_seconds)
 def get_knowledge_map():
-    q = """
-    MATCH (x)-[r]->(y)
-    RETURN DISTINCT
-        x.category AS subject_category,
-        type(r) AS edge_label,
-        r.relation AS relation,
-        y.category AS object_category,
-        r.negated AS negated,
-        COUNT(*) AS frequency;
-    """
+    rows = pd.read_csv(edge_summary, sep='|').to_dict(orient='records')
 
-    results = db.query(q)
-    results = split_up_categories(results)
-    add_up_duplicates(results)
-    results = sorted(results, key=lambda k: k['frequency'], reverse=True)
-
-    results = [d for d in results if not isinstance(d['subject_category'], list) and not isinstance(d['object_category'], list)]
+    frequency = defaultdict(lambda: 0)
+    subject_prefixes = defaultdict(set)
+    object_prefixes = defaultdict(set)
+    for row in rows:
+        # |subject_category|subject_prefix|edge_type|object_category|object_prefix|provided_by|frequency
+        triple = (row['subject_category'], row['edge_type'], row['object_category'])
+        frequency[triple] += row['frequency']
+        subject_prefixes[triple].add(row['subject_prefix'])
+        object_prefixes[triple].add(row['object_prefix'])
 
     maps = []
-    for result in results:
+    for key, fq in frequency.items():
+        subject_category, edge_type, object_category = key
+        subject_prefix = subject_prefixes[key]
+        object_prefix = object_prefixes[key]
+
         o = BeaconKnowledgeMapObject(
-            category=result['object_category'],
-            prefixes=[]
+            category=object_category,
+            prefixes=list(object_prefix)
         )
 
         p = BeaconKnowledgeMapPredicate(
-            edge_label=result['edge_label'],
-            relation=result['relation'],
-            negated=bool(result['negated'])
+            edge_label=edge_type
+            # TODO: gather negated in KGX summary?
+            # negated=None
         )
 
         s = BeaconKnowledgeMapSubject(
-            category=result['subject_category'],
-            prefixes=[]
+            category=subject_category,
+            prefixes=list(subject_prefix)
         )
 
         maps.append(BeaconKnowledgeMapStatement(
             subject=s,
             predicate=p,
             object=o,
-            frequency=result['frequency']
+            frequency=fq
         ))
+
+    maps = sorted(maps, key=lambda k: k.frequency, reverse=True)
 
     return maps
 
 @ttl_cache(ttl=__time_to_live_in_seconds)
 def get_predicates():
-    q = """
-    MATCH (x)-[r]->(y)
-    RETURN DISTINCT type(r) AS predicate, r.relation AS relation, COUNT(*) AS frequency;
-    """
+    rows = pd.read_csv(edge_summary, sep='|').to_dict(orient='records')
 
-    results = db.query(q)
+    d = defaultdict(lambda: 0)
 
-    results = sorted(results, key=lambda k: k['frequency'], reverse=True)
+    for row in rows:
+        d[row['edge_type']] += row['frequency']
+
+    results = sorted(d.items(), key=lambda t: t[1], reverse=True)
 
     predicates = []
 
-    for result in results:
+    for edge_type, frequency in results:
         predicates.append(BeaconPredicate(
-            id=result['relation'],
-            edge_label=result['predicate'],
-            frequency=result['frequency']
+            edge_label=edge_type,
+            frequency=frequency
         ))
 
     return predicates

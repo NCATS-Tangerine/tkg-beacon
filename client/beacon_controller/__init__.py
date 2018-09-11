@@ -1,3 +1,14 @@
+import os, yaml
+
+basepath = os.path.dirname(os.path.abspath(__file__))
+
+configpath = os.path.join(os.path.dirname(basepath), 'config.yml')
+
+try:
+    config = yaml.safe_load(open(configpath).read())
+except IOError as e:
+    raise Exception('Failed to open configuration file at {}, try running "make configure" and setting up resulting config file'.format(configpath))
+
 from . import utils, database
 
 from .controllers.concepts_controller import get_concept_details, get_concepts, get_exact_matches_to_concept_list

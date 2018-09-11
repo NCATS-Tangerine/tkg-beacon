@@ -1,7 +1,8 @@
 from neomodel import config
-from beacon_controller import utils
 
-db_config = utils.load_config()['client']['database']
+import beacon_controller
+
+db_config = beacon_controller.config['client']['database']
 
 username = db_config['username']
 password = db_config['password']

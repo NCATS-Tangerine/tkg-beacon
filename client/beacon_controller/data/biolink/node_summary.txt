@@ -1,0 +1,104 @@
+|category|prefix|frequency
+0|genotype|MGI|3
+1|variant locus|MGI|2141
+2|inheritance|HP|1
+3|phenotype|ZP|18327
+4|phenotype|HP|13094
+5|phenotype|MP|10558
+6|phenotype|FBbt|8715
+7|phenotype|UBERON|8338
+8|phenotype|GO|6012
+9|phenotype|VT|2834
+10|phenotype|WBPhenotype|2407
+11|phenotype|CL|943
+12|phenotype|MONARCH|627
+13|phenotype|AQTLTrait|375
+14|phenotype|NBO|295
+15|phenotype|MPATH|203
+16|phenotype|FBcv|196
+17|phenotype|OBA|115
+18|phenotype|EFO|81
+19|phenotype|APO|8
+20|phenotype|GENO|1
+21|phenotype|ENVO|1
+22|phenotype|UPHENO|1
+23|sequence feature|HGNC|19341
+24|sequence feature|MGI|19029
+25|sequence feature|ZFIN|15602
+26|sequence feature|RGD|11565
+27|sequence feature|FlyBase|11041
+28|sequence feature|WormBase|9579
+29|sequence feature|SGD|5168
+30|sequence feature|NCBIGene|2034
+31|sequence feature|ENSEMBL|1241
+32|sequence feature|Orphanet|5
+33|snv|MGI|8
+34|molecular entity|HGNC|677
+35|cell|CLO|38780
+36|cell|FBbt|3969
+37|cell|CL|2198
+38|cell|FMA|667
+39|cell|ZFA|621
+40|cell|WBbt|93
+41|cell|http|10
+42|cell|MA|3
+43|cell|OBI|1
+44|sequence alteration|MGI|2141
+45|gene|HGNC|19340
+46|gene|MGI|19029
+47|gene|ZFIN|15602
+48|gene|RGD|11565
+49|gene|FlyBase|11041
+50|gene|WormBase|9579
+51|gene|SGD|5168
+52|gene|NCBIGene|2034
+53|gene|ENSEMBL|1241
+54|gene|Orphanet|5
+55|cellular component|CLO|38780
+56|cellular component|FBbt|3969
+57|cellular component|CL|2198
+58|cellular component|FMA|667
+59|cellular component|ZFA|621
+60|cellular component|WBbt|93
+61|cellular component|http|10
+62|cellular component|MA|3
+63|cellular component|UBERON|2
+64|cellular component|OBI|1
+65|anatomical entity|CLO|38780
+66|anatomical entity|UBERON|13661
+67|anatomical entity|FBbt|8424
+68|anatomical entity|FMA|6376
+69|anatomical entity|MA|3047
+70|anatomical entity|ZFA|3016
+71|anatomical entity|CL|2198
+72|anatomical entity|NCBITaxon|1951
+73|anatomical entity|WBbt|169
+74|anatomical entity|OBO|17
+75|anatomical entity|http|10
+76|anatomical entity|ERO|8
+77|anatomical entity|OBI|1
+78|anatomical entity|_|1
+79|clinical_course|MP|81
+80|clinical_course|HP|9
+81|clinical_course|WBPhenotype|2
+82|clinical_course|ZP|1
+83|disease|MONDO|20466
+84|disease|OMIA|4998
+85|disease|SNOMED|235
+86|disease|NCIT|77
+87|disease|MPATH|39
+88|disease|HGNC|1
+89|organism|MGI|7
+90|quality|MONDO|17138
+91|quality|PATO|1737
+92|quality|FBcv|198
+93|quality|OMIA|182
+94|quality|OBA|115
+95|quality|MP|30
+96|quality|NCIT|28
+97|quality|ZP|23
+98|quality|MPATH|14
+99|quality|PCO|8
+100|quality|ERO|1
+101|quality|HGNC|1
+102|quality|ENVO|1

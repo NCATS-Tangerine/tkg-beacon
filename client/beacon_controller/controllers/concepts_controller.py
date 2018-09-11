@@ -9,6 +9,8 @@ from beacon_controller import utils
 
 from collections import defaultdict
 
+from functools import lru_cache
+
 import yaml, ast
 
 from typing import List
@@ -68,6 +70,8 @@ def get_concept_details(conceptId:str) -> BeaconConceptWithDetails:
             exact_matches=exact_matches,
             details=details
         )
+    else:
+        return BeaconConceptWithDetails()
 
 def get_concepts(keywords:List[str], categories:List[str]=None, size:int=None) -> BeaconConcept:
     size = size if size is not None and size > 0 else 100
@@ -116,10 +120,7 @@ def get_exact_matches_to_concept_list(c:List[str]) -> List[ExactMatchResponse]:
 
     :rtype: List[ExactMatchResponse]
     """
-    # ["HP:0010313", "DOID:3459", "HP:0009800", "MONDO:0004989"]
-
-    # "CCPSS:0033438","EFO:0001359","OBO:KEGG_04940","OBO:COHD_201254",
-    # "DOID:9744","NCIT:C2986","CHV:0000047456","OBO:SCTID_46635009","MESH:D003922"
+    c = [utils.fix_curie(curie) for curie in c]
 
     q = """
     UNWIND {id_list} AS input_id
