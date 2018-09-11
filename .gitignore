@@ -1,6 +1,6 @@
 # Configuration files
-client/config.yaml
-client/docker-compose.yaml
+client/beacon_controller/config/config.yaml
+docker-compose.yaml
 
 # Swagger code-gen jar
 *.jar

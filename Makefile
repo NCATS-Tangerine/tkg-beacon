@@ -7,7 +7,7 @@ install:
 
 # Creating the configuration file without installing
 configure:
-	cp -n config.yaml-template client/config.yml
+	cp -n client/beacon_controller/config/config.yaml-template client/beacon_controller/config/config.yaml
 	cp -n docker-compose.yaml-template docker-compose.yaml
 
 run:

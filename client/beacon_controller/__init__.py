@@ -1,9 +1,8 @@
 import os, yaml
-import pudb; pu.db
+
 basepath = os.path.dirname(os.path.abspath(__file__))
 
-configpath = os.path.join(basepath, 'config', 'config.yml')
-print('LOL')
+configpath = os.path.join(basepath, 'config', 'config.yaml')
 
 try:
     config = yaml.safe_load(open(configpath).read())

@@ -5,6 +5,12 @@ setup(
     version = "1.0",
     author = "lance@starinformatics.com",
     description = "Implementation of the controller classes of the biolink beacon",
+    install_requires=[
+        'neomodel',
+        'cachetools',
+        'pandas',
+        'pyyaml'
+    ],
     packages = [
         'beacon_controller',
         'beacon_controller.controllers',
