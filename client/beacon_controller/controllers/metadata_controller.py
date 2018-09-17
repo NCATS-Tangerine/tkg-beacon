@@ -19,8 +19,8 @@ from collections import defaultdict
 
 __time_to_live_in_seconds = 604800
 
-edge_summary = os.path.join(basepath, 'data', config['client']['kgx_name'], 'edge_summary.txt')
-node_summary = os.path.join(basepath, 'data', config['client']['kgx_name'], 'node_summary.txt')
+edge_summary = os.path.join(basepath, 'data', config['beacon_name'], 'edge_summary.txt')
+node_summary = os.path.join(basepath, 'data', config['beacon_name'], 'node_summary.txt')
 
 def camel_case(s:str) -> str:
     return ''.join(w.title() for w in s.replace('_', ' ').split(' '))
