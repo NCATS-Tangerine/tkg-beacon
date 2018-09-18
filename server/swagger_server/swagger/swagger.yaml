@@ -2,8 +2,8 @@
 swagger: "2.0"
 info:
   description: "This is the Translator Knowledge Beacon web service application programming\
-    \ interface (API).\n"
-  version: "1.1.1"
+    \ interface (API)\n"
+  version: "1.1.2"
   title: "Translator Knowledge Beacon API"
   contact:
     url: "http://starinformatics.com"
@@ -11,7 +11,6 @@ info:
   license:
     name: "MIT License"
     url: "http://opensource.org/licenses/MIT"
-basePath: "/"
 tags:
 - name: "metadata"
   description: "Queries about global characteristics of the knowledge source"
@@ -31,7 +30,8 @@ paths:
       description: "Get a list of concept categories and number of their concept instances\
         \ documented by the knowledge source. These types should be mapped onto the\
         \ Translator-endorsed Biolink Model concept type classes with local types,\
-        \ explicitly added as mappings to the Biolink Model YAML file.\n"
+        \ explicitly added as mappings to the Biolink Model YAML file. A frequency\
+        \ of -1 indicates the category can exist, but the count is unknown.\n"
       operationId: "get_concept_categories"
       parameters: []
       responses:
@@ -106,7 +106,9 @@ paths:
                 - "CHEMBL"
                 - "UNIPROT"
               predicate:
+                edge_label: "gene_associated_with_condition"
                 relation: "gene_associated_with_condition"
+                negated: false
               object:
                 category: "disease or phenotypic feature"
                 prefixes:
@@ -166,7 +168,8 @@ paths:
             application/json:
             - id: "wd:Q6591532"
               name: "WRN protein, human"
-              category: "protein"
+              categories:
+              - "protein"
               description: "Werner syndrome ATP-dependent helicase (1432 aa, ~162\
                 \ kDa) is encoded by the human WRN gene. This protein plays a role\
                 \ in both magnesium and ATP-dependent DNA-helicase activity and 3\\\
@@ -196,7 +199,8 @@ paths:
             application/json:
             - id: "wd:Q6591532"
               name: "WRN protein, human"
-              category: "protein"
+              categories:
+              - "protein"
               symbol: "WRN"
               synonyms:
               - "RecQ3"
@@ -364,7 +368,8 @@ paths:
                 id:
                 - "wd:Q14912054"
                 name: "KCNJ11"
-                category: "gene"
+                categories:
+                - "gene"
               predicate:
                 edge_label: "has_phenotype"
                 relation: "RO:0002200"
@@ -373,7 +378,8 @@ paths:
                 id:
                 - "wd:Q2898645"
                 name: "Neonatal diabetes mellitus"
-                category: "disease"
+                categories:
+                - "disease"
       x-swagger-router-controller: "swagger_server.controllers.statements_controller"
   /statements/{statementId}:
     get:
@@ -428,6 +434,94 @@ paths:
                 evidence_type: "ECO_0000033"
                 date: "2012-07-10T00:00:00.000Z"
       x-swagger-router-controller: "swagger_server.controllers.statements_controller"
+  /statements-by-type:
+    get:
+      tags:
+      - "statements"
+      description: "Gets a set of statements by the given constraints\n"
+      operationId: "get_statements_by_type"
+      parameters:
+      - name: "subjectIds"
+        in: "query"
+        description: "a list of [CURIE-encoded](https://www.w3.org/TR/curie/) identifiers\n"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+      - name: "edge_label"
+        in: "query"
+        description: "(Optional) A predicate edge label against which to constrain\
+          \ the search for statements ('edges') associated with the given query seed\
+          \ concept. The predicate edge_names for this parameter should be as published\
+          \ by the /predicates API endpoint and must be taken from the minimal predicate\
+          \ ('slot') list of the [Biolink Model](https://biolink.github.io/biolink-model).\n"
+        required: false
+        type: "string"
+      - name: "objectIds"
+        in: "query"
+        description: "a list of [CURIE-encoded](https://www.w3.org/TR/curie/) identifiers\n"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+      - name: "subjectCategories"
+        in: "query"
+        description: "an array set of concept categories (specified as Biolink name\
+          \ labels codes gene, pathway, etc.) to which to constrain concepts matched\
+          \ by the main keyword search (see [Biolink Model](https://biolink.github.io/biolink-model)\
+          \ for the full list of codes)\n"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+      - name: "objectCategories"
+        in: "query"
+        description: "an array set of concept categories (specified as Biolink name\
+          \ labels codes gene, pathway, etc.) to which to constrain concepts matched\
+          \ by the main keyword search (see [Biolink Model](https://biolink.github.io/biolink-model)\
+          \ for the full list of codes)\n"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+      - name: "pageNumber"
+        in: "query"
+        required: false
+        type: "integer"
+      - name: "pageSize"
+        in: "query"
+        required: false
+        type: "integer"
+      responses:
+        200:
+          description: "Successful response returns a list of concept-relations where\
+            \ there is an exact match of an input concept identifier either to the\
+            \ subject or object concepts  of the statement\n"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/BeaconStatement"
+          examples:
+            application/json:
+            - source: "semmeddb"
+              id: "kb:12345"
+              subject:
+                id:
+                - "wd:Q14912054"
+                name: "KCNJ11"
+                categories:
+                - "gene"
+              predicate:
+                edge_label: "has_phenotype"
+                relation: "RO:0002200"
+                negated: false
+              object:
+                id:
+                - "wd:Q2898645"
+                name: "Neonatal diabetes mellitus"
+                categories:
+                - "disease"
+      x-swagger-router-controller: "swagger_server.controllers.statements_controller"
 definitions:
   BeaconStatement:
     properties:
@@ -454,6 +548,7 @@ definitions:
           \ (or Reasoner-specific) predicate relationship name.\n"
       negated:
         type: "boolean"
+        description: "Indicates whether edge statement is negated (i.e. is not true)\n"
   BeaconStatementCitation:
     properties:
       id:

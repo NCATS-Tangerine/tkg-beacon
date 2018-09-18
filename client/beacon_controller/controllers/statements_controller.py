@@ -167,3 +167,28 @@ def get_statements(s, edge_label=None, relation=None, t=None, keywords=None, cat
         ))
 
     return statements
+
+
+def get_statements_by_type(subjectIds=None, edge_label=None, objectIds=None, subjectCategories=None, objectCategories=None, pageNumber=None, pageSize=None):  # noqa: E501
+    """get_statements_by_type
+
+    Gets a set of statements by the given constraints  # noqa: E501
+
+    :param subjectIds: a list of [CURIE-encoded](https://www.w3.org/TR/curie/) identifiers
+    :type subjectIds: List[str]
+    :param edge_label: (Optional) A predicate edge label against which to constrain the search for statements (&#39;edges&#39;) associated with the given query seed concept. The predicate edge_names for this parameter should be as published by the /predicates API endpoint and must be taken from the minimal predicate (&#39;slot&#39;) list of the [Biolink Model](https://biolink.github.io/biolink-model).
+    :type edge_label: str
+    :param objectIds: a list of [CURIE-encoded](https://www.w3.org/TR/curie/) identifiers
+    :type objectIds: List[str]
+    :param subjectCategories: an array set of concept categories (specified as Biolink name labels codes gene, pathway, etc.) to which to constrain concepts matched by the main keyword search (see [Biolink Model](https://biolink.github.io/biolink-model) for the full list of codes)
+    :type subjectCategories: List[str]
+    :param objectCategories: an array set of concept categories (specified as Biolink name labels codes gene, pathway, etc.) to which to constrain concepts matched by the main keyword search (see [Biolink Model](https://biolink.github.io/biolink-model) for the full list of codes)
+    :type objectCategories: List[str]
+    :param pageNumber:
+    :type pageNumber: int
+    :param pageSize:
+    :type pageSize: int
+
+    :rtype: List[BeaconStatement]
+    """
+    return 'do some magic!'

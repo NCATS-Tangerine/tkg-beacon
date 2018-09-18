@@ -1,16 +1,18 @@
 swagger: '2.0'
 info:
   title: Translator Knowledge Beacon API
-  version: 1.1.1
+  version: 1.1.2
   contact:
     url: 'http://starinformatics.com'
     email: richard@starinformatics.com
   description: >
     This is the Translator Knowledge Beacon web service application programming
-    interface (API).
+    interface (API)
   license:
     name: MIT License
     url: 'http://opensource.org/licenses/MIT'
+# host: kba.ncats.io
+# basePath: /
 schemes:
   - https
 produces:
@@ -29,7 +31,9 @@ paths:
         Get a list of concept categories and number of their concept instances
         documented by the knowledge source. These types should be mapped onto
         the Translator-endorsed Biolink Model concept type classes with local
-        types, explicitly added as mappings to the Biolink Model YAML file.
+        types, explicitly added as mappings to the Biolink Model YAML file. A
+        frequency of -1 indicates the category can exist, but the count is
+        unknown.
       tags:
         - metadata
       operationId: getConceptCategories
@@ -224,6 +228,9 @@ paths:
                         relationship name.
                     negated:
                       type: boolean
+                      description: >
+                        Indicates whether edge statement is negated (i.e. is not
+                        true)
                 object:
                   title: BeaconKnowledgeMapObject
                   type: object
@@ -267,7 +274,9 @@ paths:
                     - CHEMBL
                     - UNIPROT
                 predicate:
+                  edge_label: gene_associated_with_condition
                   relation: gene_associated_with_condition
+                  negated: false
                 object:
                   category: disease or phenotypic feature
                   prefixes:
@@ -361,7 +370,8 @@ paths:
             application/json:
               - id: 'wd:Q6591532'
                 name: 'WRN protein, human'
-                category: protein
+                categories:
+                  - protein
                 description: >-
                   Werner syndrome ATP-dependent helicase (1432 aa, ~162 kDa) is
                   encoded by the human WRN gene. This protein plays a role in
@@ -455,7 +465,8 @@ paths:
             application/json:
               - id: 'wd:Q6591532'
                 name: 'WRN protein, human'
-                category: protein
+                categories:
+                  - protein
                 symbol: WRN
                 synonyms:
                   - RecQ3
@@ -737,7 +748,8 @@ paths:
                   id:
                     - 'wd:Q14912054'
                   name: KCNJ11
-                  category: gene
+                  categories:
+                    - gene
                 predicate:
                   edge_label: has_phenotype
                   relation: 'RO:0002200'
@@ -746,7 +758,8 @@ paths:
                   id:
                     - 'wd:Q2898645'
                   name: Neonatal diabetes mellitus
-                  category: disease
+                  categories:
+                    - disease
   '/statements/{statementId}':
     get:
       description: >
@@ -882,3 +895,173 @@ paths:
                     hernia coincidence or concurrent etiology?
                   evidence_type: ECO_0000033
                   date: '2012-07-10T00:00:00.000Z'
+
+  /statements-by-type:
+    get:
+      description: >
+        Gets a set of statements by the given constraints
+      tags:
+        - statements
+      parameters:
+        - name: subjectIds
+          in: query
+          description: >
+            a list of [CURIE-encoded](https://www.w3.org/TR/curie/)
+            identifiers
+          type: array
+          items:
+            type: string
+        - name: edge_label
+          in: query
+          description: >
+            (Optional) A predicate edge label against which to constrain the
+            search for statements ('edges') associated with the given query seed
+            concept. The predicate edge_names for this parameter should be as
+            published by the /predicates API endpoint and must be taken from the
+            minimal predicate ('slot') list of the [Biolink
+            Model](https://biolink.github.io/biolink-model).
+          type: string
+        - name: objectIds
+          in: query
+          description: >
+            a list of [CURIE-encoded](https://www.w3.org/TR/curie/)
+            identifiers
+          required: false
+          type: array
+          items:
+            type: string
+        - name: subjectCategories
+          in: query
+          description: >
+            an array set of concept categories (specified as Biolink name labels
+            codes gene, pathway, etc.) to which to constrain concepts matched by
+            the main keyword search (see [Biolink
+            Model](https://biolink.github.io/biolink-model) for the full list of
+            codes)
+          type: array
+          items:
+            type: string
+        - name: objectCategories
+          in: query
+          description: >
+            an array set of concept categories (specified as Biolink name labels
+            codes gene, pathway, etc.) to which to constrain concepts matched by
+            the main keyword search (see [Biolink
+            Model](https://biolink.github.io/biolink-model) for the full list of
+            codes)
+          type: array
+          items:
+            type: string
+        - name: pageNumber
+          in: query
+          type: integer
+        - name: pageSize
+          in: query
+          type: integer
+      operationId: getStatementsByType
+      responses:
+        '200':
+          description: >
+            Successful response returns a list of concept-relations where there
+            is an exact match of an input concept identifier either to the
+            subject or object concepts  of the statement
+          schema:
+            type: array
+            items:
+              title: BeaconStatement
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: >-
+                    CURIE-encoded identifier for statement (can be used to
+                    retrieve associated evidence)
+                subject:
+                  title: BeaconStatementSubject
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: |
+                        CURIE-encoded identifier of concept
+                    name:
+                      type: string
+                      description: human readable label of subject concept
+                    categories:
+                      type: array
+                      items:
+                        type: string
+                      description: >
+                        a semantic group for the subject concept (specified as a
+                        code gene, pathway, disease, etc. - see [Biolink
+                        Model](https://biolink.github.io/biolink-model) for the
+                        full list of categories)
+                predicate:
+                  title: BeaconStatementPredicate
+                  type: object
+                  properties:
+                    edge_label:
+                      type: string
+                      description: >
+                        The predicate edge label associated with this statement,
+                        which should be as published by the /predicates API
+                        endpoint and must be taken from the minimal predicate
+                        ('slot') list of the [Biolink
+                        Model](https://biolink.github.io/biolink-model).
+                    relation:
+                      type: string
+                      description: >-
+                        The predicate relation associated with this statement,
+                        which should be as published by the /predicates API
+                        endpoint with the preferred format being a CURIE where
+                        one exists, but strings/labels acceptable. This relation
+                        may be equivalent to the edge_label (e.g. edge_label:
+                        has_phenotype, relation: RO:0002200), or a more specific
+                        relation in cases where the source provides more
+                        granularity (e.g. edge_label:
+                        molecularly_interacts_with, relation: RO:0002447)
+                    negated:
+                      type: boolean
+                      description: >
+                        (Optional) a boolean that if set to true, indicates the
+                        edge statement is negated i.e. is not true
+                object:
+                  title: BeaconStatementObject
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: |
+                        CURIE-encoded identifier of object concept
+                    name:
+                      type: string
+                      description: human readable label of object concept
+                    categories:
+                      type: array
+                      items:
+                        type: string
+                      description: >
+                        a semantic group for the object concept (specified as a
+                        code gene, pathway, disease, etc. - see [Biolink
+                        Model](https://biolink.github.io/biolink-model) for the
+                        full list of categories)
+          examples:
+            application/json:
+              - source: semmeddb
+                id: 'kb:12345'
+                subject:
+                  id:
+                    - 'wd:Q14912054'
+                  name: KCNJ11
+                  categories:
+                    - gene
+                predicate:
+                  edge_label: has_phenotype
+                  relation: 'RO:0002200'
+                  negated: false
+                object:
+                  id:
+                    - 'wd:Q2898645'
+                  name: Neonatal diabetes mellitus
+                  categories:
+                    - disease

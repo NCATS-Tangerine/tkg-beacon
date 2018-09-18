@@ -102,6 +102,7 @@ class BeaconKnowledgeMapPredicate(Model):
     def negated(self) -> bool:
         """Gets the negated of this BeaconKnowledgeMapPredicate.
 
+        Indicates whether edge statement is negated (i.e. is not true)   # noqa: E501
 
         :return: The negated of this BeaconKnowledgeMapPredicate.
         :rtype: bool
@@ -112,6 +113,7 @@ class BeaconKnowledgeMapPredicate(Model):
     def negated(self, negated: bool):
         """Sets the negated of this BeaconKnowledgeMapPredicate.
 
+        Indicates whether edge statement is negated (i.e. is not true)   # noqa: E501
 
         :param negated: The negated of this BeaconKnowledgeMapPredicate.
         :type negated: bool
