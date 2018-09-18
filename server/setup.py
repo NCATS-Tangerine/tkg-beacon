@@ -13,7 +13,7 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = ["connexion==1.1.15", "jsonschema==2.6.0"]
+REQUIRES = ["connexion"]
 
 setup(
     name=NAME,
@@ -29,7 +29,7 @@ setup(
     entry_points={
         'console_scripts': ['swagger_server=swagger_server.__main__:main']},
     long_description="""\
-    This is the Translator Knowledge Beacon web service application programming interface (API). 
+    This is the Translator Knowledge Beacon web service application programming interface (API) 
     """
 )
 

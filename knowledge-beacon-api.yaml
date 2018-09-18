@@ -953,9 +953,13 @@ paths:
           items:
             type: string
         - name: pageNumber
+          minimum: 1
+          default: 10
           in: query
           type: integer
         - name: pageSize
+          minimum: 1
+          default: 10
           in: query
           type: integer
       operationId: getStatementsByType

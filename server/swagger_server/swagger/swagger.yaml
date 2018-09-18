@@ -488,10 +488,14 @@ paths:
         in: "query"
         required: false
         type: "integer"
+        default: 10
+        minimum: 1
       - name: "pageSize"
         in: "query"
         required: false
         type: "integer"
+        default: 10
+        minimum: 1
       responses:
         200:
           description: "Successful response returns a list of concept-relations where\
