@@ -1,21 +1,13 @@
 # Copy and paste this file, and rename to "config.yaml". Then configure config.yaml.
 
-client:
-
-  database:
-    # Include the port in the address - standalone
-    #address: bolt://localhost:7687
-    # If you use the Docker Compose... use this configuration
-    address: bolt://tkg-db:7687
-    username: neo4j
-    password: your_tkg_password
-
-  # Either "rtx", "biolink" or "semmed"
-  kgx_name: rtx
-
-server:
-  port: 8080
-
-general:
-  # Setting filter_biolink to True will ignore categories that are non-Biolink category compliant
-  filter_biolink: false
+# Either "rtx", "biolink" or "rkb"
+beacon_name: rtx
+database:
+  # Include the port in the address - standalone
+  #address: bolt://localhost:7687
+  # If you use the Docker Compose... use this configuration
+  address: bolt://tkg-db:7687
+  username: neo4j
+  password: your_tkg_password
+port: 8080
+filter_biolink: false
