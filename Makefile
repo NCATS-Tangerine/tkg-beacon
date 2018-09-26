@@ -12,8 +12,15 @@ configure:
 run:
 	cd server && python -m swagger_server
 
-docker-build:
-	docker build -t ncats:${tag} .
+docker-build-biolink:
+	docker build -t ncats:biolink .
+
+docker-build-rkb:
+	docker build -t ncats:rkb .
+
+docker-build-rtx:
+	docker build -t ncats:rtx .
+
 
 docker-run-biolink:
 	docker run -d --rm -p 8078:8080 ncats:biolink
