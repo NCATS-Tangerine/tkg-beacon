@@ -9,7 +9,8 @@ setup(
         'neomodel',
         'cachetools',
         'pandas',
-        'pyyaml'
+        'pyyaml',
+        'tornado'
     ],
     packages = [
         'beacon_controller',
