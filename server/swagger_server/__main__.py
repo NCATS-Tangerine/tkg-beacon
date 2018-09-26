@@ -11,7 +11,7 @@ def handle_error(e):
     return redirect(BASEPATH)
 
 def main():
-    app = connexion.App(__name__, specification_dir='./swagger/', server='tornado')
+    app = connexion.App(__name__, specification_dir='./swagger/')
     app.app.json_encoder = encoder.JSONEncoder
     app.add_api(
         'swagger.yaml',
@@ -21,7 +21,7 @@ def main():
     )
     app.add_error_handler(404, handle_error)
 
-    app.run(port=config['port'])
+    app.run(port=config['port'], server='tornado')
 
 if __name__ == '__main__':
     main()
