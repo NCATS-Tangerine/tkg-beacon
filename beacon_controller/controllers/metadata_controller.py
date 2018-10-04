@@ -54,11 +54,12 @@ def get_concept_categories():  # noqa: E501
                 description=c.description
             ))
         else:
+            c = blm.get_class(blm.DEFAULT_CATEGORY)
             categories.append(BeaconConceptCategory(
                 frequency=frequency,
                 category=blm.DEFAULT_CATEGORY,
                 local_category=category,
-                description=None
+                description=c.description
             ))
 
     return categories
