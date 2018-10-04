@@ -27,8 +27,8 @@ database:
   # Include the port in the address - standalone
   #address: bolt://localhost:7687
   # If you use the Docker Compose... use this configuration
-  address: bolt://steveneo4j.saramsey.org:7687
+  address: bolt://localhost:7474
   username: neo4j
-  password: precisionmedicine
+  password: neo4j
 port: 8080
 filter_biolink: false
