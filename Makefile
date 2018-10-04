@@ -1,3 +1,6 @@
+configure:
+	cp config/config.yaml-template config/config.yaml
+
 install:
 	pip install .
 	pip install beacon/
