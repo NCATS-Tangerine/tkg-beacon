@@ -1,15 +1,18 @@
-# Docker file for the Translator Knowledge Graph Beacon
 FROM python:3.6
 
-WORKDIR /home
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY client client
-COPY ontology ontology
-COPY server server
+COPY beacon_controller /usr/src/app/beacon_controller
+COPY config /usr/src/app/config
+COPY beacon /usr/src/app/beacon
 
-RUN pip install client/ && pip install ontology/ && pip install --no-cache-dir -r server/requirements.txt
+COPY MANIFEST.in /usr/src/app/MANIFEST.in
+COPY setup.py /usr/src/app/setup.py
 
-WORKDIR /home/server
+RUN python setup.py install
+
+WORKDIR /usr/src/app/beacon
 
 EXPOSE 8080
 

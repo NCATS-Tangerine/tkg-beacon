@@ -1,16 +1,13 @@
 install:
-	make configure
-	pip install ontology/
-	pip install client/
-	pip install server/
+	pip install .
+	pip install beacon/
 
-# Creating the configuration file without installing
-configure:
-	cp -n client/beacon_controller/config/config.yaml-template client/beacon_controller/config/config.yaml
-	cp -n docker-compose.yaml-template docker-compose.yaml
+dev-install:
+	pip install -e .
+	pip install beacon/
 
 run:
-	cd server && python -m swagger_server
+	cd beacon && python -m swagger_server
 
 docker-build-biolink:
 	docker build -t ncats:biolink .

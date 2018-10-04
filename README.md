@@ -2,7 +2,7 @@
 
 For wrapping Translator Knowledge Graph compliant Neo4j databases.
 
-Two options: 
+Two options:
 
 1. Run the wrapper directly
 2. Run the wrapper within Docker
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 Setup the config file by copying the template file:
 ```
 cp config.yaml-template config.yaml
-``` 
+```
 Change the database settings in `config.yaml` to match the address and credentials of the wanted neo4j database.
 
 Navigate into the `/server` directory and run:
@@ -105,7 +105,7 @@ For more examples and ideas, visit:
 
 You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on your target Linux operating environment.
 
-Note that under Ubuntu, you need to run docker (and docker-compose) as 'sudo'. 
+Note that under Ubuntu, you need to run docker (and docker-compose) as 'sudo'.
 
 ## Testing Docker Compose
 
@@ -118,7 +118,7 @@ Note that your particular version and build number may be different than what is
 
 ## Configuring the Application
 
-Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database. 
+Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database.
 
 Also make a copy of the docker-compose.yaml-template into docker-compose.yaml and customize the Neo4j credentials to those of your TKG database. Alternately, set the NEO4J_AUTH environment variable to these credentials.
 
