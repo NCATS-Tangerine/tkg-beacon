@@ -1,0 +1,1022 @@
+|subject_category|subject_prefix|edge_type|relation|object_category|object_prefix|negated|frequency
+0|cellular component|CLO|subclass_of|owl:subClassOf|cellular component|CLO||77698
+1|cellular component|FBbt|subclass_of|owl:subClassOf|cellular component|FBbt||11880
+2|cellular component|CL|subclass_of|owl:subClassOf|cellular component|CL||6286
+3|cellular component|ZFA|subclass_of|owl:subClassOf|cellular component|ZFA||1824
+4|cellular component|FMA|subclass_of|owl:subClassOf|cellular component|FMA||1742
+5|cellular component|CL|subclass_of|owl:subClassOf|cellular component|FMA||670
+6|cellular component|FMA|subclass_of|owl:subClassOf|cellular component|CL||670
+7|cellular component|ZFA|subclass_of|owl:subClassOf|cellular component|CL||443
+8|cellular component|CL|subclass_of|owl:subClassOf|cellular component|ZFA||443
+9|cellular component|CL|subclass_of|owl:subClassOf|cellular component|FBbt||332
+10|cellular component|FBbt|subclass_of|owl:subClassOf|cellular component|CL||332
+11|cellular component|WBbt|subclass_of|owl:subClassOf|cellular component|WBbt||232
+12|cellular component|WBbt|subclass_of|owl:subClassOf|cellular component|CL||32
+13|cellular component|CL|subclass_of|owl:subClassOf|cellular component|WBbt||32
+14|cellular component|http|subclass_of|owl:subClassOf|cellular component|CLO||10
+15|cellular component|CLO|subclass_of|owl:subClassOf|cellular component|http||10
+16|cellular component|MA|subclass_of|owl:subClassOf|cellular component|CL||3
+17|cellular component|CL|subclass_of|owl:subClassOf|cellular component|MA||3
+18|cellular component|UBERON|subclass_of|owl:subClassOf|cellular component|UBERON||2
+19|cellular component|OBI|subclass_of|owl:subClassOf|cellular component|CLO||1
+20|cellular component|OBI|subclass_of|owl:subClassOf|cellular component|CL||1
+21|cellular component|CLO|subclass_of|owl:subClassOf|cellular component|OBI||1
+22|cellular component|CL|subclass_of|owl:subClassOf|cellular component|OBI||1
+23|cellular component|CLO|subclass_of|owl:subClassOf|anatomical entity|CLO||77698
+24|cellular component|FBbt|subclass_of|owl:subClassOf|anatomical entity|FBbt||11997
+25|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|CL||6286
+26|cellular component|ZFA|subclass_of|owl:subClassOf|anatomical entity|ZFA||1828
+27|cellular component|FMA|subclass_of|owl:subClassOf|anatomical entity|FMA||1743
+28|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|FMA||670
+29|cellular component|FMA|subclass_of|owl:subClassOf|anatomical entity|CL||670
+30|cellular component|ZFA|subclass_of|owl:subClassOf|anatomical entity|CL||443
+31|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|ZFA||443
+32|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|FBbt||332
+33|cellular component|FBbt|subclass_of|owl:subClassOf|anatomical entity|CL||332
+34|cellular component|WBbt|subclass_of|owl:subClassOf|anatomical entity|WBbt||245
+35|cellular component|CL|part_of|BFO:0000051|anatomical entity|UBERON||170
+36|cellular component|ZFA|subclass_of|owl:subClassOf|anatomical entity|UBERON||124
+37|cellular component|WBbt|subclass_of|owl:subClassOf|anatomical entity|CL||32
+38|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|WBbt||32
+39|cellular component|FBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||19
+40|cellular component|WBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||12
+41|cellular component|CLO|subclass_of|owl:subClassOf|anatomical entity|http||10
+42|cellular component|http|subclass_of|owl:subClassOf|anatomical entity|CLO||10
+43|cellular component|UBERON|subclass_of|owl:subClassOf|anatomical entity|UBERON||4
+44|cellular component|MA|subclass_of|owl:subClassOf|anatomical entity|CL||3
+45|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|MA||3
+46|cellular component|OBI|subclass_of|owl:subClassOf|anatomical entity|CLO||1
+47|cellular component|UBERON|part_of|BFO:0000051|anatomical entity|UBERON||1
+48|cellular component|FMA|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+49|cellular component|OBI|subclass_of|owl:subClassOf|anatomical entity|CL||1
+50|cellular component|CLO|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+51|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+52|cellular component|CL|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+53|cellular component|CLO|subclass_of|owl:subClassOf|cell|CLO||77698
+54|cellular component|FBbt|subclass_of|owl:subClassOf|cell|FBbt||11880
+55|cellular component|CL|subclass_of|owl:subClassOf|cell|CL||6286
+56|cellular component|ZFA|subclass_of|owl:subClassOf|cell|ZFA||1824
+57|cellular component|FMA|subclass_of|owl:subClassOf|cell|FMA||1742
+58|cellular component|FMA|subclass_of|owl:subClassOf|cell|CL||670
+59|cellular component|CL|subclass_of|owl:subClassOf|cell|FMA||670
+60|cellular component|CL|subclass_of|owl:subClassOf|cell|ZFA||443
+61|cellular component|ZFA|subclass_of|owl:subClassOf|cell|CL||443
+62|cellular component|CL|subclass_of|owl:subClassOf|cell|FBbt||332
+63|cellular component|FBbt|subclass_of|owl:subClassOf|cell|CL||332
+64|cellular component|WBbt|subclass_of|owl:subClassOf|cell|WBbt||232
+65|cellular component|WBbt|subclass_of|owl:subClassOf|cell|CL||32
+66|cellular component|CL|subclass_of|owl:subClassOf|cell|WBbt||32
+67|cellular component|http|subclass_of|owl:subClassOf|cell|CLO||10
+68|cellular component|CLO|subclass_of|owl:subClassOf|cell|http||10
+69|cellular component|MA|subclass_of|owl:subClassOf|cell|CL||3
+70|cellular component|CL|subclass_of|owl:subClassOf|cell|MA||3
+71|cellular component|OBI|subclass_of|owl:subClassOf|cell|CL||1
+72|cellular component|OBI|subclass_of|owl:subClassOf|cell|CLO||1
+73|cellular component|CLO|subclass_of|owl:subClassOf|cell|OBI||1
+74|cellular component|CL|subclass_of|owl:subClassOf|cell|OBI||1
+75|cellular component|CL|has_entity|has_entity|quality|MP||1
+76|cellular component|ZFA|has_entity|has_entity|phenotype|ZP||1394
+77|cellular component|CL|has_entity|has_entity|phenotype|MP||935
+78|cellular component|CL|has_entity|has_entity|phenotype|HP||136
+79|cellular component|WBbt|has_entity|has_entity|phenotype|WBPhenotype||85
+80|cellular component|CL|has_entity|has_entity|phenotype|WBPhenotype||28
+81|organism|MGI|has_phenotype|RO:0002200|clinical_course|MP||1
+82|organism|MGI|has_phenotype|RO:0002200|phenotype|MP||15
+83|organism|MGI|has_phenotype|RO:0002200|phenotype|HP||6
+84|organism|MGI|has_phenotype|RO:0002200|phenotype|GO||2
+85|gene|HGNC|interacts_with|RO:0002434|gene|HGNC||1888890
+86|gene|MGI|interacts_with|RO:0002434|gene|MGI||1596746
+87|gene|RGD|interacts_with|RO:0002434|gene|RGD||988592
+88|gene|ZFIN|interacts_with|RO:0002434|gene|ZFIN||793739
+89|gene|FlyBase|interacts_with|RO:0002434|gene|FlyBase||636669
+90|gene|WormBase|interacts_with|RO:0002434|gene|WormBase||466907
+91|gene|ENSEMBL|interacts_with|RO:0002434|gene|RGD||101540
+92|gene|RGD|interacts_with|RO:0002434|gene|ENSEMBL||101540
+93|gene|ENSEMBL|interacts_with|RO:0002434|gene|ENSEMBL||69489
+94|gene|HGNC|interacts_with|RO:0002434|gene|MGI||19849
+95|gene|MGI|interacts_with|RO:0002434|gene|HGNC||19849
+96|gene|ZFIN|interacts_with|RO:0002434|gene|ENSEMBL||13718
+97|gene|ENSEMBL|interacts_with|RO:0002434|gene|ZFIN||13718
+98|gene|FlyBase|interacts_with|RO:0002434|gene|ENSEMBL||10508
+99|gene|ENSEMBL|interacts_with|RO:0002434|gene|FlyBase||10508
+100|gene|NCBIGene|interacts_with|RO:0002434|gene|ZFIN||8567
+101|gene|ZFIN|interacts_with|RO:0002434|gene|NCBIGene||8567
+102|gene|RGD|interacts_with|RO:0002434|gene|NCBIGene||1618
+103|gene|NCBIGene|interacts_with|RO:0002434|gene|RGD||1618
+104|gene|NCBIGene|interacts_with|RO:0002434|gene|WormBase||1229
+105|gene|WormBase|interacts_with|RO:0002434|gene|NCBIGene||1229
+106|gene|WormBase|interacts_with|RO:0002434|gene|ENSEMBL||994
+107|gene|ENSEMBL|interacts_with|RO:0002434|gene|WormBase||994
+108|gene|ENSEMBL|interacts_with|RO:0002434|gene|MGI||712
+109|gene|MGI|interacts_with|RO:0002434|gene|ENSEMBL||712
+110|gene|NCBIGene|interacts_with|RO:0002434|gene|ENSEMBL||688
+111|gene|ENSEMBL|interacts_with|RO:0002434|gene|NCBIGene||688
+112|gene|HGNC|interacts_with|RO:0002434|gene|ENSEMBL||602
+113|gene|ENSEMBL|interacts_with|RO:0002434|gene|HGNC||602
+114|gene|NCBIGene|interacts_with|RO:0002434|gene|NCBIGene||401
+115|gene|HGNC|interacts_with|RO:0002434|gene|NCBIGene||218
+116|gene|NCBIGene|interacts_with|RO:0002434|gene|HGNC||218
+117|gene|MGI|interacts_with|RO:0002434|gene|NCBIGene||164
+118|gene|NCBIGene|interacts_with|RO:0002434|gene|MGI||164
+119|gene|HGNC|interacts_with|RO:0002434|gene|FlyBase||117
+120|gene|FlyBase|interacts_with|RO:0002434|gene|HGNC||117
+121|gene|HGNC|interacts_with|RO:0002434|gene|WormBase||49
+122|gene|WormBase|interacts_with|RO:0002434|gene|HGNC||49
+123|gene|MGI|interacts_with|RO:0002434|gene|FlyBase||30
+124|gene|FlyBase|interacts_with|RO:0002434|gene|MGI||30
+125|gene|HGNC|interacts_with|RO:0002434|gene|ZFIN||26
+126|gene|ZFIN|interacts_with|RO:0002434|gene|HGNC||26
+127|gene|MGI|interacts_with|RO:0002434|gene|ZFIN||17
+128|gene|ZFIN|interacts_with|RO:0002434|gene|MGI||17
+129|gene|MGI|interacts_with|RO:0002434|gene|WormBase||8
+130|gene|WormBase|interacts_with|RO:0002434|gene|MGI||8
+131|gene|MGI|interacts_with|RO:0002434|variant locus|MGI||45
+132|gene|MGI|interacts_with|RO:0002434|sequence alteration|MGI||45
+133|gene|HGNC|interacts_with|RO:0002434|molecular entity|HGNC||511
+134|gene|MGI|interacts_with|RO:0002434|molecular entity|HGNC||1
+135|gene|HGNC|contributes_to|RO:0002326|disease|MONDO||20739
+136|gene|NCBIGene|contributes_to|RO:0002326|disease|MONDO||1631
+137|gene|NCBIGene|contributes_to|RO:0002326|disease|OMIA||726
+138|gene|Orphanet|contributes_to|RO:0002326|disease|MONDO||5
+139|gene|HGNC|contributes_to|RO:0002326|disease|OMIA||2
+140|gene|RGD|contributes_to|RO:0002326|disease|OMIA||1
+141|gene|MGI|has_phenotype|RO:0002200|clinical_course|MP||10554
+142|gene|MGI|has_phenotype|RO:0002200|clinical_course|HP||685
+143|gene|HGNC|has_phenotype|RO:0002200|clinical_course|HP||322
+144|gene|NCBIGene|has_phenotype|RO:0002200|clinical_course|MP||31
+145|gene|NCBIGene|has_phenotype|RO:0002200|clinical_course|HP||11
+146|gene|ZFIN|has_phenotype|RO:0002200|clinical_course|MP||2
+147|gene|ZFIN|has_phenotype|RO:0002200|clinical_course|ZP||1
+148|gene|RGD|has_phenotype|RO:0002200|clinical_course|MP||1
+149|gene|HGNC|interacts_with|RO:0002434|sequence feature|HGNC||1888890
+150|gene|MGI|interacts_with|RO:0002434|sequence feature|MGI||1596746
+151|gene|RGD|interacts_with|RO:0002434|sequence feature|RGD||988592
+152|gene|ZFIN|interacts_with|RO:0002434|sequence feature|ZFIN||793739
+153|gene|FlyBase|interacts_with|RO:0002434|sequence feature|FlyBase||636669
+154|gene|WormBase|interacts_with|RO:0002434|sequence feature|WormBase||466907
+155|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|RGD||101540
+156|gene|RGD|interacts_with|RO:0002434|sequence feature|ENSEMBL||101540
+157|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|ENSEMBL||69489
+158|gene|HGNC|interacts_with|RO:0002434|sequence feature|MGI||19849
+159|gene|MGI|interacts_with|RO:0002434|sequence feature|HGNC||19849
+160|gene|ZFIN|interacts_with|RO:0002434|sequence feature|ENSEMBL||13718
+161|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|ZFIN||13718
+162|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|FlyBase||10508
+163|gene|FlyBase|interacts_with|RO:0002434|sequence feature|ENSEMBL||10508
+164|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|ZFIN||8567
+165|gene|ZFIN|interacts_with|RO:0002434|sequence feature|NCBIGene||8567
+166|gene|RGD|interacts_with|RO:0002434|sequence feature|NCBIGene||1618
+167|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|RGD||1618
+168|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|WormBase||1229
+169|gene|WormBase|interacts_with|RO:0002434|sequence feature|NCBIGene||1229
+170|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|WormBase||994
+171|gene|WormBase|interacts_with|RO:0002434|sequence feature|ENSEMBL||994
+172|gene|MGI|interacts_with|RO:0002434|sequence feature|ENSEMBL||712
+173|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|MGI||712
+174|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|ENSEMBL||688
+175|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|NCBIGene||688
+176|gene|HGNC|interacts_with|RO:0002434|sequence feature|ENSEMBL||602
+177|gene|ENSEMBL|interacts_with|RO:0002434|sequence feature|HGNC||602
+178|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|NCBIGene||401
+179|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|HGNC||218
+180|gene|HGNC|interacts_with|RO:0002434|sequence feature|NCBIGene||218
+181|gene|NCBIGene|interacts_with|RO:0002434|sequence feature|MGI||164
+182|gene|MGI|interacts_with|RO:0002434|sequence feature|NCBIGene||164
+183|gene|FlyBase|interacts_with|RO:0002434|sequence feature|HGNC||117
+184|gene|HGNC|interacts_with|RO:0002434|sequence feature|FlyBase||117
+185|gene|WormBase|interacts_with|RO:0002434|sequence feature|HGNC||49
+186|gene|HGNC|interacts_with|RO:0002434|sequence feature|WormBase||49
+187|gene|MGI|interacts_with|RO:0002434|sequence feature|FlyBase||30
+188|gene|FlyBase|interacts_with|RO:0002434|sequence feature|MGI||30
+189|gene|HGNC|interacts_with|RO:0002434|sequence feature|ZFIN||26
+190|gene|ZFIN|interacts_with|RO:0002434|sequence feature|HGNC||26
+191|gene|MGI|interacts_with|RO:0002434|sequence feature|ZFIN||17
+192|gene|ZFIN|interacts_with|RO:0002434|sequence feature|MGI||17
+193|gene|MGI|interacts_with|RO:0002434|sequence feature|WormBase||8
+194|gene|WormBase|interacts_with|RO:0002434|sequence feature|MGI||8
+195|gene|HGNC|contributes_to|RO:0002326|quality|MONDO||14254
+196|gene|NCBIGene|contributes_to|RO:0002326|quality|MONDO||582
+197|gene|ZFIN|has_phenotype|RO:0002200|quality|ZP||84
+198|gene|MGI|has_phenotype|RO:0002200|quality|MP||83
+199|gene|NCBIGene|contributes_to|RO:0002326|quality|OMIA||57
+200|gene|Orphanet|contributes_to|RO:0002326|quality|MONDO||5
+201|gene|NCBIGene|has_phenotype|RO:0002200|quality|MP||1
+202|gene|HGNC|has_phenotype|RO:0002200|phenotype|HP||583127
+203|gene|MGI|has_phenotype|RO:0002200|phenotype|MP||137048
+204|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|HP||70311
+205|gene|SGD|has_phenotype|RO:0002200|phenotype|MONARCH||59770
+206|gene|MGI|has_phenotype|RO:0002200|phenotype|HP||57552
+207|gene|ZFIN|has_phenotype|RO:0002200|phenotype|ZP||51594
+208|gene|SGD|has_phenotype|RO:0002200|phenotype|APO||8454
+209|gene|RGD|has_phenotype|RO:0002200|phenotype|MP||1227
+210|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|MP||412
+211|gene|MGI|has_phenotype|RO:0002200|phenotype|GO||238
+212|gene|Orphanet|has_phenotype|RO:0002200|phenotype|HP||185
+213|gene|ZFIN|has_phenotype|RO:0002200|phenotype|HP||182
+214|gene|ZFIN|has_phenotype|RO:0002200|phenotype|MP||133
+215|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|UBERON||13
+216|gene|WormBase|has_phenotype|RO:0002200|phenotype|GO||11
+217|gene|RGD|has_phenotype|RO:0002200|phenotype|HP||9
+218|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|GO||8
+219|gene|SGD|has_phenotype|RO:0002200|phenotype|GO||6
+220|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|NBO||3
+221|gene|NCBIGene|has_phenotype|RO:0002200|phenotype|CL||2
+222|inheritance|HP|subclass_of|owl:subClassOf|phenotype|HP||1
+223|genotype|MGI|has_phenotype|RO:0002200|clinical_course|MP||1
+224|genotype|MGI|has_phenotype|RO:0002200|phenotype|MP||7
+225|genotype|MGI|has_phenotype|RO:0002200|phenotype|HP||3
+226|variant locus|MGI|interacts_with|RO:0002434|gene|MGI||45
+227|variant locus|MGI|has_phenotype|RO:0002200|clinical_course|MP||508
+228|variant locus|MGI|has_phenotype|RO:0002200|clinical_course|HP||24
+229|variant locus|MGI|interacts_with|RO:0002434|sequence feature|MGI||45
+230|variant locus|MGI|has_phenotype|RO:0002200|phenotype|MP||4975
+231|variant locus|MGI|has_phenotype|RO:0002200|phenotype|HP||3737
+232|variant locus|MGI|has_phenotype|RO:0002200|phenotype|GO||196
+233|sequence alteration|MGI|interacts_with|RO:0002434|gene|MGI||45
+234|sequence alteration|MGI|has_phenotype|RO:0002200|clinical_course|MP||508
+235|sequence alteration|MGI|has_phenotype|RO:0002200|clinical_course|HP||24
+236|sequence alteration|MGI|interacts_with|RO:0002434|sequence feature|MGI||45
+237|sequence alteration|MGI|has_phenotype|RO:0002200|phenotype|MP||4975
+238|sequence alteration|MGI|has_phenotype|RO:0002200|phenotype|HP||3737
+239|sequence alteration|MGI|has_phenotype|RO:0002200|phenotype|GO||196
+240|snv|MGI|has_phenotype|RO:0002200|clinical_course|MP||2
+241|snv|MGI|has_phenotype|RO:0002200|phenotype|HP||48
+242|snv|MGI|has_phenotype|RO:0002200|phenotype|MP||24
+243|molecular entity|HGNC|interacts_with|RO:0002434|gene|HGNC||511
+244|molecular entity|HGNC|interacts_with|RO:0002434|gene|MGI||1
+245|molecular entity|HGNC|interacts_with|RO:0002434|molecular entity|HGNC||1
+246|molecular entity|HGNC|contributes_to|RO:0002326|disease|MONDO||1065
+247|molecular entity|HGNC|has_phenotype|RO:0002200|clinical_course|HP||3
+248|molecular entity|HGNC|interacts_with|RO:0002434|sequence feature|HGNC||511
+249|molecular entity|HGNC|interacts_with|RO:0002434|sequence feature|MGI||1
+250|molecular entity|HGNC|contributes_to|RO:0002326|quality|MONDO||497
+251|molecular entity|HGNC|has_phenotype|RO:0002200|phenotype|HP||38431
+252|disease|MONDO|contributes_to|RO:0002326|gene|HGNC||20739
+253|disease|MONDO|contributes_to|RO:0002326|gene|NCBIGene||1631
+254|disease|OMIA|contributes_to|RO:0002326|gene|NCBIGene||726
+255|disease|MONDO|contributes_to|RO:0002326|gene|Orphanet||5
+256|disease|OMIA|contributes_to|RO:0002326|gene|HGNC||2
+257|disease|OMIA|contributes_to|RO:0002326|gene|RGD||1
+258|disease|MONDO|contributes_to|RO:0002326|molecular entity|HGNC||1065
+259|disease|MONDO|subclass_of|owl:subClassOf|disease|MONDO||72850
+260|disease|OMIA|subclass_of|owl:subClassOf|disease|OMIA||6464
+261|disease|OMIA|subclass_of|owl:subClassOf|disease|MONDO||1766
+262|disease|MONDO|subclass_of|owl:subClassOf|disease|OMIA||1766
+263|disease|MONDO|subclass_of|owl:subClassOf|disease|SNOMED||235
+264|disease|SNOMED|subclass_of|owl:subClassOf|disease|MONDO||235
+265|disease|MONDO|subclass_of|owl:subClassOf|disease|NCIT||151
+266|disease|NCIT|subclass_of|owl:subClassOf|disease|MONDO||151
+267|disease|NCIT|subclass_of|owl:subClassOf|disease|NCIT||98
+268|disease|MPATH|subclass_of|owl:subClassOf|disease|MONDO||65
+269|disease|MONDO|subclass_of|owl:subClassOf|disease|MPATH||65
+270|disease|MPATH|subclass_of|owl:subClassOf|disease|MPATH||36
+271|disease|NCIT|subclass_of|owl:subClassOf|disease|MPATH||9
+272|disease|MPATH|subclass_of|owl:subClassOf|disease|NCIT||9
+273|disease|HGNC|subclass_of|owl:subClassOf|disease|MONDO||1
+274|disease|MONDO|subclass_of|owl:subClassOf|disease|HGNC||1
+275|disease|MONDO|contributes_to|RO:0002326|sequence feature|HGNC||20739
+276|disease|MONDO|contributes_to|RO:0002326|sequence feature|NCBIGene||1631
+277|disease|OMIA|contributes_to|RO:0002326|sequence feature|NCBIGene||726
+278|disease|MONDO|contributes_to|RO:0002326|sequence feature|Orphanet||5
+279|disease|OMIA|contributes_to|RO:0002326|sequence feature|HGNC||2
+280|disease|MONDO|subclass_of|owl:subClassOf|sequence feature|HGNC||1
+281|disease|OMIA|contributes_to|RO:0002326|sequence feature|RGD||1
+282|disease|MONDO|subclass_of|owl:subClassOf|quality|MONDO||61543
+283|disease|OMIA|subclass_of|owl:subClassOf|quality|OMIA||264
+284|disease|MONDO|subclass_of|owl:subClassOf|quality|PATO||85
+285|disease|NCIT|subclass_of|owl:subClassOf|quality|MONDO||80
+286|disease|MONDO|subclass_of|owl:subClassOf|quality|NCIT||53
+287|disease|MONDO|subclass_of|owl:subClassOf|quality|OMIA||50
+288|disease|OMIA|subclass_of|owl:subClassOf|quality|MONDO||50
+289|disease|MPATH|subclass_of|owl:subClassOf|quality|MONDO||42
+290|disease|NCIT|subclass_of|owl:subClassOf|quality|NCIT||25
+291|disease|MONDO|subclass_of|owl:subClassOf|quality|MPATH||17
+292|disease|NCIT|subclass_of|owl:subClassOf|quality|MPATH||6
+293|disease|MPATH|subclass_of|owl:subClassOf|quality|MPATH||6
+294|disease|MPATH|subclass_of|owl:subClassOf|quality|NCIT||5
+295|disease|MONDO|subclass_of|owl:subClassOf|quality|HGNC||1
+296|disease|HGNC|subclass_of|owl:subClassOf|quality|MONDO||1
+297|disease|MONDO|has_quality|has_quality|phenotype|MPATH||25
+298|clinical_course|MP|has_phenotype|RO:0002200|organism|MGI||1
+299|clinical_course|MP|has_phenotype|RO:0002200|gene|MGI||10554
+300|clinical_course|HP|has_phenotype|RO:0002200|gene|MGI||685
+301|clinical_course|HP|has_phenotype|RO:0002200|gene|HGNC||322
+302|clinical_course|MP|has_phenotype|RO:0002200|gene|NCBIGene||31
+303|clinical_course|HP|has_phenotype|RO:0002200|gene|NCBIGene||11
+304|clinical_course|MP|has_phenotype|RO:0002200|gene|ZFIN||2
+305|clinical_course|ZP|has_phenotype|RO:0002200|gene|ZFIN||1
+306|clinical_course|MP|has_phenotype|RO:0002200|gene|RGD||1
+307|clinical_course|MP|has_phenotype|RO:0002200|genotype|MGI||1
+308|clinical_course|MP|has_phenotype|RO:0002200|variant locus|MGI||508
+309|clinical_course|HP|has_phenotype|RO:0002200|variant locus|MGI||24
+310|clinical_course|MP|has_phenotype|RO:0002200|sequence alteration|MGI||508
+311|clinical_course|HP|has_phenotype|RO:0002200|sequence alteration|MGI||24
+312|clinical_course|MP|has_phenotype|RO:0002200|snv|MGI||2
+313|clinical_course|HP|has_phenotype|RO:0002200|molecular entity|HGNC||3
+314|clinical_course|MP|subclass_of|owl:subClassOf|clinical_course|MP||154
+315|clinical_course|HP|subclass_of|owl:subClassOf|clinical_course|HP||16
+316|clinical_course|HP|subclass_of|owl:subClassOf|clinical_course|MP||9
+317|clinical_course|MP|subclass_of|owl:subClassOf|clinical_course|HP||9
+318|clinical_course|WBPhenotype|subclass_of|owl:subClassOf|clinical_course|WBPhenotype||2
+319|clinical_course|MP|subclass_of|owl:subClassOf|clinical_course|ZP||1
+320|clinical_course|WBPhenotype|subclass_of|owl:subClassOf|clinical_course|MP||1
+321|clinical_course|ZP|subclass_of|owl:subClassOf|clinical_course|MP||1
+322|clinical_course|MP|subclass_of|owl:subClassOf|clinical_course|WBPhenotype||1
+323|clinical_course|MP|has_entity|has_entity|anatomical entity|UBERON||2
+324|clinical_course|WBPhenotype|has_entity|has_entity|anatomical entity|WBbt||1
+325|clinical_course|MP|has_phenotype|RO:0002200|sequence feature|MGI||10554
+326|clinical_course|HP|has_phenotype|RO:0002200|sequence feature|MGI||685
+327|clinical_course|HP|has_phenotype|RO:0002200|sequence feature|HGNC||322
+328|clinical_course|MP|has_phenotype|RO:0002200|sequence feature|NCBIGene||31
+329|clinical_course|HP|has_phenotype|RO:0002200|sequence feature|NCBIGene||11
+330|clinical_course|MP|has_phenotype|RO:0002200|sequence feature|ZFIN||2
+331|clinical_course|ZP|has_phenotype|RO:0002200|sequence feature|ZFIN||1
+332|clinical_course|MP|has_phenotype|RO:0002200|sequence feature|RGD||1
+333|clinical_course|MP|has_quality|has_quality|quality|PATO||5
+334|clinical_course|WBPhenotype|has_quality|has_quality|quality|PATO||1
+335|clinical_course|ZP|has_quality|has_quality|quality|PATO||1
+336|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|MP||168
+337|clinical_course|HP|subclass_of|owl:subClassOf|phenotype|HP||16
+338|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|HP||12
+339|clinical_course|HP|subclass_of|owl:subClassOf|phenotype|MP||10
+340|clinical_course|WBPhenotype|subclass_of|owl:subClassOf|phenotype|WBPhenotype||4
+341|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|ZP||3
+342|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|GO||2
+343|clinical_course|ZP|subclass_of|owl:subClassOf|phenotype|GO||1
+344|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|UBERON||1
+345|clinical_course|WBPhenotype|subclass_of|owl:subClassOf|phenotype|MP||1
+346|clinical_course|ZP|subclass_of|owl:subClassOf|phenotype|MP||1
+347|clinical_course|MP|subclass_of|owl:subClassOf|phenotype|WBPhenotype||1
+348|anatomical entity|CLO|subclass_of|owl:subClassOf|cellular component|CLO||77698
+349|anatomical entity|FBbt|subclass_of|owl:subClassOf|cellular component|FBbt||11997
+350|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|CL||6286
+351|anatomical entity|ZFA|subclass_of|owl:subClassOf|cellular component|ZFA||1828
+352|anatomical entity|FMA|subclass_of|owl:subClassOf|cellular component|FMA||1743
+353|anatomical entity|FMA|subclass_of|owl:subClassOf|cellular component|CL||670
+354|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|FMA||670
+355|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|ZFA||443
+356|anatomical entity|ZFA|subclass_of|owl:subClassOf|cellular component|CL||443
+357|anatomical entity|FBbt|subclass_of|owl:subClassOf|cellular component|CL||332
+358|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|FBbt||332
+359|anatomical entity|WBbt|subclass_of|owl:subClassOf|cellular component|WBbt||245
+360|anatomical entity|UBERON|part_of|BFO:0000051|cellular component|CL||170
+361|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|ZFA||124
+362|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|WBbt||32
+363|anatomical entity|WBbt|subclass_of|owl:subClassOf|cellular component|CL||32
+364|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|FBbt||19
+365|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|WBbt||12
+366|anatomical entity|CLO|subclass_of|owl:subClassOf|cellular component|http||10
+367|anatomical entity|http|subclass_of|owl:subClassOf|cellular component|CLO||10
+368|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|UBERON||4
+369|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|MA||3
+370|anatomical entity|MA|subclass_of|owl:subClassOf|cellular component|CL||3
+371|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|FMA||1
+372|anatomical entity|UBERON|part_of|BFO:0000051|cellular component|UBERON||1
+373|anatomical entity|OBI|subclass_of|owl:subClassOf|cellular component|CLO||1
+374|anatomical entity|OBI|subclass_of|owl:subClassOf|cellular component|CL||1
+375|anatomical entity|CLO|subclass_of|owl:subClassOf|cellular component|OBI||1
+376|anatomical entity|UBERON|subclass_of|owl:subClassOf|cellular component|CL||1
+377|anatomical entity|CL|subclass_of|owl:subClassOf|cellular component|OBI||1
+378|anatomical entity|UBERON|has_entity|has_entity|clinical_course|MP||2
+379|anatomical entity|WBbt|has_entity|has_entity|clinical_course|WBPhenotype||1
+380|anatomical entity|CLO|subclass_of|owl:subClassOf|anatomical entity|CLO||77698
+381|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|UBERON||40552
+382|anatomical entity|FBbt|subclass_of|owl:subClassOf|anatomical entity|FBbt||24382
+383|anatomical entity|FMA|subclass_of|owl:subClassOf|anatomical entity|FMA||14452
+384|anatomical entity|ZFA|subclass_of|owl:subClassOf|anatomical entity|ZFA||7198
+385|anatomical entity|MA|subclass_of|owl:subClassOf|anatomical entity|MA||7000
+386|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|CL||6286
+387|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|FMA||5742
+388|anatomical entity|FMA|subclass_of|owl:subClassOf|anatomical entity|UBERON||5742
+389|anatomical entity|NCBITaxon|subclass_of|owl:subClassOf|anatomical entity|NCBITaxon||3966
+390|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|ZFA||3293
+391|anatomical entity|ZFA|subclass_of|owl:subClassOf|anatomical entity|UBERON||3293
+392|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|MA||3064
+393|anatomical entity|MA|subclass_of|owl:subClassOf|anatomical entity|UBERON||3064
+394|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|FBbt||712
+395|anatomical entity|FBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||712
+396|anatomical entity|UBERON|part_of|BFO:0000051|anatomical entity|UBERON||684
+397|anatomical entity|FMA|subclass_of|owl:subClassOf|anatomical entity|CL||670
+398|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|FMA||670
+399|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|ZFA||443
+400|anatomical entity|ZFA|subclass_of|owl:subClassOf|anatomical entity|CL||443
+401|anatomical entity|WBbt|subclass_of|owl:subClassOf|anatomical entity|WBbt||422
+402|anatomical entity|FBbt|subclass_of|owl:subClassOf|anatomical entity|CL||332
+403|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|FBbt||332
+404|anatomical entity|CL|part_of|BFO:0000051|anatomical entity|UBERON||170
+405|anatomical entity|UBERON|part_of|BFO:0000051|anatomical entity|CL||170
+406|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|WBbt||64
+407|anatomical entity|WBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||64
+408|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|WBbt||32
+409|anatomical entity|WBbt|subclass_of|owl:subClassOf|anatomical entity|CL||32
+410|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|OBO||18
+411|anatomical entity|OBO|subclass_of|owl:subClassOf|anatomical entity|UBERON||18
+412|anatomical entity|ERO|subclass_of|owl:subClassOf|anatomical entity|ERO||12
+413|anatomical entity|http|subclass_of|owl:subClassOf|anatomical entity|CLO||10
+414|anatomical entity|CLO|subclass_of|owl:subClassOf|anatomical entity|http||10
+415|anatomical entity|FBbt|part_of|BFO:0000051|anatomical entity|FBbt||6
+416|anatomical entity|MA|subclass_of|owl:subClassOf|anatomical entity|CL||3
+417|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|MA||3
+418|anatomical entity|NCBITaxon|subclass_of|owl:subClassOf|anatomical entity|ERO||2
+419|anatomical entity|ERO|subclass_of|owl:subClassOf|anatomical entity|NCBITaxon||2
+420|anatomical entity|FMA|part_of|BFO:0000051|anatomical entity|UBERON||1
+421|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|_||1
+422|anatomical entity|_|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+423|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|NCBITaxon||1
+424|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+425|anatomical entity|OBI|subclass_of|owl:subClassOf|anatomical entity|CL||1
+426|anatomical entity|NCBITaxon|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+427|anatomical entity|OBI|subclass_of|owl:subClassOf|anatomical entity|CLO||1
+428|anatomical entity|UBERON|part_of|BFO:0000051|anatomical entity|FMA||1
+429|anatomical entity|CLO|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+430|anatomical entity|CL|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+431|anatomical entity|UBERON|subclass_of|owl:subClassOf|anatomical entity|CL||1
+432|anatomical entity|CLO|subclass_of|owl:subClassOf|cell|CLO||77698
+433|anatomical entity|FBbt|subclass_of|owl:subClassOf|cell|FBbt||11997
+434|anatomical entity|CL|subclass_of|owl:subClassOf|cell|CL||6286
+435|anatomical entity|ZFA|subclass_of|owl:subClassOf|cell|ZFA||1828
+436|anatomical entity|FMA|subclass_of|owl:subClassOf|cell|FMA||1743
+437|anatomical entity|FMA|subclass_of|owl:subClassOf|cell|CL||670
+438|anatomical entity|CL|subclass_of|owl:subClassOf|cell|FMA||670
+439|anatomical entity|CL|subclass_of|owl:subClassOf|cell|ZFA||443
+440|anatomical entity|ZFA|subclass_of|owl:subClassOf|cell|CL||443
+441|anatomical entity|FBbt|subclass_of|owl:subClassOf|cell|CL||332
+442|anatomical entity|CL|subclass_of|owl:subClassOf|cell|FBbt||332
+443|anatomical entity|WBbt|subclass_of|owl:subClassOf|cell|WBbt||245
+444|anatomical entity|UBERON|part_of|BFO:0000051|cell|CL||170
+445|anatomical entity|UBERON|subclass_of|owl:subClassOf|cell|ZFA||124
+446|anatomical entity|CL|subclass_of|owl:subClassOf|cell|WBbt||32
+447|anatomical entity|WBbt|subclass_of|owl:subClassOf|cell|CL||32
+448|anatomical entity|UBERON|subclass_of|owl:subClassOf|cell|FBbt||19
+449|anatomical entity|UBERON|subclass_of|owl:subClassOf|cell|WBbt||12
+450|anatomical entity|CLO|subclass_of|owl:subClassOf|cell|http||10
+451|anatomical entity|http|subclass_of|owl:subClassOf|cell|CLO||10
+452|anatomical entity|MA|subclass_of|owl:subClassOf|cell|CL||3
+453|anatomical entity|CL|subclass_of|owl:subClassOf|cell|MA||3
+454|anatomical entity|UBERON|subclass_of|owl:subClassOf|cell|CL||1
+455|anatomical entity|CL|subclass_of|owl:subClassOf|cell|OBI||1
+456|anatomical entity|UBERON|subclass_of|owl:subClassOf|cell|FMA||1
+457|anatomical entity|OBI|subclass_of|owl:subClassOf|cell|CL||1
+458|anatomical entity|CLO|subclass_of|owl:subClassOf|cell|OBI||1
+459|anatomical entity|OBI|subclass_of|owl:subClassOf|cell|CLO||1
+460|anatomical entity|CL|has_entity|has_entity|quality|MP||1
+461|anatomical entity|ZFA|has_entity|has_entity|phenotype|ZP||8809
+462|anatomical entity|UBERON|has_entity|has_entity|phenotype|MP||4028
+463|anatomical entity|UBERON|has_entity|has_entity|phenotype|HP||3740
+464|anatomical entity|CL|has_entity|has_entity|phenotype|MP||935
+465|anatomical entity|FBbt|subclass_of|owl:subClassOf|phenotype|FBbt||661
+466|anatomical entity|WBbt|has_entity|has_entity|phenotype|WBPhenotype||268
+467|anatomical entity|CL|has_entity|has_entity|phenotype|HP||136
+468|anatomical entity|UBERON|subclass_of|owl:subClassOf|phenotype|FBbt||103
+469|anatomical entity|CL|has_entity|has_entity|phenotype|WBPhenotype||28
+470|anatomical entity|FBbt|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+471|cell|CLO|subclass_of|owl:subClassOf|cellular component|CLO||77698
+472|cell|FBbt|subclass_of|owl:subClassOf|cellular component|FBbt||11880
+473|cell|CL|subclass_of|owl:subClassOf|cellular component|CL||6286
+474|cell|ZFA|subclass_of|owl:subClassOf|cellular component|ZFA||1824
+475|cell|FMA|subclass_of|owl:subClassOf|cellular component|FMA||1742
+476|cell|FMA|subclass_of|owl:subClassOf|cellular component|CL||670
+477|cell|CL|subclass_of|owl:subClassOf|cellular component|FMA||670
+478|cell|CL|subclass_of|owl:subClassOf|cellular component|ZFA||443
+479|cell|ZFA|subclass_of|owl:subClassOf|cellular component|CL||443
+480|cell|CL|subclass_of|owl:subClassOf|cellular component|FBbt||332
+481|cell|FBbt|subclass_of|owl:subClassOf|cellular component|CL||332
+482|cell|WBbt|subclass_of|owl:subClassOf|cellular component|WBbt||232
+483|cell|WBbt|subclass_of|owl:subClassOf|cellular component|CL||32
+484|cell|CL|subclass_of|owl:subClassOf|cellular component|WBbt||32
+485|cell|http|subclass_of|owl:subClassOf|cellular component|CLO||10
+486|cell|CLO|subclass_of|owl:subClassOf|cellular component|http||10
+487|cell|CL|subclass_of|owl:subClassOf|cellular component|MA||3
+488|cell|MA|subclass_of|owl:subClassOf|cellular component|CL||3
+489|cell|OBI|subclass_of|owl:subClassOf|cellular component|CL||1
+490|cell|OBI|subclass_of|owl:subClassOf|cellular component|CLO||1
+491|cell|CLO|subclass_of|owl:subClassOf|cellular component|OBI||1
+492|cell|CL|subclass_of|owl:subClassOf|cellular component|OBI||1
+493|cell|CLO|subclass_of|owl:subClassOf|anatomical entity|CLO||77698
+494|cell|FBbt|subclass_of|owl:subClassOf|anatomical entity|FBbt||11997
+495|cell|CL|subclass_of|owl:subClassOf|anatomical entity|CL||6286
+496|cell|ZFA|subclass_of|owl:subClassOf|anatomical entity|ZFA||1828
+497|cell|FMA|subclass_of|owl:subClassOf|anatomical entity|FMA||1743
+498|cell|CL|subclass_of|owl:subClassOf|anatomical entity|FMA||670
+499|cell|FMA|subclass_of|owl:subClassOf|anatomical entity|CL||670
+500|cell|ZFA|subclass_of|owl:subClassOf|anatomical entity|CL||443
+501|cell|CL|subclass_of|owl:subClassOf|anatomical entity|ZFA||443
+502|cell|CL|subclass_of|owl:subClassOf|anatomical entity|FBbt||332
+503|cell|FBbt|subclass_of|owl:subClassOf|anatomical entity|CL||332
+504|cell|WBbt|subclass_of|owl:subClassOf|anatomical entity|WBbt||245
+505|cell|CL|part_of|BFO:0000051|anatomical entity|UBERON||170
+506|cell|ZFA|subclass_of|owl:subClassOf|anatomical entity|UBERON||124
+507|cell|WBbt|subclass_of|owl:subClassOf|anatomical entity|CL||32
+508|cell|CL|subclass_of|owl:subClassOf|anatomical entity|WBbt||32
+509|cell|FBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||19
+510|cell|WBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||12
+511|cell|CLO|subclass_of|owl:subClassOf|anatomical entity|http||10
+512|cell|http|subclass_of|owl:subClassOf|anatomical entity|CLO||10
+513|cell|MA|subclass_of|owl:subClassOf|anatomical entity|CL||3
+514|cell|CL|subclass_of|owl:subClassOf|anatomical entity|MA||3
+515|cell|CL|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+516|cell|FMA|subclass_of|owl:subClassOf|anatomical entity|UBERON||1
+517|cell|CLO|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+518|cell|OBI|subclass_of|owl:subClassOf|anatomical entity|CLO||1
+519|cell|OBI|subclass_of|owl:subClassOf|anatomical entity|CL||1
+520|cell|CL|subclass_of|owl:subClassOf|anatomical entity|OBI||1
+521|cell|CLO|subclass_of|owl:subClassOf|cell|CLO||77698
+522|cell|FBbt|subclass_of|owl:subClassOf|cell|FBbt||11880
+523|cell|CL|subclass_of|owl:subClassOf|cell|CL||6286
+524|cell|ZFA|subclass_of|owl:subClassOf|cell|ZFA||1824
+525|cell|FMA|subclass_of|owl:subClassOf|cell|FMA||1742
+526|cell|FMA|subclass_of|owl:subClassOf|cell|CL||670
+527|cell|CL|subclass_of|owl:subClassOf|cell|FMA||670
+528|cell|CL|subclass_of|owl:subClassOf|cell|ZFA||443
+529|cell|ZFA|subclass_of|owl:subClassOf|cell|CL||443
+530|cell|CL|subclass_of|owl:subClassOf|cell|FBbt||332
+531|cell|FBbt|subclass_of|owl:subClassOf|cell|CL||332
+532|cell|WBbt|subclass_of|owl:subClassOf|cell|WBbt||232
+533|cell|WBbt|subclass_of|owl:subClassOf|cell|CL||32
+534|cell|CL|subclass_of|owl:subClassOf|cell|WBbt||32
+535|cell|http|subclass_of|owl:subClassOf|cell|CLO||10
+536|cell|CLO|subclass_of|owl:subClassOf|cell|http||10
+537|cell|CL|subclass_of|owl:subClassOf|cell|MA||3
+538|cell|MA|subclass_of|owl:subClassOf|cell|CL||3
+539|cell|OBI|subclass_of|owl:subClassOf|cell|CL||1
+540|cell|OBI|subclass_of|owl:subClassOf|cell|CLO||1
+541|cell|CL|subclass_of|owl:subClassOf|cell|OBI||1
+542|cell|CLO|subclass_of|owl:subClassOf|cell|OBI||1
+543|cell|CL|has_entity|has_entity|quality|MP||1
+544|cell|ZFA|has_entity|has_entity|phenotype|ZP||1394
+545|cell|CL|has_entity|has_entity|phenotype|MP||935
+546|cell|CL|has_entity|has_entity|phenotype|HP||136
+547|cell|WBbt|has_entity|has_entity|phenotype|WBPhenotype||85
+548|cell|CL|has_entity|has_entity|phenotype|WBPhenotype||28
+549|sequence feature|HGNC|interacts_with|RO:0002434|gene|HGNC||1888890
+550|sequence feature|MGI|interacts_with|RO:0002434|gene|MGI||1596746
+551|sequence feature|RGD|interacts_with|RO:0002434|gene|RGD||988592
+552|sequence feature|ZFIN|interacts_with|RO:0002434|gene|ZFIN||793739
+553|sequence feature|FlyBase|interacts_with|RO:0002434|gene|FlyBase||636669
+554|sequence feature|WormBase|interacts_with|RO:0002434|gene|WormBase||466907
+555|sequence feature|RGD|interacts_with|RO:0002434|gene|ENSEMBL||101540
+556|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|RGD||101540
+557|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|ENSEMBL||69489
+558|sequence feature|HGNC|interacts_with|RO:0002434|gene|MGI||19849
+559|sequence feature|MGI|interacts_with|RO:0002434|gene|HGNC||19849
+560|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|ZFIN||13718
+561|sequence feature|ZFIN|interacts_with|RO:0002434|gene|ENSEMBL||13718
+562|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|FlyBase||10508
+563|sequence feature|FlyBase|interacts_with|RO:0002434|gene|ENSEMBL||10508
+564|sequence feature|ZFIN|interacts_with|RO:0002434|gene|NCBIGene||8567
+565|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|ZFIN||8567
+566|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|RGD||1618
+567|sequence feature|RGD|interacts_with|RO:0002434|gene|NCBIGene||1618
+568|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|WormBase||1229
+569|sequence feature|WormBase|interacts_with|RO:0002434|gene|NCBIGene||1229
+570|sequence feature|WormBase|interacts_with|RO:0002434|gene|ENSEMBL||994
+571|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|WormBase||994
+572|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|MGI||712
+573|sequence feature|MGI|interacts_with|RO:0002434|gene|ENSEMBL||712
+574|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|ENSEMBL||688
+575|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|NCBIGene||688
+576|sequence feature|HGNC|interacts_with|RO:0002434|gene|ENSEMBL||602
+577|sequence feature|ENSEMBL|interacts_with|RO:0002434|gene|HGNC||602
+578|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|NCBIGene||401
+579|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|HGNC||218
+580|sequence feature|HGNC|interacts_with|RO:0002434|gene|NCBIGene||218
+581|sequence feature|NCBIGene|interacts_with|RO:0002434|gene|MGI||164
+582|sequence feature|MGI|interacts_with|RO:0002434|gene|NCBIGene||164
+583|sequence feature|HGNC|interacts_with|RO:0002434|gene|FlyBase||117
+584|sequence feature|FlyBase|interacts_with|RO:0002434|gene|HGNC||117
+585|sequence feature|HGNC|interacts_with|RO:0002434|gene|WormBase||49
+586|sequence feature|WormBase|interacts_with|RO:0002434|gene|HGNC||49
+587|sequence feature|MGI|interacts_with|RO:0002434|gene|FlyBase||30
+588|sequence feature|FlyBase|interacts_with|RO:0002434|gene|MGI||30
+589|sequence feature|ZFIN|interacts_with|RO:0002434|gene|HGNC||26
+590|sequence feature|HGNC|interacts_with|RO:0002434|gene|ZFIN||26
+591|sequence feature|ZFIN|interacts_with|RO:0002434|gene|MGI||17
+592|sequence feature|MGI|interacts_with|RO:0002434|gene|ZFIN||17
+593|sequence feature|MGI|interacts_with|RO:0002434|gene|WormBase||8
+594|sequence feature|WormBase|interacts_with|RO:0002434|gene|MGI||8
+595|sequence feature|MGI|interacts_with|RO:0002434|variant locus|MGI||45
+596|sequence feature|MGI|interacts_with|RO:0002434|sequence alteration|MGI||45
+597|sequence feature|HGNC|interacts_with|RO:0002434|molecular entity|HGNC||511
+598|sequence feature|MGI|interacts_with|RO:0002434|molecular entity|HGNC||1
+599|sequence feature|HGNC|contributes_to|RO:0002326|disease|MONDO||20739
+600|sequence feature|NCBIGene|contributes_to|RO:0002326|disease|MONDO||1631
+601|sequence feature|NCBIGene|contributes_to|RO:0002326|disease|OMIA||726
+602|sequence feature|Orphanet|contributes_to|RO:0002326|disease|MONDO||5
+603|sequence feature|HGNC|contributes_to|RO:0002326|disease|OMIA||2
+604|sequence feature|RGD|contributes_to|RO:0002326|disease|OMIA||1
+605|sequence feature|HGNC|subclass_of|owl:subClassOf|disease|MONDO||1
+606|sequence feature|MGI|has_phenotype|RO:0002200|clinical_course|MP||10554
+607|sequence feature|MGI|has_phenotype|RO:0002200|clinical_course|HP||685
+608|sequence feature|HGNC|has_phenotype|RO:0002200|clinical_course|HP||322
+609|sequence feature|NCBIGene|has_phenotype|RO:0002200|clinical_course|MP||31
+610|sequence feature|NCBIGene|has_phenotype|RO:0002200|clinical_course|HP||11
+611|sequence feature|ZFIN|has_phenotype|RO:0002200|clinical_course|MP||2
+612|sequence feature|ZFIN|has_phenotype|RO:0002200|clinical_course|ZP||1
+613|sequence feature|RGD|has_phenotype|RO:0002200|clinical_course|MP||1
+614|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|HGNC||1888890
+615|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|MGI||1596746
+616|sequence feature|RGD|interacts_with|RO:0002434|sequence feature|RGD||988592
+617|sequence feature|ZFIN|interacts_with|RO:0002434|sequence feature|ZFIN||793739
+618|sequence feature|FlyBase|interacts_with|RO:0002434|sequence feature|FlyBase||636669
+619|sequence feature|WormBase|interacts_with|RO:0002434|sequence feature|WormBase||466907
+620|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|RGD||101540
+621|sequence feature|RGD|interacts_with|RO:0002434|sequence feature|ENSEMBL||101540
+622|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|ENSEMBL||69489
+623|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|MGI||19849
+624|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|HGNC||19849
+625|sequence feature|ZFIN|interacts_with|RO:0002434|sequence feature|ENSEMBL||13718
+626|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|ZFIN||13718
+627|sequence feature|FlyBase|interacts_with|RO:0002434|sequence feature|ENSEMBL||10508
+628|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|FlyBase||10508
+629|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|ZFIN||8567
+630|sequence feature|ZFIN|interacts_with|RO:0002434|sequence feature|NCBIGene||8567
+631|sequence feature|RGD|interacts_with|RO:0002434|sequence feature|NCBIGene||1618
+632|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|RGD||1618
+633|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|WormBase||1229
+634|sequence feature|WormBase|interacts_with|RO:0002434|sequence feature|NCBIGene||1229
+635|sequence feature|WormBase|interacts_with|RO:0002434|sequence feature|ENSEMBL||994
+636|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|WormBase||994
+637|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|MGI||712
+638|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|ENSEMBL||712
+639|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|ENSEMBL||688
+640|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|NCBIGene||688
+641|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|ENSEMBL||602
+642|sequence feature|ENSEMBL|interacts_with|RO:0002434|sequence feature|HGNC||602
+643|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|NCBIGene||401
+644|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|NCBIGene||218
+645|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|HGNC||218
+646|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|NCBIGene||164
+647|sequence feature|NCBIGene|interacts_with|RO:0002434|sequence feature|MGI||164
+648|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|FlyBase||117
+649|sequence feature|FlyBase|interacts_with|RO:0002434|sequence feature|HGNC||117
+650|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|WormBase||49
+651|sequence feature|WormBase|interacts_with|RO:0002434|sequence feature|HGNC||49
+652|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|FlyBase||30
+653|sequence feature|FlyBase|interacts_with|RO:0002434|sequence feature|MGI||30
+654|sequence feature|HGNC|interacts_with|RO:0002434|sequence feature|ZFIN||26
+655|sequence feature|ZFIN|interacts_with|RO:0002434|sequence feature|HGNC||26
+656|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|ZFIN||17
+657|sequence feature|ZFIN|interacts_with|RO:0002434|sequence feature|MGI||17
+658|sequence feature|MGI|interacts_with|RO:0002434|sequence feature|WormBase||8
+659|sequence feature|WormBase|interacts_with|RO:0002434|sequence feature|MGI||8
+660|sequence feature|HGNC|contributes_to|RO:0002326|quality|MONDO||14254
+661|sequence feature|NCBIGene|contributes_to|RO:0002326|quality|MONDO||582
+662|sequence feature|ZFIN|has_phenotype|RO:0002200|quality|ZP||84
+663|sequence feature|MGI|has_phenotype|RO:0002200|quality|MP||83
+664|sequence feature|NCBIGene|contributes_to|RO:0002326|quality|OMIA||57
+665|sequence feature|Orphanet|contributes_to|RO:0002326|quality|MONDO||5
+666|sequence feature|HGNC|subclass_of|owl:subClassOf|quality|MONDO||1
+667|sequence feature|NCBIGene|has_phenotype|RO:0002200|quality|MP||1
+668|sequence feature|HGNC|has_phenotype|RO:0002200|phenotype|HP||583127
+669|sequence feature|MGI|has_phenotype|RO:0002200|phenotype|MP||137048
+670|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|HP||70311
+671|sequence feature|SGD|has_phenotype|RO:0002200|phenotype|MONARCH||59770
+672|sequence feature|MGI|has_phenotype|RO:0002200|phenotype|HP||57552
+673|sequence feature|ZFIN|has_phenotype|RO:0002200|phenotype|ZP||51594
+674|sequence feature|SGD|has_phenotype|RO:0002200|phenotype|APO||8454
+675|sequence feature|RGD|has_phenotype|RO:0002200|phenotype|MP||1227
+676|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|MP||412
+677|sequence feature|MGI|has_phenotype|RO:0002200|phenotype|GO||238
+678|sequence feature|Orphanet|has_phenotype|RO:0002200|phenotype|HP||185
+679|sequence feature|ZFIN|has_phenotype|RO:0002200|phenotype|HP||182
+680|sequence feature|ZFIN|has_phenotype|RO:0002200|phenotype|MP||133
+681|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|UBERON||13
+682|sequence feature|WormBase|has_phenotype|RO:0002200|phenotype|GO||11
+683|sequence feature|RGD|has_phenotype|RO:0002200|phenotype|HP||9
+684|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|GO||8
+685|sequence feature|SGD|has_phenotype|RO:0002200|phenotype|GO||6
+686|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|NBO||3
+687|sequence feature|NCBIGene|has_phenotype|RO:0002200|phenotype|CL||2
+688|quality|MP|has_entity|has_entity|cellular component|CL||1
+689|quality|MONDO|contributes_to|RO:0002326|gene|HGNC||14254
+690|quality|MONDO|contributes_to|RO:0002326|gene|NCBIGene||582
+691|quality|ZP|has_phenotype|RO:0002200|gene|ZFIN||84
+692|quality|MP|has_phenotype|RO:0002200|gene|MGI||83
+693|quality|OMIA|contributes_to|RO:0002326|gene|NCBIGene||57
+694|quality|MONDO|contributes_to|RO:0002326|gene|Orphanet||5
+695|quality|MP|has_phenotype|RO:0002200|gene|NCBIGene||1
+696|quality|MONDO|contributes_to|RO:0002326|molecular entity|HGNC||497
+697|quality|MONDO|subclass_of|owl:subClassOf|disease|MONDO||61543
+698|quality|OMIA|subclass_of|owl:subClassOf|disease|OMIA||264
+699|quality|PATO|subclass_of|owl:subClassOf|disease|MONDO||85
+700|quality|MONDO|subclass_of|owl:subClassOf|disease|NCIT||80
+701|quality|NCIT|subclass_of|owl:subClassOf|disease|MONDO||53
+702|quality|OMIA|subclass_of|owl:subClassOf|disease|MONDO||50
+703|quality|MONDO|subclass_of|owl:subClassOf|disease|OMIA||50
+704|quality|MONDO|subclass_of|owl:subClassOf|disease|MPATH||42
+705|quality|NCIT|subclass_of|owl:subClassOf|disease|NCIT||25
+706|quality|MPATH|subclass_of|owl:subClassOf|disease|MONDO||17
+707|quality|MPATH|subclass_of|owl:subClassOf|disease|MPATH||6
+708|quality|MPATH|subclass_of|owl:subClassOf|disease|NCIT||6
+709|quality|NCIT|subclass_of|owl:subClassOf|disease|MPATH||5
+710|quality|HGNC|subclass_of|owl:subClassOf|disease|MONDO||1
+711|quality|MONDO|subclass_of|owl:subClassOf|disease|HGNC||1
+712|quality|PATO|has_quality|has_quality|clinical_course|MP||5
+713|quality|PATO|has_quality|has_quality|clinical_course|ZP||1
+714|quality|PATO|has_quality|has_quality|clinical_course|WBPhenotype||1
+715|quality|MP|has_entity|has_entity|anatomical entity|CL||1
+716|quality|MP|has_entity|has_entity|cell|CL||1
+717|quality|MONDO|contributes_to|RO:0002326|sequence feature|HGNC||14254
+718|quality|MONDO|contributes_to|RO:0002326|sequence feature|NCBIGene||582
+719|quality|ZP|has_phenotype|RO:0002200|sequence feature|ZFIN||84
+720|quality|MP|has_phenotype|RO:0002200|sequence feature|MGI||83
+721|quality|OMIA|contributes_to|RO:0002326|sequence feature|NCBIGene||57
+722|quality|MONDO|contributes_to|RO:0002326|sequence feature|Orphanet||5
+723|quality|MONDO|subclass_of|owl:subClassOf|sequence feature|HGNC||1
+724|quality|MP|has_phenotype|RO:0002200|sequence feature|NCBIGene||1
+725|quality|MONDO|subclass_of|owl:subClassOf|quality|MONDO||58840
+726|quality|PATO|subclass_of|owl:subClassOf|quality|PATO||4126
+727|quality|FBcv|subclass_of|owl:subClassOf|quality|FBcv||466
+728|quality|OBA|subclass_of|owl:subClassOf|quality|OBA||278
+729|quality|OMIA|subclass_of|owl:subClassOf|quality|OMIA||264
+730|quality|PATO|subclass_of|owl:subClassOf|quality|MONDO||87
+731|quality|MONDO|subclass_of|owl:subClassOf|quality|PATO||87
+732|quality|MP|subclass_of|owl:subClassOf|quality|MP||56
+733|quality|ZP|subclass_of|owl:subClassOf|quality|ZP||54
+734|quality|OMIA|subclass_of|owl:subClassOf|quality|MONDO||50
+735|quality|MONDO|subclass_of|owl:subClassOf|quality|OMIA||50
+736|quality|PATO|subclass_of|owl:subClassOf|quality|FBcv||49
+737|quality|FBcv|subclass_of|owl:subClassOf|quality|PATO||49
+738|quality|MONDO|subclass_of|owl:subClassOf|quality|NCIT||45
+739|quality|NCIT|subclass_of|owl:subClassOf|quality|MONDO||45
+740|quality|ZP|has_quality|has_quality|quality|PATO||23
+741|quality|PATO|has_quality|has_quality|quality|ZP||23
+742|quality|PATO|has_quality|has_quality|quality|MP||19
+743|quality|MP|has_quality|has_quality|quality|PATO||19
+744|quality|MPATH|subclass_of|owl:subClassOf|quality|MONDO||16
+745|quality|NCIT|subclass_of|owl:subClassOf|quality|NCIT||16
+746|quality|MONDO|subclass_of|owl:subClassOf|quality|MPATH||16
+747|quality|PCO|subclass_of|owl:subClassOf|quality|PCO||12
+748|quality|MPATH|subclass_of|owl:subClassOf|quality|NCIT||5
+749|quality|PATO|subclass_of|owl:subClassOf|quality|MP||5
+750|quality|MP|subclass_of|owl:subClassOf|quality|PATO||5
+751|quality|NCIT|subclass_of|owl:subClassOf|quality|MPATH||5
+752|quality|PCO|subclass_of|owl:subClassOf|quality|PATO||2
+753|quality|MPATH|subclass_of|owl:subClassOf|quality|MPATH||2
+754|quality|PATO|subclass_of|owl:subClassOf|quality|PCO||2
+755|quality|MONDO|subclass_of|owl:subClassOf|quality|HGNC||1
+756|quality|MP|subclass_of|owl:subClassOf|quality|ZP||1
+757|quality|OBA|subclass_of|owl:subClassOf|quality|PATO||1
+758|quality|PATO|subclass_of|owl:subClassOf|quality|ERO||1
+759|quality|PATO|subclass_of|owl:subClassOf|quality|OBA||1
+760|quality|ZP|subclass_of|owl:subClassOf|quality|MP||1
+761|quality|PATO|subclass_of|owl:subClassOf|quality|ENVO||1
+762|quality|ERO|subclass_of|owl:subClassOf|quality|PATO||1
+763|quality|HGNC|subclass_of|owl:subClassOf|quality|MONDO||1
+764|quality|ENVO|subclass_of|owl:subClassOf|quality|PATO||1
+765|quality|PATO|has_quality|has_quality|phenotype|ZP||18327
+766|quality|PATO|has_quality|has_quality|phenotype|MP||7558
+767|quality|PATO|has_quality|has_quality|phenotype|HP||5841
+768|quality|PATO|has_quality|has_quality|phenotype|WBPhenotype||878
+769|quality|FBcv|subclass_of|owl:subClassOf|phenotype|FBcv||461
+770|quality|OBA|subclass_of|owl:subClassOf|phenotype|OBA||278
+771|quality|FBcv|subclass_of|owl:subClassOf|phenotype|GO||71
+772|quality|MP|subclass_of|owl:subClassOf|phenotype|MP||70
+773|quality|ZP|subclass_of|owl:subClassOf|phenotype|ZP||60
+774|quality|PATO|subclass_of|owl:subClassOf|phenotype|FBcv||48
+775|quality|MONDO|has_quality|has_quality|phenotype|MPATH||25
+776|quality|FBcv|subclass_of|owl:subClassOf|phenotype|FBbt||17
+777|quality|ZP|subclass_of|owl:subClassOf|phenotype|UBERON||11
+778|quality|ZP|subclass_of|owl:subClassOf|phenotype|MP||6
+779|quality|ZP|subclass_of|owl:subClassOf|phenotype|GO||5
+780|quality|PATO|subclass_of|owl:subClassOf|phenotype|MP||5
+781|quality|ZP|subclass_of|owl:subClassOf|phenotype|HP||5
+782|quality|MP|subclass_of|owl:subClassOf|phenotype|GO||5
+783|quality|FBcv|subclass_of|owl:subClassOf|phenotype|CL||4
+784|quality|MP|subclass_of|owl:subClassOf|phenotype|HP||3
+785|quality|MP|subclass_of|owl:subClassOf|phenotype|ZP||2
+786|quality|MP|subclass_of|owl:subClassOf|phenotype|CL||1
+787|quality|ZP|subclass_of|owl:subClassOf|phenotype|WBPhenotype||1
+788|quality|PATO|subclass_of|owl:subClassOf|phenotype|OBA||1
+789|quality|FBcv|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+790|quality|ZP|subclass_of|owl:subClassOf|phenotype|CL||1
+791|quality|PATO|subclass_of|owl:subClassOf|phenotype|ENVO||1
+792|quality|ENVO|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+793|phenotype|ZP|has_entity|has_entity|cellular component|ZFA||1394
+794|phenotype|MP|has_entity|has_entity|cellular component|CL||935
+795|phenotype|HP|has_entity|has_entity|cellular component|CL||136
+796|phenotype|WBPhenotype|has_entity|has_entity|cellular component|WBbt||85
+797|phenotype|WBPhenotype|has_entity|has_entity|cellular component|CL||28
+798|phenotype|MP|has_phenotype|RO:0002200|organism|MGI||15
+799|phenotype|HP|has_phenotype|RO:0002200|organism|MGI||6
+800|phenotype|GO|has_phenotype|RO:0002200|organism|MGI||2
+801|phenotype|HP|has_phenotype|RO:0002200|gene|HGNC||583127
+802|phenotype|MP|has_phenotype|RO:0002200|gene|MGI||137048
+803|phenotype|HP|has_phenotype|RO:0002200|gene|NCBIGene||70311
+804|phenotype|MONARCH|has_phenotype|RO:0002200|gene|SGD||59770
+805|phenotype|HP|has_phenotype|RO:0002200|gene|MGI||57552
+806|phenotype|ZP|has_phenotype|RO:0002200|gene|ZFIN||51594
+807|phenotype|APO|has_phenotype|RO:0002200|gene|SGD||8454
+808|phenotype|MP|has_phenotype|RO:0002200|gene|RGD||1227
+809|phenotype|MP|has_phenotype|RO:0002200|gene|NCBIGene||412
+810|phenotype|GO|has_phenotype|RO:0002200|gene|MGI||238
+811|phenotype|HP|has_phenotype|RO:0002200|gene|Orphanet||185
+812|phenotype|HP|has_phenotype|RO:0002200|gene|ZFIN||182
+813|phenotype|MP|has_phenotype|RO:0002200|gene|ZFIN||133
+814|phenotype|UBERON|has_phenotype|RO:0002200|gene|NCBIGene||13
+815|phenotype|GO|has_phenotype|RO:0002200|gene|WormBase||11
+816|phenotype|HP|has_phenotype|RO:0002200|gene|RGD||9
+817|phenotype|GO|has_phenotype|RO:0002200|gene|NCBIGene||8
+818|phenotype|GO|has_phenotype|RO:0002200|gene|SGD||6
+819|phenotype|NBO|has_phenotype|RO:0002200|gene|NCBIGene||3
+820|phenotype|CL|has_phenotype|RO:0002200|gene|NCBIGene||2
+821|phenotype|HP|subclass_of|owl:subClassOf|inheritance|HP||1
+822|phenotype|MP|has_phenotype|RO:0002200|genotype|MGI||7
+823|phenotype|HP|has_phenotype|RO:0002200|genotype|MGI||3
+824|phenotype|MP|has_phenotype|RO:0002200|variant locus|MGI||4975
+825|phenotype|HP|has_phenotype|RO:0002200|variant locus|MGI||3737
+826|phenotype|GO|has_phenotype|RO:0002200|variant locus|MGI||196
+827|phenotype|MP|has_phenotype|RO:0002200|sequence alteration|MGI||4975
+828|phenotype|HP|has_phenotype|RO:0002200|sequence alteration|MGI||3737
+829|phenotype|GO|has_phenotype|RO:0002200|sequence alteration|MGI||196
+830|phenotype|HP|has_phenotype|RO:0002200|snv|MGI||48
+831|phenotype|MP|has_phenotype|RO:0002200|snv|MGI||24
+832|phenotype|HP|has_phenotype|RO:0002200|molecular entity|HGNC||38431
+833|phenotype|MPATH|has_quality|has_quality|disease|MONDO||25
+834|phenotype|MP|subclass_of|owl:subClassOf|clinical_course|MP||168
+835|phenotype|HP|subclass_of|owl:subClassOf|clinical_course|HP||16
+836|phenotype|HP|subclass_of|owl:subClassOf|clinical_course|MP||12
+837|phenotype|MP|subclass_of|owl:subClassOf|clinical_course|HP||10
+838|phenotype|WBPhenotype|subclass_of|owl:subClassOf|clinical_course|WBPhenotype||4
+839|phenotype|ZP|subclass_of|owl:subClassOf|clinical_course|MP||3
+840|phenotype|GO|subclass_of|owl:subClassOf|clinical_course|MP||2
+841|phenotype|GO|subclass_of|owl:subClassOf|clinical_course|ZP||1
+842|phenotype|MP|subclass_of|owl:subClassOf|clinical_course|WBPhenotype||1
+843|phenotype|MP|subclass_of|owl:subClassOf|clinical_course|ZP||1
+844|phenotype|WBPhenotype|subclass_of|owl:subClassOf|clinical_course|MP||1
+845|phenotype|UBERON|subclass_of|owl:subClassOf|clinical_course|MP||1
+846|phenotype|ZP|has_entity|has_entity|anatomical entity|ZFA||8809
+847|phenotype|MP|has_entity|has_entity|anatomical entity|UBERON||4028
+848|phenotype|HP|has_entity|has_entity|anatomical entity|UBERON||3740
+849|phenotype|MP|has_entity|has_entity|anatomical entity|CL||935
+850|phenotype|FBbt|subclass_of|owl:subClassOf|anatomical entity|FBbt||661
+851|phenotype|WBPhenotype|has_entity|has_entity|anatomical entity|WBbt||268
+852|phenotype|HP|has_entity|has_entity|anatomical entity|CL||136
+853|phenotype|FBbt|subclass_of|owl:subClassOf|anatomical entity|UBERON||103
+854|phenotype|WBPhenotype|has_entity|has_entity|anatomical entity|CL||28
+855|phenotype|UPHENO|subclass_of|owl:subClassOf|anatomical entity|FBbt||1
+856|phenotype|ZP|has_entity|has_entity|cell|ZFA||1394
+857|phenotype|MP|has_entity|has_entity|cell|CL||935
+858|phenotype|HP|has_entity|has_entity|cell|CL||136
+859|phenotype|WBPhenotype|has_entity|has_entity|cell|WBbt||85
+860|phenotype|WBPhenotype|has_entity|has_entity|cell|CL||28
+861|phenotype|HP|has_phenotype|RO:0002200|sequence feature|HGNC||583127
+862|phenotype|MP|has_phenotype|RO:0002200|sequence feature|MGI||137048
+863|phenotype|HP|has_phenotype|RO:0002200|sequence feature|NCBIGene||70311
+864|phenotype|MONARCH|has_phenotype|RO:0002200|sequence feature|SGD||59770
+865|phenotype|HP|has_phenotype|RO:0002200|sequence feature|MGI||57552
+866|phenotype|ZP|has_phenotype|RO:0002200|sequence feature|ZFIN||51594
+867|phenotype|APO|has_phenotype|RO:0002200|sequence feature|SGD||8454
+868|phenotype|MP|has_phenotype|RO:0002200|sequence feature|RGD||1227
+869|phenotype|MP|has_phenotype|RO:0002200|sequence feature|NCBIGene||412
+870|phenotype|GO|has_phenotype|RO:0002200|sequence feature|MGI||238
+871|phenotype|HP|has_phenotype|RO:0002200|sequence feature|Orphanet||185
+872|phenotype|HP|has_phenotype|RO:0002200|sequence feature|ZFIN||182
+873|phenotype|MP|has_phenotype|RO:0002200|sequence feature|ZFIN||133
+874|phenotype|UBERON|has_phenotype|RO:0002200|sequence feature|NCBIGene||13
+875|phenotype|GO|has_phenotype|RO:0002200|sequence feature|WormBase||11
+876|phenotype|HP|has_phenotype|RO:0002200|sequence feature|RGD||9
+877|phenotype|GO|has_phenotype|RO:0002200|sequence feature|NCBIGene||8
+878|phenotype|GO|has_phenotype|RO:0002200|sequence feature|SGD||6
+879|phenotype|NBO|has_phenotype|RO:0002200|sequence feature|NCBIGene||3
+880|phenotype|CL|has_phenotype|RO:0002200|sequence feature|NCBIGene||2
+881|phenotype|ZP|has_quality|has_quality|quality|PATO||18327
+882|phenotype|MP|has_quality|has_quality|quality|PATO||7558
+883|phenotype|HP|has_quality|has_quality|quality|PATO||5841
+884|phenotype|WBPhenotype|has_quality|has_quality|quality|PATO||878
+885|phenotype|FBcv|subclass_of|owl:subClassOf|quality|FBcv||461
+886|phenotype|OBA|subclass_of|owl:subClassOf|quality|OBA||278
+887|phenotype|GO|subclass_of|owl:subClassOf|quality|FBcv||71
+888|phenotype|MP|subclass_of|owl:subClassOf|quality|MP||70
+889|phenotype|ZP|subclass_of|owl:subClassOf|quality|ZP||60
+890|phenotype|FBcv|subclass_of|owl:subClassOf|quality|PATO||48
+891|phenotype|MPATH|has_quality|has_quality|quality|MONDO||25
+892|phenotype|FBbt|subclass_of|owl:subClassOf|quality|FBcv||17
+893|phenotype|UBERON|subclass_of|owl:subClassOf|quality|ZP||11
+894|phenotype|MP|subclass_of|owl:subClassOf|quality|ZP||6
+895|phenotype|MP|subclass_of|owl:subClassOf|quality|PATO||5
+896|phenotype|GO|subclass_of|owl:subClassOf|quality|MP||5
+897|phenotype|GO|subclass_of|owl:subClassOf|quality|ZP||5
+898|phenotype|HP|subclass_of|owl:subClassOf|quality|ZP||5
+899|phenotype|CL|subclass_of|owl:subClassOf|quality|FBcv||4
+900|phenotype|HP|subclass_of|owl:subClassOf|quality|MP||3
+901|phenotype|ZP|subclass_of|owl:subClassOf|quality|MP||2
+902|phenotype|OBA|subclass_of|owl:subClassOf|quality|PATO||1
+903|phenotype|WBPhenotype|subclass_of|owl:subClassOf|quality|ZP||1
+904|phenotype|UPHENO|subclass_of|owl:subClassOf|quality|FBcv||1
+905|phenotype|CL|subclass_of|owl:subClassOf|quality|MP||1
+906|phenotype|UPHENO|subclass_of|owl:subClassOf|quality|ENVO||1
+907|phenotype|CL|subclass_of|owl:subClassOf|quality|ZP||1
+908|phenotype|ENVO|subclass_of|owl:subClassOf|quality|PATO||1
+909|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|ZP||43812
+910|phenotype|HP|subclass_of|owl:subClassOf|phenotype|HP||34776
+911|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|FBbt||31410
+912|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|UBERON||30354
+913|phenotype|MP|subclass_of|owl:subClassOf|phenotype|MP||22278
+914|phenotype|GO|subclass_of|owl:subClassOf|phenotype|GO||20952
+915|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|ZP||14729
+916|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|UBERON||14729
+917|phenotype|HP|subclass_of|owl:subClassOf|phenotype|ZP||6684
+918|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|HP||6684
+919|phenotype|VT|subclass_of|owl:subClassOf|phenotype|VT||6058
+920|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|WBPhenotype||5672
+921|phenotype|HP|subclass_of|owl:subClassOf|phenotype|MP||5336
+922|phenotype|MP|subclass_of|owl:subClassOf|phenotype|HP||5336
+923|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|GO||3403
+924|phenotype|GO|subclass_of|owl:subClassOf|phenotype|ZP||3403
+925|phenotype|CL|subclass_of|owl:subClassOf|phenotype|ZP||3389
+926|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|CL||3389
+927|phenotype|MP|subclass_of|owl:subClassOf|phenotype|ZP||3229
+928|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|MP||3229
+929|phenotype|CL|subclass_of|owl:subClassOf|phenotype|CL||2738
+930|phenotype|MP|subclass_of|owl:subClassOf|phenotype|UBERON||1686
+931|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|MP||1686
+932|phenotype|HP|subclass_of|owl:subClassOf|phenotype|UBERON||1363
+933|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|HP||1363
+934|phenotype|GO|subclass_of|owl:subClassOf|phenotype|MP||773
+935|phenotype|MP|subclass_of|owl:subClassOf|phenotype|GO||773
+936|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|MONARCH||627
+937|phenotype|MONARCH|subclass_of|owl:subClassOf|phenotype|UPHENO||627
+938|phenotype|NBO|subclass_of|owl:subClassOf|phenotype|NBO||626
+939|phenotype|VT|subclass_of|owl:subClassOf|phenotype|AQTLTrait||522
+940|phenotype|AQTLTrait|subclass_of|owl:subClassOf|phenotype|VT||522
+941|phenotype|MPATH|subclass_of|owl:subClassOf|phenotype|MPATH||494
+942|phenotype|FBcv|subclass_of|owl:subClassOf|phenotype|FBcv||458
+943|phenotype|CL|subclass_of|owl:subClassOf|phenotype|MP||414
+944|phenotype|MP|subclass_of|owl:subClassOf|phenotype|CL||414
+945|phenotype|AQTLTrait|subclass_of|owl:subClassOf|phenotype|AQTLTrait||390
+946|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|FBbt||383
+947|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|UBERON||383
+948|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|CL||329
+949|phenotype|CL|subclass_of|owl:subClassOf|phenotype|FBbt||329
+950|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|GO||281
+951|phenotype|GO|subclass_of|owl:subClassOf|phenotype|WBPhenotype||281
+952|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|WBPhenotype||278
+953|phenotype|OBA|subclass_of|owl:subClassOf|phenotype|OBA||278
+954|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|ZP||278
+955|phenotype|HP|subclass_of|owl:subClassOf|phenotype|GO||231
+956|phenotype|GO|subclass_of|owl:subClassOf|phenotype|HP||231
+957|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|UPHENO||193
+958|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|UBERON||193
+959|phenotype|HP|subclass_of|owl:subClassOf|phenotype|MPATH||159
+960|phenotype|MPATH|subclass_of|owl:subClassOf|phenotype|HP||159
+961|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|WBPhenotype||139
+962|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|UBERON||139
+963|phenotype|MP|subclass_of|owl:subClassOf|phenotype|NBO||129
+964|phenotype|NBO|subclass_of|owl:subClassOf|phenotype|MP||129
+965|phenotype|MP|subclass_of|owl:subClassOf|phenotype|WBPhenotype||122
+966|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|MP||122
+967|phenotype|CL|subclass_of|owl:subClassOf|phenotype|UBERON||88
+968|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|CL||88
+969|phenotype|MPATH|subclass_of|owl:subClassOf|phenotype|MP||85
+970|phenotype|MP|subclass_of|owl:subClassOf|phenotype|MPATH||85
+971|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|EFO||81
+972|phenotype|EFO|subclass_of|owl:subClassOf|phenotype|UPHENO||81
+973|phenotype|NBO|subclass_of|owl:subClassOf|phenotype|HP||75
+974|phenotype|HP|subclass_of|owl:subClassOf|phenotype|NBO||75
+975|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|GO||72
+976|phenotype|GO|subclass_of|owl:subClassOf|phenotype|UPHENO||72
+977|phenotype|GO|subclass_of|owl:subClassOf|phenotype|FBcv||71
+978|phenotype|FBcv|subclass_of|owl:subClassOf|phenotype|GO||71
+979|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|CL||71
+980|phenotype|CL|subclass_of|owl:subClassOf|phenotype|WBPhenotype||71
+981|phenotype|HP|subclass_of|owl:subClassOf|phenotype|CL||64
+982|phenotype|CL|subclass_of|owl:subClassOf|phenotype|HP||64
+983|phenotype|MPATH|subclass_of|owl:subClassOf|phenotype|ZP||60
+984|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|MPATH||60
+985|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|HP||51
+986|phenotype|HP|subclass_of|owl:subClassOf|phenotype|WBPhenotype||51
+987|phenotype|CL|subclass_of|owl:subClassOf|phenotype|GO||37
+988|phenotype|GO|subclass_of|owl:subClassOf|phenotype|CL||37
+989|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|FBcv||17
+990|phenotype|FBcv|subclass_of|owl:subClassOf|phenotype|FBbt||17
+991|phenotype|UBERON|subclass_of|owl:subClassOf|phenotype|GO||9
+992|phenotype|GO|subclass_of|owl:subClassOf|phenotype|UBERON||9
+993|phenotype|APO|subclass_of|owl:subClassOf|phenotype|UPHENO||8
+994|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|APO||8
+995|phenotype|GENO|subclass_of|owl:subClassOf|phenotype|ZP||5
+996|phenotype|ZP|subclass_of|owl:subClassOf|phenotype|GENO||5
+997|phenotype|CL|subclass_of|owl:subClassOf|phenotype|FBcv||4
+998|phenotype|FBcv|subclass_of|owl:subClassOf|phenotype|CL||4
+999|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|GO||3
+1000|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|CL||3
+1001|phenotype|CL|subclass_of|owl:subClassOf|phenotype|UPHENO||3
+1002|phenotype|GO|subclass_of|owl:subClassOf|phenotype|FBbt||3
+1003|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|FBbt||2
+1004|phenotype|NBO|subclass_of|owl:subClassOf|phenotype|UPHENO||2
+1005|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|NBO||2
+1006|phenotype|FBbt|subclass_of|owl:subClassOf|phenotype|UPHENO||2
+1007|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|FBcv||1
+1008|phenotype|MP|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1009|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|ENVO||1
+1010|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|GENO||1
+1011|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|WBPhenotype||1
+1012|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|HP||1
+1013|phenotype|WBPhenotype|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1014|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|MPATH||1
+1015|phenotype|UPHENO|subclass_of|owl:subClassOf|phenotype|MP||1
+1016|phenotype|GENO|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1017|phenotype|FBcv|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1018|phenotype|HP|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1019|phenotype|MPATH|subclass_of|owl:subClassOf|phenotype|UPHENO||1
+1020|phenotype|ENVO|subclass_of|owl:subClassOf|phenotype|UPHENO||1
