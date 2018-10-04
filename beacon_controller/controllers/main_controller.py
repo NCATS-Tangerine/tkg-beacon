@@ -4,8 +4,7 @@ from swagger_server import encoder
 from flask import redirect
 from beacon_controller import config
 
-def handle_error(e):
-    return redirect(config['basepath'])
+BASEPATH = f'/beacon/{config["beacon_name"]}/'
 
 def main(name:str):
     """
@@ -22,12 +21,12 @@ def main(name:str):
 
     app.add_api(
         'swagger.yaml',
-        base_path=config['basepath'],
+        base_path=BASEPATH,
         swagger_url='/',
         arguments={'title': config['title']}
     )
 
-    if config['redirect_404'] and isinstance(config['basepath'], str):
-        app.add_error_handler(404, lambda e: redirect(config['basepath']))
+    if config['redirect_404'] and isinstance(BASEPATH, str):
+        app.add_error_handler(404, lambda e: redirect(BASEPATH))
 
     app.run(port=config['port'])

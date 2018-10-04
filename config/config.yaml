@@ -12,8 +12,6 @@
 # Or you can install and use another.
 server: tornado
 
-basepath: /api/
-
 title: Biothings Explorer Translator Knowledge Beacon API
 
 port: 8080

@@ -131,16 +131,35 @@ def get_predicates():  # noqa: E501
     d = defaultdict(lambda: 0)
 
     for row in rows:
-        d[row['edge_type']] += row['frequency']
+        edge_type = row['edge_type']
+        relation = row['relation']
+        d[f'{edge_type}|{relation}'] += row['frequency']
 
     results = sorted(d.items(), key=lambda t: t[1], reverse=True)
 
     predicates = []
 
-    for edge_type, frequency in results:
-        predicates.append(BeaconPredicate(
-            edge_label=edge_type,
-            frequency=frequency
-        ))
+    for key, frequency in results:
+        edge_type, relation = key.split('|')
+
+        slot = blm.get_slot(edge_type)
+
+        if slot is not None:
+            predicates.append(BeaconPredicate(
+                edge_label=edge_type,
+                relation=relation,
+                frequency=frequency,
+                description=slot.description
+            ))
+        else:
+            slot = blm.get_slot(blm.DEFAULT_EDGE_LABEL)
+            if relation is None:
+                relation = edge_type
+            predicates.append(BeaconPredicate(
+                edge_label=blm.DEFAULT_EDGE_LABEL,
+                relation=relation,
+                frequency=frequency,
+                description=slot.description
+            ))
 
     return predicates

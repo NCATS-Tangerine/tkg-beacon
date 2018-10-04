@@ -35,3 +35,12 @@ docker-stop-rkb:
 
 docker-stop-rtx:
 	docker stop rtx
+
+docker-logs-biolink:
+	docker logs biolink
+
+docker-logs-rkb:
+	docker logs rkb
+
+docker-logs-rtx:
+	docker logs rtx
