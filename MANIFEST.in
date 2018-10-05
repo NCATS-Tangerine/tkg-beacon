@@ -1,0 +1,2 @@
+include config/config.yaml
+include data/**/*.txt

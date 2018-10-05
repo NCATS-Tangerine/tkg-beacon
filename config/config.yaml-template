@@ -1,0 +1,34 @@
+################################################################################
+# This yaml file will be loaded as a python dictionary and once the root package
+# is installed these properties can be accessed in the following way:
+#
+#     import beacon_controller
+#     beacon_controller.config['port']
+#
+################################################################################
+
+# By default we will use "tornado" for production. Alternatively "flask" can be
+# used for the default non-concurrent flask server can be used for debugging.
+# Or you can install and use another.
+server: tornado
+
+title: Biothings Explorer Translator Knowledge Beacon API
+
+port: 8080
+
+redirect_404: True
+
+include_nulls: True
+
+# Either "rtx", "biolink" or "rkb"
+beacon_name: biolink
+
+database:
+  # Include the port in the address - standalone
+  #address: bolt://localhost:7687
+  # If you use the Docker Compose... use this configuration
+  address: bolt://localhost:7474
+  username: neo4j
+  password: neo4j
+
+filter_biolink: false

@@ -1,2 +1,0 @@
-include beacon_controller/config/config.yaml
-recursive-include beacon_controller/data *
