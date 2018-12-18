@@ -185,13 +185,8 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
         # if they want.
         return []
 
-    """
-    NOTE: not p or q = if p then q. We wish to apply the filter only when the
-    filter is not null. Passing in an empty list will apply a filter that
-    cannot be satisfied.
-    """
     q = """
-    MATCH (n)-[r]-(m)
+    MATCH (n)-[r]->(m)
     WHERE (
         {sources} IS NULL OR
         ANY(id IN {sources} WHERE n.id = id)
@@ -222,10 +217,8 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
         ANY(k IN {t_categories} WHERE ANY(c IN m.category WHERE c = k))
     )
     RETURN
-        n AS source,
-        m AS target,
-        EXISTS((n)-[r]->(m)) AS source_is_subject,
-        EXISTS((n)<-[r]-(m)) AS source_is_object,
+        n AS subject,
+        m AS object,
         type(r) AS edge_type,
         r.edge_label AS edge_label,
         r.relation AS relation,
@@ -253,13 +246,7 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
     statements = []
 
     for result in results:
-        if result['source_is_subject'] and result['source_is_object']:
-            print(result)
-
-        if result['source_is_subject']:
-            s, o = result['source'], result['target']
-        else:
-            o, s = result['source'], result['target']
+        s, o = result['subject'], result['object']
 
         s_categories = utils.standardize(s['category'])
         o_categories = utils.standardize(o['category'])

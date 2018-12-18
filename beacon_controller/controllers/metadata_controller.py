@@ -4,6 +4,8 @@ from swagger_server.models.beacon_knowledge_map_subject import BeaconKnowledgeMa
 from swagger_server.models.beacon_knowledge_map_predicate import BeaconKnowledgeMapPredicate
 from swagger_server.models.beacon_knowledge_map_object import BeaconKnowledgeMapObject
 from swagger_server.models.beacon_predicate import BeaconPredicate
+from swagger_server.models.namespace import Namespace
+from swagger_server.models.local_namespace import LocalNamespace
 
 from cachetools.func import ttl_cache
 
@@ -164,3 +166,65 @@ def get_predicates():  # noqa: E501
             ))
 
     return predicates
+
+from prefixcommons.curie_util import default_curie_maps as cmaps
+
+def prefix_to_uri(prefix):
+    """
+    Pulls the default curie map from prefixcommons and gets the uri from it
+    """
+    prefix = prefix.upper()
+
+    for cmap in cmaps:
+        for key, value in cmap.items():
+            if prefix.lower() == key.lower():
+                return value
+    else:
+        return None
+
+
+@ttl_cache(ttl=__time_to_live_in_seconds)
+def get_namespaces():  # noqa: E501
+    """get_namespaces
+    Get a list of namespace (curie prefixes) mappings that this beacon can perform with its /exactmatches endpoint  # noqa: E501
+    :rtype: List[LocalNamespace]
+    """
+    q = """
+    MATCH (n)
+    WITH
+        split(n.id, ":")[0] AS prefix,
+        FILTER(x IN n.xrefs WHERE x <> n.id) AS xrefs,
+        FILTER(x IN n.clique WHERE x <> n.id) AS clique
+    WITH
+        prefix AS prefix,
+        EXTRACT(id IN xrefs | split(id, ":")[0]) AS xref_prefixes,
+        EXTRACT(id IN clique | split(id, ":")[0]) AS clique_prefixes
+    UNWIND
+        COALESCE(xref_prefixes, []) + COALESCE(clique_prefixes, []) As p
+    RETURN DISTINCT prefix AS local_prefix, COLLECT(DISTINCT p) AS clique_prefixes, COUNT(*) AS frequency;
+    """
+
+    results = db.query(q)
+
+    local_namespaces = []
+
+    for result in results:
+        local_prefix = result.get('local_prefix')
+        clique_prefixes = result.get('clique_prefixes')
+        frequency = result.get('frequency')
+
+        namespaces = []
+        for prefix in clique_prefixes:
+            namespaces.append(Namespace(
+                prefix=prefix,
+                uri=prefix_to_uri(prefix)
+            ))
+
+        local_namespaces.append(LocalNamespace(
+            local_prefix=local_prefix,
+            clique_mappings=namespaces,
+            frequency=frequency,
+            uri=prefix_to_uri(local_prefix),
+        ))
+
+    return local_namespaces
