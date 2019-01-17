@@ -4,10 +4,12 @@ configure:
 install:
 	pip install .
 	pip install beacon/
+	pip install ontology/
 
 dev-install:
 	pip install -e .
 	pip install beacon/
+	pip install ontology/
 
 run:
 	cd beacon && python -m swagger_server

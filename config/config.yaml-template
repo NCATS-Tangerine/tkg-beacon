@@ -20,8 +20,9 @@ redirect_404: True
 
 include_nulls: True
 
-# Either "rtx", "biolink" or "rkb"
-beacon_name: biolink
+# Default supported options are: "rtx", "biolink" or "rkb". See README.md
+# "Getting the data" to learn how to add more options.
+beacon_name: <beacon name>
 
 database:
   # Include the port in the address - standalone

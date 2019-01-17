@@ -2,55 +2,51 @@
 
 For wrapping Translator Knowledge Graph compliant Neo4j databases.
 
-Two options:
+## Getting Started
+
+### Configuring
+
+You may create the configuration file `config/config.yaml` with the following command:
+```
+make configure
+```
+Change the database settings in `config/config.yaml` to match the address and credentials of the wanted neo4j database. Also set the beacon name appropriately. The name serves two functions: it shows up in the basepath, and it also determines the location of the metadata files. Setting `filter_biolink` to `True` will ignore all categories that are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular concept, the concept will be reported by the beacon as `"named thing"`.
+
+### Getting the data
+
+The Cypher queries for the metadata endpoints are incredibly slow, and so we have opted to run them offline. The metadata should be contained in `data/{beacon name}/edge_summary.txt` and `data/{beacon name}/edge_summary.txt`. These files can be generated using the [KGX](https://kgx.readthedocs.io/en/latest/index.html) command line interface `neo4j-node-summary` and `neo4j-edge-summary` commands. The resulting files will need to be placed in `data/{beacon name}/`. Of course if you're giving your beaon a new name (not one of the defaults: "biolink", "rkb", "rtx") then you will have to create a new directory to hold its metadata.
+
+### Running the application
+
+There are two options for running this application:
 
 1. Run the wrapper directly
 2. Run the wrapper within Docker
 
-## 1. Directly (code snippets are for Linux)
-
-### Getting started
+#### 1. Directly (code snippets are for Linux)
 
 Create a fresh virtual environment
 ```
-virtualenv -p python3.5 venv
+virtualenv -p python3.6 venv
 source venv/bin/activate
 ```
-
-Install the project requirements:
+Once configuration is finished, you may install the application with:
 ```
-pip install -r requirements.txt
+make install
 ```
-
-Setup the config file by copying the template file:
+If you are developing the application and may be playing around with configurations, you can install it in developer mode instead (so that you will not need to re-install every time you make a change):
 ```
-cp config.yaml-template config.yaml
+make dev-install
 ```
-Change the database settings in `config.yaml` to match the address and credentials of the wanted neo4j database.
-
-Navigate into the `/server` directory and run:
+Finally, you can run the application with:
 ```
-python setup.py install
+make run
 ```
+Visit it at http://localhost:8080. The basepath will automatically contain `/beacon/{beacon name}/`, and you will be redirected appropriately.
 
-Then navigate into the `/ontology` and `/client` directories and do the same.
+### 2. Running under Docker
 
-Then navigate into the `/server` directory and run the program with:
-```
-python -m swagger_server
-```
-
-The Swagger UI can be found at `{basepath}/ui/`, e.g. `localhost:8080/ui/`
-
-### Configuring the beacon
-Settings should be in `config.yaml`.
-Change the database address (bolt protocol), username, and password to the Neo4j database you would like to wrap.
-
-Setting `filter_biolink` to `True` will ignore all categories that are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular concept, the concept will be reported by the beacon as `"named thing"`.
-
-## 2. Running under Docker
-
-## Installation of Docker
+#### Installation of Docker
 
 If you choose to run the dockerized versions of the applications, you'll obviously need to [install Docker first](https://docs.docker.com/engine/installation/) in your target Linux operating environment (bare metal server or virtual machine running Linux).
 
@@ -63,7 +59,7 @@ $ sudo apt-get install curl
 
 For other installations, please find instructions specific to your choice of Linux variant, on the Docker site.
 
-## Testing Docker
+#### Testing Docker
 
 In order to ensure that docker is working correctly, run the following command:
 
@@ -101,13 +97,13 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-## Installing Docker Compose
+#### Installing Docker Compose
 
 You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on your target Linux operating environment.
 
-Note that under Ubuntu, you need to run docker (and docker-compose) as 'sudo'.
+Note that under Ubuntu, you may need to run docker (and docker-compose) as 'sudo'.
 
-## Testing Docker Compose
+#### Testing Docker Compose
 
 In order to ensure Docker Compose is working correctly, issue the following command:
 ```
@@ -116,7 +112,7 @@ docker-compose version 1.18.0, build 8dd22a9
 ```
 Note that your particular version and build number may be different than what is shown here. We don't currently expect that docker-compose version differences should have a significant impact on the build, but if in doubt, refer to the release notes of the docker-compose site for advice.
 
-## Configuring the Application
+#### Configuring the Application
 
 Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database.
 
