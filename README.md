@@ -2,7 +2,11 @@
 
 For wrapping Translator Knowledge Graph compliant Neo4j databases.
 
+Python Beacon client https://github.com/NCATS-Tangerine/tkbeacon-python-client
+
 ## Getting Started
+
+This project was developed using Python 3.6, and it is advised that you use this version.
 
 ### Configuring
 
