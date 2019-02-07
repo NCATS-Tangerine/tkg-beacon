@@ -52,7 +52,7 @@ def get_concept_details(concept_id):  # noqa: E501
     LIMIT 1
     """
 
-    results = db.query(q, conceptId=conceptId)
+    results = db.query(q, conceptId=concept_id)
 
     for result in results:
         uri = result['uri'] if result['uri'] != None else result['iri']

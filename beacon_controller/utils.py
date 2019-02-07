@@ -103,8 +103,6 @@ def stringify(s):
     """
     Turns s into a semicolon separated string if s is a list
     """
-    if s is None:
-        s = ""
     if isinstance(s, (list, set)):
         s = "; ".join(s)
     return s
