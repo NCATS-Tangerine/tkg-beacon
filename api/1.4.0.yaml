@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   title: Translator Knowledge Beacon API
-  version: 1.3.0
+  version: 1.4.0
   contact:
     url: 'http://starinformatics.com'
     email: richard@starinformatics.com
@@ -689,6 +689,152 @@ paths:
           type: integer
           minimum: 0
       operationId: getStatements
+      responses:
+        '200':
+          description: >
+            Successful response returns a list of concept-relations where there
+            is an exact match of an input concept identifier either to the
+            subject or object concepts  of the statement
+          schema:
+            type: array
+            items:
+              title: BeaconStatement
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: >-
+                    CURIE-encoded identifier for statement (can be used to
+                    retrieve associated evidence)
+                subject:
+                  title: BeaconStatementSubject
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: |
+                        CURIE-encoded identifier of concept
+                    name:
+                      type: string
+                      description: human readable label of subject concept
+                    categories:
+                      type: array
+                      items:
+                        type: string
+                      description: >
+                        a semantic group for the subject concept (specified as a
+                        code gene, pathway, disease, etc. - see [Biolink
+                        Model](https://biolink.github.io/biolink-model) for the
+                        full list of categories)
+                predicate:
+                  title: BeaconStatementPredicate
+                  type: object
+                  properties:
+                    edge_label:
+                      type: string
+                      description: >
+                        The predicate edge label associated with this statement,
+                        which should be as published by the /predicates API
+                        endpoint and must be taken from the minimal predicate
+                        ('slot') list of the [Biolink
+                        Model](https://biolink.github.io/biolink-model).
+                    relation:
+                      type: string
+                      description: >-
+                        The predicate relation associated with this statement,
+                        which should be as published by the /predicates API
+                        endpoint with the preferred format being a CURIE where
+                        one exists, but strings/labels acceptable. This relation
+                        may be equivalent to the edge_label (e.g. edge_label:
+                        has_phenotype, relation: RO:0002200), or a more specific
+                        relation in cases where the source provides more
+                        granularity (e.g. edge_label:
+                        molecularly_interacts_with, relation: RO:0002447)
+                    negated:
+                      type: boolean
+                      description: >
+                        (Optional) a boolean that if set to true, indicates the
+                        edge statement is negated i.e. is not true
+                object:
+                  title: BeaconStatementObject
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: |
+                        CURIE-encoded identifier of object concept
+                    name:
+                      type: string
+                      description: human readable label of object concept
+                    categories:
+                      type: array
+                      items:
+                        type: string
+                      description: >
+                        a semantic group for the object concept (specified as a
+                        code gene, pathway, disease, etc. - see [Biolink
+                        Model](https://biolink.github.io/biolink-model) for the
+                        full list of categories)
+          examples:
+            application/json:
+              - source: semmeddb
+                id: 'kb:12345'
+                subject:
+                  id:
+                    - 'wd:Q14912054'
+                  name: KCNJ11
+                  categories:
+                    - gene
+                predicate:
+                  edge_label: has_phenotype
+                  relation: 'RO:0002200'
+                  negated: false
+                object:
+                  id:
+                    - 'wd:Q2898645'
+                  name: Neonatal diabetes mellitus
+                  categories:
+                    - disease
+  /statements/published:
+    get:
+      description: >
+        Given a constrained set of some [CURIE-encoded](https://www.w3.org/TR/curie/)
+        's' ('source') concept identifiers, categories and/or keywords
+        (to match in the concept name or description), retrieves a list of relationship
+        statements where either the subject or the object concept matches any of the
+        input source concepts provided.  Optionally, a set of some 't' ('target')
+        concept identifiers, categories and/or keywords (to match in the concept name
+        or description) may also be given, in which case a member of the 't' concept
+        set should matchthe concept opposite an 's' concept in the statement.
+        That is, if the 's' concept matches a subject, then the 't' concept
+        should match the object of a given statement (or vice versa).
+      tags:
+        - statements
+      parameters:
+        - name: p
+          in: query
+          description: >
+            A list of publication ID's.
+          type: array
+          items:
+            type: string
+        - name: offset
+          in: query
+          description: >
+            offset (cursor position) to next batch of statements of amount
+            'size' to return.
+          required: false
+          type: integer
+          minimum: 0
+        - name: size
+          in: query
+          description: >
+            maximum number of concept entries requested by the client; if this
+            argument is omitted, then the query is expected to returned all  the
+            available data for the query
+          type: integer
+          minimum: 0
+      operationId: getStatementsByPublication
       responses:
         '200':
           description: >
