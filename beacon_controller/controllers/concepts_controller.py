@@ -6,14 +6,13 @@ from swagger_server.models.beacon_concept_detail import BeaconConceptDetail
 import beacon_controller.database as db
 from beacon_controller.database import Node
 from beacon_controller import utils
+from beacon_controller import config
 
 from beacon_controller import biolink_model as blm
 
 from collections import defaultdict
 
 from functools import lru_cache
-
-import yaml, ast
 
 from typing import List
 
@@ -101,23 +100,33 @@ def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noq
 
     :rtype: List[BeaconConcept]
     """
-    if keywords is None and categories is None and size is None:
-        return []
+    if size is None:
+        size = 50
 
-    q = """
+    id = utils.get(config, 'concepts', 'properties', 'id', default='id')
+    name = utils.get(config, 'concepts', 'properties', 'name', default='name')
+    category = utils.get(config, 'concepts', 'properties', 'category', default='category')
+    description = utils.get(config, 'concepts', 'properties', 'description', default='description')
+
+    q = f"""
     MATCH (n)
     WHERE (
-        {keywords} IS NULL OR
-        ANY(keyword IN {keywords} WHERE (
-            ANY(name IN n.name WHERE toLower(name) CONTAINS toLower(keyword))
+        {{keywords}} IS NULL OR
+        ANY(keyword IN {{keywords}} WHERE (
+            ANY(name IN n.{name} WHERE toLower(name) CONTAINS toLower(keyword)) OR
+            ANY(name IN n.{description} WHERE toLower(name) CONTAINS toLower(keyword))
         ))
     ) AND (
-        {categories} IS NULL OR
-        ANY(category IN {categories} WHERE (
-            ANY(c IN n.category WHERE toLower(c) = toLower(category))
+        {{categories}} IS NULL OR
+        ANY(category IN {{categories}} WHERE (
+            ANY(c IN n.{category} WHERE toLower(c) = toLower(category))
         ))
-    )
-    RETURN n
+    ) RETURN {{
+        id: n.{id},
+        name : n.{name},
+        description : n.{description},
+        category : n.{category}
+    }} AS key
     """
 
     if offset is not None:
@@ -125,25 +134,28 @@ def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noq
     if size is not None:
         q += f' LIMIT {size}'
 
-    nodes = db.query(q, Node, keywords=keywords, categories=categories, limit=size)
+    nodes = db.query(q, keywords=keywords, categories=categories, limit=size)
 
     concepts = []
 
     for node in nodes:
-        if all(len(category) == 1 for category in node.category):
-            node.category = [''.join(node.category)]
-        categories = utils.standardize(node.category)
+        node = node['key']
+
+        categories = utils.standardize(node['category'])
+
+        if node['id'].startswith('http'):
+            node['id'] = utils.curie(node['id'])
+
         concept = BeaconConcept(
-            id=node.curie,
-            name=node.name,
+            id=node['id'],
+            name=node['name'],
             categories=categories,
-            description=node.description
+            description=node['description']
         )
 
         concepts.append(concept)
 
     return concepts
-
 
 def get_exact_matches_to_concept_list(c):  # noqa: E501
     """get_exact_matches_to_concept_list

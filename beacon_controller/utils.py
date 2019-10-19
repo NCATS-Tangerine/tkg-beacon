@@ -4,6 +4,13 @@ import beacon_controller as ctrl
 from functools import lru_cache
 from beacon_controller import config
 
+from prefixcommons import contract_uri
+from prefixcommons.curie_util import default_curie_maps
+
+default_curie_maps += [{
+    'OMIM' : 'http://omim.org/entry/'
+}]
+
 import logging
 
 logger = logging.getLogger(__file__)
@@ -90,14 +97,11 @@ def standardize(categories):
     Converts categories into a list if not already
     Also removes all non-Biolink categories if filter_biolink setting is set to True
     """
-    if categories is None:
-        categories = []
-    if not isinstance(categories, (list, set, tuple)):
-        categories = [categories]
+    categories = listify(categories)
     filter_biolink = config['filter_biolink']
     if filter_biolink is True:
         categories = removeNonBiolinkCategories(categories)
-    return categories
+    return [c for c in categories if c is not ""]
 
 def stringify(s):
     """
@@ -118,3 +122,30 @@ def listify(s):
     elif not isinstance(s, list):
         s = [s]
     return s
+
+def get(d: dict, *keys, default=None):
+    """
+    Gets a value from a series of nested dictionaries. Returns default value if
+    path of keys cannot be extracted.
+    """
+    for key in keys:
+        if key in d:
+            d = d[key]
+        else:
+            return default
+    return d
+
+def curie(uri:str):
+    """
+    Attempts to contract a URI. If unable to, returns the origional URI. If
+    many contractions are available, chooses the shortest.
+    """
+    curies = contract_uri(uri)
+
+    if len(curies) == 0:
+        return uri
+    elif len(curies) == 1:
+        return curies[0]
+    else:
+        curies.sort(key=len)
+        return curies[0]
