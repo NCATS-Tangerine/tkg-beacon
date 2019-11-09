@@ -1,20 +1,17 @@
-from metamodel.utils.schemaloader import SchemaLoader
-from metamodel.metamodel import ClassDefinition, SlotDefinition
+import bmt
 
-__schema = None
+tk = None
 
 DEFAULT_EDGE_LABEL = 'related_to'
 DEFAULT_CATEGORY = 'named thing'
 
-def schema():
-    global __schema
+def toolkit_instance():
+    global tk
 
-    if __schema is None:
-        __schema = SchemaLoader(
-            'https://biolink.github.io/biolink-model/biolink-model.yaml'
-        ).resolve()
+    if tk is None:
+        tk = bmt.Toolkit()
 
-    return __schema
+    return tk
 
 def slot_uri(s:str) -> str:
     return f'https://biolink.github.io/biolink-model/docs/{s.replace(" ", "_")}.html'
@@ -24,13 +21,13 @@ def class_uri(c:str) -> str:
     return f'https://biolink.github.io/biolink-model/docs/{camel_case}.html'
 
 def is_class(c:str) -> bool:
-    return c in schema().classes
+    return toolkit_instance().is_category(c)
 
 def is_slot(s:str) -> bool:
-    return s.replace('_', ' ') in schema().slots
+    return toolkit_instance().is_edgelabel(s)
 
-def get_class(c:str) -> ClassDefinition:
-    return schema().classes.get(c)
+def get_class(c:str):
+    return toolkit_instance().get_element(c)
 
-def get_slot(s:str) -> SlotDefinition:
-    return schema().slots.get(s.replace('_', ' '))
+def get_slot(s:str):
+    return toolkit_instance().get_element(s)

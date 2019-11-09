@@ -47,7 +47,7 @@ def get_concept_categories():  # noqa: E501
 
     categories = []
     for category, frequency in sorted_results:
-        c = blm.schema().classes.get(category)
+        c = blm.get_class(category)
         if c is not None:
             categories.append(BeaconConceptCategory(
                 frequency=frequency,
