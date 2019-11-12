@@ -179,43 +179,71 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
 
     :rtype: List[BeaconStatement]
     """
-    if s is None and s_keywords is None and s_categories is None and edge_label is None and relation is None and t is None and t_keywords is None and t_categories is None and size is None:
-        # We don't want to ask the database to just dump everything without
-        # limiting the size of the response. The user can get batches of everything
-        # if they want.
-        return []
+    if size is None:
+        size = 100
 
-    q = """
-    MATCH (n)-[r]->(m)
-    WHERE (
-        {sources} IS NULL OR
-        ANY(id IN {sources} WHERE n.id = id)
-    ) AND (
-        {s_keywords} IS NULL OR
-        ANY(k IN {s_keywords} WHERE (
-            ANY(name IN n.name WHERE toLower(name) CONTAINS toLower(k)) OR
-            ANY(syn IN n.synonyms WHERE toLower(syn) CONTAINS toLower(k))
-        ))
-    ) AND (
-        {s_categories} IS NULL OR
-        ANY(k IN {s_categories} WHERE ANY(c IN n.category WHERE c = k))
-    ) AND (
-        {edge_label} IS NULL OR type(r) = {edge_label}
-    ) AND (
-        {relation} IS NULL OR r.relation = {relation}
-    ) AND (
-        {targets} IS NULL OR
-        ANY(id IN {targets} WHERE m.id = id)
-    ) AND (
-        {t_keywords} IS NULL OR
-        ANY(k IN {t_keywords} WHERE (
-            ANY(name IN m.name WHERE toLower(name) CONTAINS toLower(k)) OR
-            ANY(syn IN m.synonyms WHERE toLower(syn) CONTAINS toLower(k))
-        ))
-    ) AND (
-        {t_categories} IS NULL OR
-        ANY(k IN {t_categories} WHERE ANY(c IN m.category WHERE c = k))
-    )
+    conjuncts = []
+    unwinds = []
+    data = {}
+
+    if s is not None:
+        unwinds.append("[x IN {sources} | toLower(x)] AS s")
+        conjuncts.append("toLower(n.id) = s")
+        data['sources'] = s
+
+    if t is not None:
+        unwinds.append("UNWIND [x IN {targets} | toLower(x)] AS t")
+        conjuncts.append("toLower(m.id) = t")
+        data['targets'] = t
+
+    if s_keywords is not None:
+        unwinds.append("[x IN {s_keywords} | toLower(x)] AS s_keyword")
+        disjuncts = [
+            "toLower(n.name) CONTAINS s_keyword",
+            "ANY(syn IN n.synonym WHERE toLower(syn) CONTAINS s_keyword)"
+        ]
+        conjuncts.append(" OR ".join(disjuncts))
+        # conjuncts.append("toLower(n.name) CONTAINS s_keyword OR ANY(synonym IN n.synonym WHERE toLower(synonym) CONTAINS s_keyword)")
+        data['s_keywords'] = s_keywords
+
+    if t_keywords is not None:
+        unwinds.append("[x IN {t_keywords} | toLower(x)] AS t_keyword")
+        disjuncts = [
+            "toLower(m.name) CONTAINS t_keyword",
+            "ANY(syn IN m.synonym WHERE toLower(syn) CONTAINS t_keyword)"
+        ]
+        conjuncts.append(" OR ".join(disjuncts))
+        # conjuncts.append("ANY(keyword in {t_keywords} WHERE keyword CONTAINS toLower(m.name))")
+        # conjuncts.append("toLower(m.name) CONTAINS t_keyword OR ANY(synonym IN m.synonym WHERE toLower(synonym) CONTAINS t_keyword)")
+        data['t_keywords'] = t_keywords
+
+    if edge_label is not None:
+        conjuncts.append("type(r) = {edge_label}")
+        data['edge_label'] = edge_label
+
+    if relation is not None:
+        conjuncts.append("r.relation = {relation}")
+        data['relation'] = relation
+
+    if s_categories is not None:
+        unwinds.append("[x IN {s_categories} | toLower(x)] AS s_category")
+        conjuncts.append("ANY(category IN {s_categories} WHERE category IN label(n))")
+        data['s_categories'] = s_categories
+
+    if t_categories is not None:
+        unwinds.append("[x IN {t_categories} | toLower(x)] AS t_category")
+        conjuncts.append("ANY(category IN {t_categories} WHERE category IN label(m))")
+        data['t_categories'] = t_categories
+
+    q = "MATCH (n)-[r]->(m)"
+
+    if unwinds != []:
+        q = "UNWIND " + ', '.join(unwinds) + " " + q
+
+    if conjuncts != []:
+        q = q + " WHERE (" + ') AND ('.join(conjuncts) + ")"
+
+    q += """
     RETURN
         n AS subject,
         m AS object,
@@ -231,17 +259,22 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
     if isinstance(size, int) and size >= 1:
         q += f' LIMIT {size}'
 
+    print(q.format(**data))
+
+    import time
+
+    start = time.time()
+
     results = db.query(
         q,
-        sources=s,
-        targets=t,
-        s_keywords=s_keywords,
-        t_keywords=t_keywords,
-        s_categories=s_categories,
-        t_categories=t_categories,
-        edge_label=edge_label,
-        relation=relation
+        **data
     )
+
+    end = time.time()
+
+    print(end - start)
+
+    print(len(results))
 
     statements = []
 
