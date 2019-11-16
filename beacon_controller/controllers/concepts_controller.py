@@ -101,28 +101,40 @@ def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noq
 
     :rtype: List[BeaconConcept]
     """
-    if keywords is None and categories is None and size is None:
-        return []
+    if size is None:
+        size = 100;
 
-    q = """
-    MATCH (n)
-    WHERE (
-        {keywords} IS NULL OR
-        ANY(keyword IN {keywords} WHERE (
-            ANY(name IN n.name WHERE toLower(name) CONTAINS toLower(keyword))
-        ))
-    ) AND (
-        {categories} IS NULL OR
-        ANY(category IN {categories} WHERE (
-            ANY(c IN n.category WHERE toLower(c) = toLower(category))
-        ))
-    )
-    RETURN n
-    """
+    conjuncts = []
+    unwinds = []
+    data = {}
 
-    if offset is not None:
+    if keywords is not None:
+        unwinds.append("[x IN {keywords} | toLower(x)] AS keyword")
+        disjuncts = [
+            "toLower(n.name) CONTAINS keyword",
+            "ANY(syn IN n.synonym WHERE toLower(syn) CONTAINS keyword)"
+        ]
+        conjuncts.append(" OR ".join(disjuncts))
+        data['keywords'] = keywords
+
+    if categories is not None:
+        unwinds.append("[x IN {categories} | toLower(x)] AS category")
+        conjuncts.append("ANY(category IN {categories} WHERE category IN labels(n))")
+        data['categories'] = categories
+
+    q = "MATCH (n)"
+
+    if unwinds != []:
+        q = "UNWIND " + ' UNWIND '.join(unwinds) + " " + q
+
+    if conjuncts != []:
+        q = q + " WHERE (" + ') AND ('.join(conjuncts) + ")"
+
+    q += " RETURN n"
+
+    if isinstance(offset, int) and offset >= 0:
         q += f' SKIP {offset}'
-    if size is not None:
+    if isinstance(size, int) and size >= 1:
         q += f' LIMIT {size}'
 
     nodes = db.query(q, Node, keywords=keywords, categories=categories, limit=size)

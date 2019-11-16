@@ -227,18 +227,18 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
 
     if s_categories is not None:
         unwinds.append("[x IN {s_categories} | toLower(x)] AS s_category")
-        conjuncts.append("ANY(category IN {s_categories} WHERE category IN label(n))")
+        conjuncts.append("s_category IN labels(n))")
         data['s_categories'] = s_categories
 
     if t_categories is not None:
         unwinds.append("[x IN {t_categories} | toLower(x)] AS t_category")
-        conjuncts.append("ANY(category IN {t_categories} WHERE category IN label(m))")
+        conjuncts.append("t_category IN labels(m)")
         data['t_categories'] = t_categories
 
     q = "MATCH (n)-[r]->(m)"
 
     if unwinds != []:
-        q = "UNWIND " + ', '.join(unwinds) + " " + q
+        q = "UNWIND " + ' UNWIND '.join(unwinds) + " " + q
 
     if conjuncts != []:
         q = q + " WHERE (" + ') AND ('.join(conjuncts) + ")"
@@ -259,22 +259,10 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
     if isinstance(size, int) and size >= 1:
         q += f' LIMIT {size}'
 
-    print(q.format(**data))
-
-    import time
-
-    start = time.time()
-
     results = db.query(
         q,
         **data
     )
-
-    end = time.time()
-
-    print(end - start)
-
-    print(len(results))
 
     statements = []
 
