@@ -6,6 +6,7 @@ from swagger_server.models.beacon_concept_detail import BeaconConceptDetail
 import beacon_controller.database as db
 from beacon_controller.database import Node
 from beacon_controller import utils
+from beacon_controller import namespace as ns
 from beacon_controller import config
 
 from beacon_controller import biolink_model as blm
@@ -50,6 +51,7 @@ def get_concept_details(concept_id):  # noqa: E501
         n AS node
     LIMIT 1
     """
+    import pudb; pu.db
 
     results = db.query(q, conceptId=concept_id)
 
@@ -83,7 +85,6 @@ def get_concept_details(concept_id):  # noqa: E501
     else:
         return BeaconConceptWithDetails()
 
-
 def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noqa: E501
     """get_concepts
 
@@ -107,6 +108,8 @@ def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noq
     name = utils.get(config, 'concepts', 'properties', 'name', default='name')
     category = utils.get(config, 'concepts', 'properties', 'category', default='category')
     description = utils.get(config, 'concepts', 'properties', 'description', default='description')
+
+    # import pudb; pu.db
 
     q = f"""
     MATCH (n)
@@ -144,7 +147,7 @@ def get_concepts(keywords=None, categories=None, offset=None, size=None):  # noq
         categories = utils.standardize(node['category'])
 
         if node['id'].startswith('http'):
-            node['id'] = utils.curie(node['id'])
+            node['id'] = ns.curie(node['id'])
 
         concept = BeaconConcept(
             id=node['id'],

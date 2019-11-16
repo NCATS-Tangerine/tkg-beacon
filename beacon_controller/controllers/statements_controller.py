@@ -10,6 +10,7 @@ from swagger_server.models.beacon_statement_annotation import BeaconStatementAnn
 
 import beacon_controller.database as db
 from beacon_controller import utils
+from beacon_controller import namespace
 
 def populate_dict(d, db_dict, prefix=None):
     for key, value in db_dict.items():
@@ -179,11 +180,12 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
 
     :rtype: List[BeaconStatement]
     """
-    if s is None and s_keywords is None and s_categories is None and edge_label is None and relation is None and t is None and t_keywords is None and t_categories is None and size is None:
-        # We don't want to ask the database to just dump everything without
-        # limiting the size of the response. The user can get batches of everything
-        # if they want.
-        return []
+    if size is None:
+        size = 50
+
+    import pudb; pu.db
+    namespace.expand(s)
+    namespace.expand(t)
 
     q = """
     MATCH (n)-[r]->(m)

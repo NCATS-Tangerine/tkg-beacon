@@ -4,13 +4,6 @@ import beacon_controller as ctrl
 from functools import lru_cache
 from beacon_controller import config
 
-from prefixcommons import contract_uri
-from prefixcommons.curie_util import default_curie_maps
-
-default_curie_maps += [{
-    'OMIM' : 'http://omim.org/entry/'
-}]
-
 import logging
 
 logger = logging.getLogger(__file__)
@@ -134,18 +127,3 @@ def get(d: dict, *keys, default=None):
         else:
             return default
     return d
-
-def curie(uri:str):
-    """
-    Attempts to contract a URI. If unable to, returns the origional URI. If
-    many contractions are available, chooses the shortest.
-    """
-    curies = contract_uri(uri)
-
-    if len(curies) == 0:
-        return uri
-    elif len(curies) == 1:
-        return curies[0]
-    else:
-        curies.sort(key=len)
-        return curies[0]
