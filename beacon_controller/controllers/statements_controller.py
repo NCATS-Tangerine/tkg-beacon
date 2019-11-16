@@ -192,7 +192,7 @@ def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, 
         data['sources'] = s
 
     if t is not None:
-        unwinds.append("UNWIND [x IN {targets} | toLower(x)] AS t")
+        unwinds.append("[x IN {targets} | toLower(x)] AS t")
         conjuncts.append("toLower(m.id) = t")
         data['targets'] = t
 
