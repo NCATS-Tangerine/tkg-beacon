@@ -25,5 +25,6 @@ setup(
         'python_dateutil',
         'setuptools >= 21.0.0',
         'prefixcommons',
+        'bmt',
     ]
 )
