@@ -2,14 +2,14 @@ configure:
 	cp config/config.yaml-template config/config.yaml
 
 install:
-	pip install .
-	pip install beacon/
-	pip install ontology/
+	python -m pip install .
+	python -m pip install beacon/
+	python -m pip install ontology/
 
 dev-install:
-	pip install -e .
-	pip install beacon/
-	pip install ontology/
+	python -m pip install -e .
+	python -m pip install beacon/
+	python -m pip install ontology/
 
 run:
 	cd beacon && python -m swagger_server

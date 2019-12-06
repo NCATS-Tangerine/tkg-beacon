@@ -1,16 +1,17 @@
-## TKG Beacon
+# Translator Knowledge Graph (TKG) Beacon
 
-For wrapping Translator Knowledge Graph compliant Neo4j databases.
-
-Python Beacon client https://github.com/NCATS-Tangerine/tkbeacon-python-client
+For wrapping Translator Knowledge Graph compliant Neo4j databases. Generally speaking, you'll need to clone this 
+project once, in a uniquely named project folder, for each distinct Neo4j database you wish to wrap as a beacon. 
+(Perhaps in the future, we'll make things a bit more convenient for multiple database beacon deployments...)
 
 ## Getting Started
 
 This project currently uses Python 3.7, and it is advised that you use this version.
 
-### Configuring
+### Configuration
 
 You may create the configuration file `config/config.yaml` with the following command:
+
 ```
 make configure
 ```
@@ -31,12 +32,13 @@ These files can be generated using the [KGX](https://kgx.readthedocs.io/en/lates
 
 ### Running the application
 
-There are two options for running this application:
+There are three options for running this application:
 
 1. Run the wrapper directly
-2. Run the wrapper within Docker
+2. Run the wrapper directly within Docker
+3. Run the wrapper using Docker Compose
 
-#### 1. Directly (code snippets are for Linux)
+## 1. Directly (code snippets are for Linux)
 
 Create a fresh virtual environment
 ```
@@ -59,9 +61,9 @@ make run
 Visit it at http://localhost:8080. The basepath will automatically contain `/beacon/{beacon name}/`, and you will be 
 redirected appropriately.
 
-### 2. Running under Docker
+## 2. Running Directly under Docker
 
-#### Installation of Docker
+### Installation of Docker
 
 If you choose to run the dockerized versions of the applications, you'll obviously need to 
 [install Docker first](https://docs.docker.com/engine/installation/) in your target Linux operating environment 
@@ -77,7 +79,7 @@ $ sudo apt-get install curl
 
 For other installations, please find instructions specific to your choice of Linux variant, on the Docker site.
 
-#### Testing Docker
+### Testing Docker
 
 In order to ensure that docker is working correctly, run the following command:
 
@@ -115,7 +117,39 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-#### Installing Docker Compose
+### Running the System with Docker
+
+The `Makefile` contains several targets for a standard set of TKG beacons: semmeddb, biolink (Monarch) and rtx. 
+Assuming that you have properly set up the config/config.yaml files for each target, you can run the following `make` 
+operations (substituting one of 'semmeddb', 'biolink' and 'rtx' for the '<beacon_name>' string in the targets):
+
+```bash
+# Building the Docker container for the selected '###' 
+make docker-build-<beacon_name>
+# Then start it up!
+make docker-run-<beacon_name>
+```
+
+To view the logs of the running beacon Docker container:
+
+```bash
+make docker-logs-<beacon_name>
+```
+
+To stop the beacon Docker container:
+
+```bash
+make docker-stop-<beacon_name>
+```
+
+## 3. Running with Docker Compose
+
+The advantage of running the TKG Beacon with Docker Compose is operational convenience. The caveat is that you need 
+to do a bit more work up front, the system assumes that it is communicating with a local Neo4j database, and also, 
+you'll have some system overhead related to running database instances running locally (each in their 
+own docker container).
+
+### Installing Docker Compose
 
 You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on 
 your target Linux operating environment.
@@ -133,14 +167,29 @@ Note that your particular version and build number may be different than what is
 expect that docker-compose version differences should have a significant impact on the build, but if in doubt, 
 refer to the release notes of the docker-compose site for advice.
 
-#### Configuring the Application
+### Configuring the Application
 
-Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database.
+Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database. In particular, 
+you should set your Neo4j credentials there and also, point to the local service database:
+
+```
+database:
+  address: bolt://tkg-db:7687
+  username: neo4j
+  password: neo4j
+```
 
 Also make a copy of the docker-compose.yaml-template into docker-compose.yaml and customize the Neo4j credentials 
 to those of your TKG database. Alternately, set the NEO4J_AUTH environment variable to these credentials.
 
-To build the Docker containers, run the following command
+If you plan to run multiple instances of the project on your server, you'll also need to give each service name a 
+globally unique value, e.g. `tkg-api` to `tkg-semmeddb-api` and `tkg-db` to `tkg-semmeddb-db` so that your 
+Docker Engine can tell each Neo4j Beacon instance apart. Remember to also use the new `tkg-db` name in your the 
+`config.yaml` configuration file address as well.
+
+### Running the System
+
+To build the Docker containers with Compose, run the following command
 
 ```
  $ cd ..  # make sure you are back in the root project directory
@@ -174,3 +223,5 @@ $ sudo docker-compose up tkg-db
 $ sudo docker-compose up tkg-api
 
 ```
+
+Note that if you (had to) rename your services, substitute the service names as put into the docker-compose.yaml file.

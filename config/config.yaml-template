@@ -26,9 +26,9 @@ beacon_name: <beacon name>
 
 database:
   # Include the port in the address - standalone
-  #address: bolt://localhost:7687
+  #address: bolt://localhost:7474
   # If you use the Docker Compose... use this configuration
-  address: bolt://localhost:7474
+  address: bolt://tkg-db:7687
   username: neo4j
   password: neo4j
 
