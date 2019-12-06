@@ -18,7 +18,7 @@ Change the database settings in `config/config.yaml` to match the address and cr
 
 ### Getting the data
 
-The Cypher queries for the metadata endpoints are incredibly slow, and so we have opted to run them offline. The metadata should be contained in `data/{beacon name}/edge_summary.txt` and `data/{beacon name}/edge_summary.txt`. These files can be generated using the [KGX](https://kgx.readthedocs.io/en/latest/index.html) command line interface `neo4j-node-summary` and `neo4j-edge-summary` commands. The resulting files will need to be placed in `data/{beacon name}/`. Of course if you're giving your beaon a new name (not one of the defaults: "biolink", "rkb", "rtx") then you will have to create a new directory to hold its metadata.
+The Cypher queries for the metadata endpoints are incredibly slow, and so we have opted to run them offline. The metadata should be contained in `data/{beacon name}/edge_summary.txt` and `data/{beacon name}/edge_summary.txt`. These files can be generated using the [KGX](https://kgx.readthedocs.io/en/latest/index.html) command line interface `neo4j-node-summary` and `neo4j-edge-summary` commands. The resulting files will need to be placed in `data/{beacon name}/`. Of course if you're giving your beaon a new name (not one of the defaults: "biolink", "semmeddb", "rtx") then you will have to create a new directory to hold its metadata.
 
 ### Running the application
 

@@ -12,7 +12,7 @@
 # Or you can install and use another.
 server: tornado
 
-title: Biothings Explorer Translator Knowledge Beacon API
+title: Translator Knowledge Beacon API
 
 port: 8080
 
@@ -20,7 +20,7 @@ redirect_404: True
 
 include_nulls: True
 
-# Default supported options are: "rtx", "biolink" or "rkb". See README.md
+# Default supported options are: "rtx", "biolink" or "semmeddb". See README.md
 # "Getting the data" to learn how to add more options.
 beacon_name: <beacon name>
 
