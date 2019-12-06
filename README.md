@@ -8,11 +8,20 @@ project once, in a uniquely named project folder, for each distinct Neo4j databa
 
 This project currently uses Python 3.7, and it is advised that you use this version.
 
+Start by cloning the project:
+
+```
+git clone https://github.com/NCATS-Tangerine/tkg-beacon.git
+```
+
+Note: if you are running multiple TKG beacon databases, you may wish to clone into a meaningfully named directory, one per beacon.
+
 ### Configuration
 
 You may create the configuration file `config/config.yaml` with the following command:
 
 ```
+cd tkg-beacon
 make configure
 ```
 Change the database settings in `config/config.yaml` to match the address and credentials of the wanted neo4j database. 
@@ -40,7 +49,7 @@ There are three options for running this application:
 
 ## 1. Directly (code snippets are for Linux)
 
-Create a fresh virtual environment
+Create a fresh virtual environment:
 ```
 virtualenv -p python3.7 venv
 source venv/bin/activate
