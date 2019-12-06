@@ -116,6 +116,10 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
+#### Avoiding use of sudo for Docker run under Linux
+
+Note that under Linux, you likely need to do a bit more preparation to avoid having to run docker (and docker-compose) 
+as 'sudo'. See [here](https://docs.docker.com/install/linux/linux-postinstall/) for details on how to fix this.
 
 ### Running the System with Docker
 
@@ -151,10 +155,8 @@ own docker container).
 
 ### Installing Docker Compose
 
-You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on 
+You need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on 
 your target Linux operating environment.
-
-Note that under Ubuntu, you may need to run docker (and docker-compose) as 'sudo'.
 
 #### Testing Docker Compose
 
