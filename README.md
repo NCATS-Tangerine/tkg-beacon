@@ -14,11 +14,20 @@ You may create the configuration file `config/config.yaml` with the following co
 ```
 make configure
 ```
-Change the database settings in `config/config.yaml` to match the address and credentials of the wanted neo4j database. Also set the beacon name appropriately. The name serves two functions: it shows up in the basepath, and it also determines the location of the metadata files. Setting `filter_biolink` to `True` will ignore all categories that are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular concept, the concept will be reported by the beacon as `"named thing"`.
+Change the database settings in `config/config.yaml` to match the address and credentials of the wanted neo4j database. 
+Also set the beacon name appropriately. The name serves two functions: it shows up in the basepath, and it also 
+determines the location of the metadata files. Setting `filter_biolink` to `True` will ignore all categories that 
+are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular 
+concept, the concept will be reported by the beacon as `"named thing"`.
 
 ### Getting the data
 
-The Cypher queries for the metadata endpoints are incredibly slow, and so we have opted to run them offline. The metadata should be contained in `data/{beacon name}/edge_summary.txt` and `data/{beacon name}/edge_summary.txt`. These files can be generated using the [KGX](https://kgx.readthedocs.io/en/latest/index.html) command line interface `neo4j-node-summary` and `neo4j-edge-summary` commands. The resulting files will need to be placed in `data/{beacon name}/`. Of course if you're giving your beaon a new name (not one of the defaults: "biolink", "semmeddb", "rtx") then you will have to create a new directory to hold its metadata.
+The Cypher queries for the metadata endpoints are incredibly slow, and so we have opted to run them offline. 
+The metadata should be contained in `data/{beacon name}/edge_summary.txt` and `data/{beacon name}/edge_summary.txt`. 
+These files can be generated using the [KGX](https://kgx.readthedocs.io/en/latest/index.html) command line interface 
+`neo4j-node-summary` and `neo4j-edge-summary` commands. The resulting files will need to be placed in 
+`data/{beacon name}/`. Of course if you're giving your beacon a new name (not one of the defaults: "biolink", 
+"semmeddb", "rtx") then you will have to create a new directory to hold its metadata.
 
 ### Running the application
 
@@ -38,7 +47,8 @@ Once configuration is finished, you may install the application with:
 ```
 make install
 ```
-If you are developing the application and may be playing around with configurations, you can install it in developer mode instead (so that you will not need to re-install every time you make a change):
+If you are developing the application and may be playing around with configurations, you can install it in developer 
+mode instead (so that you will not need to re-install every time you make a change):
 ```
 make dev-install
 ```
@@ -46,15 +56,19 @@ Finally, you can run the application with:
 ```
 make run
 ```
-Visit it at http://localhost:8080. The basepath will automatically contain `/beacon/{beacon name}/`, and you will be redirected appropriately.
+Visit it at http://localhost:8080. The basepath will automatically contain `/beacon/{beacon name}/`, and you will be 
+redirected appropriately.
 
 ### 2. Running under Docker
 
 #### Installation of Docker
 
-If you choose to run the dockerized versions of the applications, you'll obviously need to [install Docker first](https://docs.docker.com/engine/installation/) in your target Linux operating environment (bare metal server or virtual machine running Linux).
+If you choose to run the dockerized versions of the applications, you'll obviously need to 
+[install Docker first](https://docs.docker.com/engine/installation/) in your target Linux operating environment 
+(bare metal server or virtual machine running Linux).
 
-For our installations, we typically use Ubuntu Linux, for which there is an [Ubuntu-specific docker installation using the repository](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
+For our installations, we typically use Ubuntu Linux, for which there is an 
+[Ubuntu-specific docker installation using the repository](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
 Note that you should have 'curl' installed first before installing Docker:
 
 ```
@@ -103,7 +117,8 @@ For more examples and ideas, visit:
 
 #### Installing Docker Compose
 
-You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on your target Linux operating environment.
+You will then also need to [install Docker Compose](https://docs.docker.com/compose/install/) alongside Docker on 
+your target Linux operating environment.
 
 Note that under Ubuntu, you may need to run docker (and docker-compose) as 'sudo'.
 
@@ -114,13 +129,16 @@ In order to ensure Docker Compose is working correctly, issue the following comm
 $ docker-compose --version
 docker-compose version 1.18.0, build 8dd22a9
 ```
-Note that your particular version and build number may be different than what is shown here. We don't currently expect that docker-compose version differences should have a significant impact on the build, but if in doubt, refer to the release notes of the docker-compose site for advice.
+Note that your particular version and build number may be different than what is shown here. We don't currently 
+expect that docker-compose version differences should have a significant impact on the build, but if in doubt, 
+refer to the release notes of the docker-compose site for advice.
 
 #### Configuring the Application
 
 Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database.
 
-Also make a copy of the docker-compose.yaml-template into docker-compose.yaml and customize the Neo4j credentials to those of your TKG database. Alternately, set the NEO4J_AUTH environment variable to these credentials.
+Also make a copy of the docker-compose.yaml-template into docker-compose.yaml and customize the Neo4j credentials 
+to those of your TKG database. Alternately, set the NEO4J_AUTH environment variable to these credentials.
 
 To build the Docker containers, run the following command
 
