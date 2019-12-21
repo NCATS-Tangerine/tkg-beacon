@@ -193,12 +193,13 @@ database:
 ```
 
 Ensure that the user/password credentials of your Neo4j database for are also set to the same values in the local copy 
-of the docker-compose.yaml file for both the `tkg-api` and `tkg-db` services. 
+of the `docker-compose.yaml` file for both the `tkg-api` and `tkg-db` services.  
 
 If you plan to run multiple instances of the project on your server, you'll also need to give each service name a 
 globally unique value, e.g. `tkg-api` to `tkg-semmeddb-api` and `tkg-db` to `tkg-semmeddb-db` so that your 
 Docker Engine can tell each Neo4j Beacon instance apart. Remember to also use the new `tkg-db` name in your the 
-`config.yaml` configuration file address as well.
+`config.yaml` configuration file address as well. You should also adjust the port directive in the file to the port 
+you want exposed for the API.
 
 ### Running the System
 
