@@ -6,7 +6,7 @@ services:
     environment:
       - NEO4J_AUTH=${NEO4J_AUTH:-neo4j/your_tkg_password}
     ports:
-      - "8080:5000"
+      - "8075:8080" # semmeddb default port?
     depends_on:
       - "tkg-db"
     networks:
