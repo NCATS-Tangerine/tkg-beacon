@@ -43,9 +43,9 @@ These files can be generated using the [KGX](https://kgx.readthedocs.io/en/lates
 
 There are three options for running this application:
 
-1. [Run the wrapper directly](#1_directly_code_snippets_are_for_Linux)
-2. [Run the wrapper directly within Docker](#2_running_directly_under_docker)
-3. [Run the wrapper using Docker Compose](#3_running_with_docker_compose)
+1. [Run the wrapper directly](#1-directly-code-snippets-are-for-Linux)
+2. [Run the wrapper directly within Docker](#2-running-directly-under-docker)
+3. [Run the wrapper using Docker Compose](#3-running-with-docker-compose)
 
 ## 1. Directly (code snippets are for Linux)
 
