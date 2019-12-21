@@ -1,5 +1,6 @@
 configure:
 	cp config/config.yaml-template config/config.yaml
+	cp docker-compose.yaml-template docker-compose.yaml
 
 install:
 	python -m pip install .
