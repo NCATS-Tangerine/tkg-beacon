@@ -28,7 +28,7 @@ Change the database settings in `config/config.yaml` to match the address and cr
 Also set the beacon name appropriately. The name serves two functions: it shows up in the basepath, and it also 
 determines the location of the metadata files. Setting `filter_biolink` to `True` will ignore all categories that 
 are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular 
-concept, the concept will be reported by the beacon as `"named thing"`.
+concept, the concept will be reported by the beacon as `"named_thing"`.
 
 ### Getting the data
 
@@ -67,7 +67,7 @@ Finally, you can run the application with:
 ```
 make run
 ```
-Visit it at http://localhost:8080. The basepath will automatically contain `/beacon/{beacon name}/`, and you will be 
+Visit it at http://localhost:8080. The base path will automatically contain `/beacon/{beacon name}/`, and you will be 
 redirected appropriately.
 
 ## 2. Running Directly under Docker

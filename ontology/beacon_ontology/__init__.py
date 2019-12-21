@@ -4,7 +4,7 @@ convenience.
 """
 
 
-from beacon_ontology.model import BiolinkModel
+from .model import BiolinkModel
 
 _model = BiolinkModel()
 

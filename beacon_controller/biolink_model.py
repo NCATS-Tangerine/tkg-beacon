@@ -5,6 +5,7 @@ tk = None
 DEFAULT_EDGE_LABEL = 'related_to'
 DEFAULT_CATEGORY = 'named thing'
 
+
 def toolkit_instance():
     global tk
 
@@ -13,21 +14,27 @@ def toolkit_instance():
 
     return tk
 
+
 def slot_uri(s:str) -> str:
     return f'https://biolink.github.io/biolink-model/docs/{s.replace(" ", "_")}.html'
+
 
 def class_uri(c:str) -> str:
     camel_case = c.title().replace(' ', '')
     return f'https://biolink.github.io/biolink-model/docs/{camel_case}.html'
 
+
 def is_class(c:str) -> bool:
     return toolkit_instance().is_category(c)
+
 
 def is_slot(s:str) -> bool:
     return toolkit_instance().is_edgelabel(s)
 
+
 def get_class(c:str):
     return toolkit_instance().get_element(c)
+
 
 def get_slot(s:str):
     return toolkit_instance().get_element(s)

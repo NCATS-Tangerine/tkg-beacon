@@ -1,11 +1,12 @@
 import yaml
 import requests
 
-from beacon_ontology.biolink_class import BiolinkClass
-from beacon_ontology.biolink_slot import BiolinkSlot
-from beacon_ontology.biolink_type import BiolinkType
+from .biolink_class import BiolinkClass
+from .biolink_slot import BiolinkSlot
+from .biolink_type import BiolinkType
 
 _URI='https://raw.githubusercontent.com/biolink/biolink-model/master/biolink-model.yaml'
+
 
 class BiolinkModel(object):
     """

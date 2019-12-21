@@ -1,12 +1,10 @@
-import os, yaml, threading
-
-import beacon_controller as ctrl
 from functools import lru_cache
 from beacon_controller import config
 
 import logging
 
 logger = logging.getLogger(__file__)
+
 
 @lru_cache()
 def prefix_map():
@@ -33,13 +31,14 @@ def prefix_map():
 
     return d
 
-def fix_curie(curie:str) -> str:
+
+def fix_curie(curie: str) -> str:
     """
     The exact matches query is case sensitive. This method can be used to ensure
     that a given curie prefix matches the case of the prefix in the database.
     """
     if curie is None or ':' not in curie:
-        return curie
+        return ""
 
     prefixes = prefix_map()
     prefix, local_id = curie.split(':', 1)
@@ -50,6 +49,7 @@ def fix_curie(curie:str) -> str:
     else:
         return curie
 
+
 def make_case_insensitive_and_inexact(strings):
     """
     Adds additional regex modifiers to make the resulting list of search terms
@@ -57,6 +57,7 @@ def make_case_insensitive_and_inexact(strings):
     """
     converted = list(map(lambda s: "(?i).*" + s + ".*", strings))
     return converted
+
 
 def make_case_insensitive(strings):
     """
@@ -66,24 +67,27 @@ def make_case_insensitive(strings):
     converted = list(map(lambda s: "(?i)" + s, strings))
     return converted
 
+
 def remove_all(original_list:list, object_to_be_removed):
     """
     Removes object_to_be_removed in list if it exists and returns list with removed items
     """
     return [i for i in original_list if i != object_to_be_removed]
 
+
 def removeNonBiolinkCategories(old_categories:list):
     """
     Removes all non-Biolink compliant categories and returns the remaining list.
-    If all items are removed, then returns a list containing the default, "named thing"
+    If all items are removed, then returns a list containing the default, "named_thing"
     """
     # categories = list(filter(isBiolinkCategory, old_categories))
     categories = [c for c in old_categories if isBiolinkCategory(c)]
     if not categories:
         #categories is empty
-        categories.append("named thing")
+        categories.append("named_thing")
 
     return categories
+
 
 def standardize(categories):
     """
@@ -99,6 +103,7 @@ def standardize(categories):
         categories = removeNonBiolinkCategories(categories)
     return categories
 
+
 def stringify(s):
     """
     Turns s into a semicolon separated string if s is a list
@@ -106,6 +111,7 @@ def stringify(s):
     if isinstance(s, (list, set)):
         s = "; ".join(s)
     return s
+
 
 def listify(s):
     """
