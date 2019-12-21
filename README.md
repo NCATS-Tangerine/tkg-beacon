@@ -182,18 +182,18 @@ refer to the release notes of the docker-compose site for advice.
 
 ### Configuring the Application
 
-Copy the config.yaml-template into config.yaml and customize it to the credentials of your TKG database. In particular, 
-you should set your Neo4j credentials there and also, point to the local service database:
+Running the `make config` command above copied the config.yaml-template into config.yaml. If you haven't done so 
+already, you should set your Neo4j credentials there and also, point to the local service database:
 
 ```
 database:
   address: bolt://tkg-db:7687
   username: neo4j
-  password: neo4j
+  password: <your_tkg_password>
 ```
 
-Also make a copy of the docker-compose.yaml-template into docker-compose.yaml and customize the Neo4j credentials 
-to those of your TKG database. Alternately, set the NEO4J_AUTH environment variable to these credentials.
+Ensure that the user/password credentials of your Neo4j database for are also set to the same values in the local copy 
+of the docker-compose.yaml file for both the `tkg-api` and `tkg-db` services. 
 
 If you plan to run multiple instances of the project on your server, you'll also need to give each service name a 
 globally unique value, e.g. `tkg-api` to `tkg-semmeddb-api` and `tkg-db` to `tkg-semmeddb-db` so that your 
@@ -214,7 +214,7 @@ This command make take some time to execute, as it is downloading and building y
 To run the system, run the following command:
 
 ```
-$ sudo docker-compose up
+$ sudo docker-compose up --detach
 ```
 
 To shut down the system, run the following:
