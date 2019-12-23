@@ -28,7 +28,7 @@ Change the database settings in `config/config.yaml` to match the address and cr
 Also set the beacon name appropriately. The name serves two functions: it shows up in the basepath, and it also 
 determines the location of the metadata files. Setting `filter_biolink` to `True` will ignore all categories that 
 are non-Biolink compliant if a concept has more than one category. If only one category exists for a particular 
-concept, the concept will be reported by the beacon as `"named_thing"`.  The configure make command also copies over 
+concept, the concept will be reported by the beacon as `"named thing"`.  The configure make command also copies over 
 the `docker-compose.yaml-template` to `docker-compose.yaml`. The Neo4j credentials may be adjusted to point to your 
 target local Neo4j folders and a suitable Neo4j password specified here in the `docker-compose-yaml` file.
 

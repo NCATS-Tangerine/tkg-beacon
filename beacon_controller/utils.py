@@ -78,13 +78,13 @@ def remove_all(original_list:list, object_to_be_removed):
 def removeNonBiolinkCategories(old_categories:list):
     """
     Removes all non-Biolink compliant categories and returns the remaining list.
-    If all items are removed, then returns a list containing the default, "named_thing"
+    If all items are removed, then returns a list containing the default, " named thing"
     """
     # categories = list(filter(isBiolinkCategory, old_categories))
     categories = [c for c in old_categories if isBiolinkCategory(c)]
     if not categories:
         #categories is empty
-        categories.append("named_thing")
+        categories.append(" named thing")
 
     return categories
 
