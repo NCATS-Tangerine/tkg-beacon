@@ -75,7 +75,7 @@ def remove_all(original_list:list, object_to_be_removed):
     return [i for i in original_list if i != object_to_be_removed]
 
 
-def removeNonBiolinkCategories(old_categories:list):
+def removeNonBiolinkCategories(old_categories: list):
     """
     Removes all non-Biolink compliant categories and returns the remaining list.
     If all items are removed, then returns a list containing the default, " named thing"
@@ -98,6 +98,10 @@ def standardize(categories):
         categories = []
     if not isinstance(categories, (list, set, tuple)):
         categories = [categories]
+
+    # categories should not have underscores in their strings
+    categories = [str(c).replace("_"," ") for c in categories]
+
     filter_biolink = config['filter_biolink']
     if filter_biolink is True:
         categories = removeNonBiolinkCategories(categories)

@@ -3,6 +3,7 @@ from .model import Node, Edge
 
 from neomodel import db
 
+
 def query(q, inflator=None, **kwargs):
     results, meta = db.cypher_query(q, kwargs)
 

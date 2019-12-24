@@ -17,6 +17,7 @@ import yaml, ast
 
 from typing import List
 
+
 def create_details_dict(node):
     d = {}
     already_labels = ['id', 'uri', 'iri', 'name', 'category', 'symbol', 'description', 'synonym', 'clique', 'xrefs']
@@ -24,6 +25,7 @@ def create_details_dict(node):
         if key not in already_labels:
             d[key] = value
     return d
+
 
 def get_concept_details(concept_id):  # noqa: E501
     """get_concept_details
@@ -55,7 +57,7 @@ def get_concept_details(concept_id):  # noqa: E501
     results = db.query(q, conceptId=concept_id)
 
     for result in results:
-        uri = result['uri'] if result['uri'] != None else result['iri']
+        uri = result['uri'] if result['uri'] is not None else result['iri']
 
         clique = utils.listify(result['clique'])
         xrefs = utils.listify(result['xrefs'])

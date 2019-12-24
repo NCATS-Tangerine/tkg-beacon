@@ -11,6 +11,7 @@ from swagger_server.models.beacon_statement_annotation import BeaconStatementAnn
 import beacon_controller.database as db
 from beacon_controller import utils
 
+
 def populate_dict(d, db_dict, prefix=None):
     for key, value in db_dict.items():
         value = utils.stringify(value)
@@ -18,6 +19,7 @@ def populate_dict(d, db_dict, prefix=None):
             d['{}_{}'.format(prefix, key)] = value
         else:
             d[key] = value
+
 
 def build_evidence(publication_id):
     """
@@ -63,6 +65,7 @@ def build_evidence(publication_id):
             uri=uri,
             date=d.get('pubdate')
         )
+
 
 def get_statement_details(statement_id, keywords=None, offset=None, size=None):  # noqa: E501
     """get_statement_details
@@ -150,6 +153,7 @@ def get_statement_details(statement_id, keywords=None, offset=None, size=None): 
             annotation=annotations,
             evidence=evidences
         )
+
 
 def get_statements(s=None, s_keywords=None, s_categories=None, edge_label=None, relation=None, t=None, t_keywords=None, t_categories=None, offset=None, size=None):  # noqa: E501
     """get_statements

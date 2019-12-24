@@ -6,6 +6,7 @@ from beacon_controller import config
 
 BASEPATH = f'/beacon/{config["beacon_name"]}/'
 
+
 def main(name:str):
     """
     Usage in swagger_server/main.py:
